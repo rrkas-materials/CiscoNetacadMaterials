@@ -60,3 +60,15 @@ Modules:
    7.6 Automating Testing  
    7.7 Network Simulation  
    7.8 Infrastructure and Automation Summary  
+8. Cisco Platforms and Development  
+   8.0 Introduction to Cisco Platforms and Development  
+   8.1 Introduction to Cisco Platforms  
+   8.2 Cisco SDKs  
+   8.3 Understanding Network Programmability and Device Models  
+   8.4 Cisco Network Management  
+   8.5 Cisco Compute Management  
+   8.6 Cisco Collaboration Platforms  
+   8.7 Cisco Security Platforms  
+   8.8 Cisco Platforms and Development Summary  
+   8.9 Prepare for Your Exam and Launch Your Career!
+
