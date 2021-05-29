@@ -50,3 +50,13 @@ Modules:
    6.4 Networks for Application Development and Security  
    6.5 Securing Applications  
    6.6 Summary: Application Deployment and Security  
+7. Infrastructure and Automation  
+   7.0 Introduction to Infrastructure and Automation  
+   7.1 Automating Infrastructure with Cisco  
+   7.2 DevOps and SRE  
+   7.3 Basic Automation Scripting  
+   7.4 Automation Tools  
+   7.5 Infrastructure as Code  
+   7.6 Automating Testing  
+   7.7 Network Simulation  
+   7.8 Infrastructure and Automation Summary  
