@@ -33,3 +33,12 @@ Modules:
    4.7 Working with Webhooks  
    4.8 Troubleshooting API Calls  
    4.9 Understanding and Using APIs Summary
+5. Network Fundamentals  
+   5.0 Introduction  
+   5.1 Introduction to Network Fundamentals  
+   5.2 Network Interface Layer  
+   5.3 Internetwork Layer  
+   5.4 Network Devices  
+   5.5 Networking Protocols  
+   5.6 Troubleshooting Application Connectivity Issues  
+   5.7 Networking Fundamentals Summary  
