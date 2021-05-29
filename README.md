@@ -42,3 +42,11 @@ Modules:
    5.5 Networking Protocols  
    5.6 Troubleshooting Application Connectivity Issues  
    5.7 Networking Fundamentals Summary  
+6. Application Deployment and Security  
+   6.0 Introduction to Application Deployment and Security  
+   6.1 Understanding Deployment Choices with Different Models  
+   6.2 Creating and Deploying a Sample Application  
+   6.3 Continuous Integration/Continuous Deployment (CI/CD)  
+   6.4 Networks for Application Development and Security  
+   6.5 Securing Applications  
+   6.6 Summary: Application Deployment and Security  
