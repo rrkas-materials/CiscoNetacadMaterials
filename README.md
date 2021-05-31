@@ -72,3 +72,7 @@ Modules:
    8.8 Cisco Platforms and Development Summary  
    8.9 Prepare for Your Exam and Launch Your Career!
 
+## CCNA
+### PDFs
+1. CCNA volume 1
+2. CCNA volume 2
