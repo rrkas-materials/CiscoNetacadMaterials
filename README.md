@@ -110,6 +110,15 @@ Modules:
    3.6 Data Encapsulation  
    3.7 Data Access  
    3.8 Module Practice and Quiz  
+4. Physical Layer  
+   4.0 Introduction  
+   4.1 Purpose of the Physical Layer  
+   4.2 Physical Layer Characteristics  
+   4.3 Copper Cabling  
+   4.4 UTP Cabling  
+   4.5 Fiber-Optic Cabling  
+   4.6 Wireless Media  
+   4.7 Module Practice and Quiz  
 
 
 
