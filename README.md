@@ -124,7 +124,29 @@ Modules:
    5.1 Binary Number System  
    5.2 Hexadecimal Number System  
    5.3 Module Practice and Quiz  
+6. Data Link Layer  
+   6.0 Introduction  
+   6.1 Purpose of the Data Link Layer  
+   6.2 Topologies  
+   6.3 Data Link Frame  
+   6.4 Module Practice and Quiz  
+7. Ethernet Switching  
+   7.0 Introduction  
+   7.1 Ethernet Frames  
+   7.2 Ethernet MAC Address  
+   7.3 The MAC Address Table  
+   7.4 Switch Speeds and Forwarding Methods  
+   7.5 Module Practice and Quiz  
+8. Network Layer  
+   8.0 Introduction  
+   8.1 Network Layer Characteristics  
+   8.2 IPv4 Packet  
+   8.3 IPv6 Packet  
+   8.4 How a Host Routes  
+   8.5 Introduction to Routing  
+   8.6 Module Practice and Quiz  
 
+   
    
 
 
