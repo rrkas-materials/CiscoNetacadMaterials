@@ -73,9 +73,23 @@ Modules:
    8.9 Prepare for Your Exam and Launch Your Career!
 
 ## CCNA
-### Module 0 [Course Introduction]
-* First Time in This Course  
-* Student Resources  
+### Modules
+0. Course Introduction  
+   0.1 First Time in This Course    
+   0.2 Student Resources
+1. Networking Today  
+   1.0 Introduction  
+   1.1 Networks Affect our Lives  
+   1.2 Network Components  
+   1.3 Network Representations and Topologies  
+   1.4 Common Types of Networks  
+   1.5 Internet Connections  
+   1.6 Reliable Networks  
+   1.7 Network Trends  
+   1.8 Network Security  
+   1.9 The IT Professional  
+   1.10 Module Practice and Quiz  
+
 
 
 
