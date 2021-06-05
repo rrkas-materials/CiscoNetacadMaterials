@@ -119,7 +119,13 @@ Modules:
    4.5 Fiber-Optic Cabling  
    4.6 Wireless Media  
    4.7 Module Practice and Quiz  
+5. Number Systems  
+   5.0 Introduction  
+   5.1 Binary Number System  
+   5.2 Hexadecimal Number System  
+   5.3 Module Practice and Quiz  
 
+   
 
 
 
