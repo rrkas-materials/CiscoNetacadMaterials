@@ -108,7 +108,9 @@ Modules:
    3.4 Standards Organizations  
    3.5 Reference Models  
    3.6 Data Encapsulation  
-   3.7 
+   3.7 Data Access  
+   3.8 Module Practice and Quiz  
+
 
 
 
