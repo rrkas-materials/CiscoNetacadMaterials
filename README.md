@@ -100,6 +100,15 @@ Modules:
    2.7 Configure IP Addressing  
    2.8 Verify Connectivity  
    2.9 Module Practice and Quiz
+3. Protocols and Models  
+   3.0 Introduction  
+   3.1 The Rules  
+   3.2 Protocols  
+   3.3 Protocol Suites  
+   3.4 Standards Organizations  
+   3.5 Reference Models  
+   3.6 Data Encapsulation  
+   3.7 
 
 
 
