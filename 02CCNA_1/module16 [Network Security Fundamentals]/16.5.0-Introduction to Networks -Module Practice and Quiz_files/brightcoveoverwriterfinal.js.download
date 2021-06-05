@@ -1,0 +1,78 @@
+AdwaysInteractiveOverWriterBrightcoveFinalPlugin = function() {
+    'use strict';
+    
+    if (arguments.length < 2)
+        return -1;
+
+    if (typeof arguments[1] != "object")
+        return -2;
+
+    var that = arguments[1];
+
+    var publicationJSONChangedCB = function() {
+        if (that.AdwaysInteractiveOverWriterBrightcovePluginExperience.getPublicationJSON() != null &&
+                typeof that.AdwaysInteractiveOverWriterBrightcovePluginPublication != 'undefined' &&
+                that.AdwaysInteractiveOverWriterBrightcovePluginPublication != '' &&
+                that.AdwaysInteractiveOverWriterBrightcovePluginExperience.getSceneState().valueOf() !== adways.interactive.Experience.sceneStates.BUILT) {
+
+            that.AdwaysInteractiveOverWriterBrightcovePluginExperience.buildScene();
+
+            that.AdwaysInteractiveOverWriterBrightcovePluginExperience.removeEventListener(adways.interactive.Experience.Event.PUBLICATION_JSON_CHANGED, publicationJSONChangedCB);
+
+            delete(that.AdwaysInteractiveOverWriterBrightcovePluginPublication);
+            delete(that.AdwaysInteractiveOverWriterBrightcovePluginExperience);
+        }
+    };
+
+    var buildNewExperience = function() {
+        if (typeof that.AdwaysInteractiveOverWriterBrightcovePluginPublication != 'undefined') {
+            that.AdwaysInteractiveOverWriterBrightcovePluginExperience.clearScene();
+            if (that.AdwaysInteractiveOverWriterBrightcovePluginPublication != null) {
+                
+                that.AdwaysInteractiveOverWriterBrightcovePluginExperience.addEventListener(adways.interactive.Experience.Event.PUBLICATION_JSON_CHANGED, publicationJSONChangedCB);
+                
+                if (typeof that.AdwaysInteractiveOverWriterBrightcovePluginPublication == 'string') {
+                    that.AdwaysInteractiveOverWriterBrightcovePluginExperience.setPublicationID(that.AdwaysInteractiveOverWriterBrightcovePluginPublication);
+                    that.AdwaysInteractiveOverWriterBrightcovePluginExperience.requestPublicationJSON();
+                } else {
+                    that.AdwaysInteractiveOverWriterBrightcovePluginExperience.setPublicationJSON(that.AdwaysInteractiveOverWriterBrightcovePluginPublication, true);
+                }
+            }
+        }
+    };
+
+    var sceneStateChangedCB = function() {
+        if (that.AdwaysInteractiveOverWriterBrightcovePluginExperience.getSceneState().valueOf() === adways.interactive.Experience.sceneStates.BUILT) {
+            that.AdwaysInteractiveOverWriterBrightcovePluginExperience.removeEventListener(adways.interactive.Experience.Event.SCENE_STATE_CHANGED, sceneStateChangedCB);
+            buildNewExperience();
+        }
+    };
+
+    if (typeof arguments[0] == 'undefined')
+        arguments[0] = new Object();
+
+    if (typeof (arguments[0].publicationID) == 'string') {
+        that.AdwaysInteractiveOverWriterBrightcovePluginPublication = arguments[0].publicationID;
+    }
+    else if (typeof (arguments[0].publication) == 'string' || typeof (arguments[0].publication) == 'object') {
+        that.AdwaysInteractiveOverWriterBrightcovePluginPublication = arguments[0].publication;
+    }
+
+    if (typeof that.AdwaysInteractiveOverWriterBrightcovePluginExperience != 'undefined' &&
+            typeof that.AdwaysInteractiveOverWriterBrightcovePluginPublication != 'undefined') {
+        buildNewExperience();
+    }
+
+    if (typeof arguments[0].adwaysExperience == 'object') {
+    
+        that.AdwaysInteractiveOverWriterBrightcovePluginExperience = arguments[0].adwaysExperience;
+
+        if (that.AdwaysInteractiveOverWriterBrightcovePluginExperience.getSceneState().valueOf() === adways.interactive.Experience.sceneStates.BUILT) {
+            buildNewExperience();
+        } else {
+            that.AdwaysInteractiveOverWriterBrightcovePluginExperience.addEventListener(adways.interactive.Experience.Event.SCENE_STATE_CHANGED, sceneStateChangedCB);
+        }
+    }
+
+    return 1;
+};

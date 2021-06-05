@@ -180,7 +180,48 @@ Modules:
     12.7 IPv6 Multicast Addresses  
     12.8 Subnet an IPv6 Network  
     12.9 Module Practice and Quiz  
+13. ICMP  
+    13.0 Introduction  
+    13.1 ICMP Messages  
+    13.2 Ping and Traceroute Tests  
+    13.3 Module Practice and Quiz  
+14. Transport Layer  
+    14.0 Introduction  
+    14.1 Transportation of Data  
+    14.2 TCP Overview  
+    14.3 UDP Overview  
+    14.4 Port Numbers  
+    14.5 TCP Communication Process  
+    14.6 Reliability and Flow Control  
+    14.7 UDP Communication  
+    14.8 Module Practice and Quiz  
+15. Application Layer  
+    15.0 Introduction  
+    15.1 Application, Presentation, and Session  
+    15.2 Peer-to-Peer  
+    15.3 Web and Email Protocols  
+    15.4 IP Addressing Services  
+    15.5 File Sharing Services  
+    15.6 Module Practice and Quiz  
+16. Network Security Fundamentals  
+    16.0 Introduction  
+    16.1 Security Threats and Vulnerabilities  
+    16.2 Network Attacks  
+    16.3 Network Attack Mitigations  
+    16.4 Device Security  
+    16.5 Module Practice and Quiz  
+17. Build a Small Network  
+    17.0 Introduction  
+    17.1 Devices in a Small Network  
+    17.2 Small Network Applications and Protocols  
+    17.3 Scale to Larger Networks  
+    17.4 Verify Connectivity  
+    17.5 Host and IOS Commands  
+    17.6 Troubleshooting Methodologies  
+    17.7 Troubleshooting Scenarios  
+    17.8 Module Practice and Quiz  
 
+    
    
 
 
