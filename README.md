@@ -73,6 +73,12 @@ Modules:
    8.9 Prepare for Your Exam and Launch Your Career!
 
 ## CCNA
+### Module 0 [Course Introduction]
+* First Time in This Course  
+* Student Resources  
+
+
+
 ### PDFs
 1. CCNA volume 1
 2. CCNA volume 2
