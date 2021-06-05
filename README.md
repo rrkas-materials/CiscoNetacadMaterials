@@ -145,8 +145,19 @@ Modules:
    8.4 How a Host Routes  
    8.5 Introduction to Routing  
    8.6 Module Practice and Quiz  
+9. Address Resolution  
+   9.0 Introduction  
+   9.1 MAC and IP  
+   9.2 ARP  
+   9.3 IPv6 Neighbor Discovery  
+   9.4 Module Practice and Quiz  
+10. Basic Router Configuration  
+    10.0 Introduction  
+    10.1 Configure Initial Router Settings  
+    10.2 Configure Interfaces  
+    10.3 Configure the Default Gateway  
+    10.4 Module Practice and Quiz  
 
-   
    
 
 
