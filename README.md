@@ -72,7 +72,7 @@ Modules:
    8.8 Cisco Platforms and Development Summary  
    8.9 Prepare for Your Exam and Launch Your Career!
 
-## CCNA
+## CCNA 1
 ### Modules
 0. Course Introduction  
    0.1 First Time in This Course    
@@ -89,7 +89,17 @@ Modules:
    1.8 Network Security  
    1.9 The IT Professional  
    1.10 Module Practice and Quiz  
-
+2. Basic Switch and End Device Configuration  
+   2.0 Introduction  
+   2.1 Cisco IOS Access  
+   2.2 IOS Navigation  
+   2.3 The Command Structure  
+   2.4 Basic Device Configuration  
+   2.5 Save Configurations  
+   2.6 Ports and Addresses  
+   2.7 Configure IP Addressing  
+   2.8 Verify Connectivity  
+   2.9 Module Practice and Quiz
 
 
 
