@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/course/module1/1.2.1.2/1.2.1.2.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1.2.1.2 Confidentiality, Integrity, and Availability</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    <script>
+      var media_transcript_file = "media_1.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">Confidentiality, Integrity, and Availability</h1>
+        <div tabindex="0">
+          <p>Confidentiality, integrity and availability, known as the CIA triad (Figure 1), is a guideline for information security for an organization. Confidentiality ensures the privacy of data by restricting access through authentication encryption. Integrity assures that the information is accurate and trustworthy. Availability ensures that the information is accessible to authorized people.</p>
+          <p>
+            <b>Confidentiality</b>
+          </p>
+          <p>Another term for confidentiality would be privacy. Company policies should restrict access to the information to authorized personnel and ensure that only those authorized individuals view this data. The data may be compartmentalized according to the security or sensitivity level of the information. For example, a Java program developer should not have to access to the personal information of all employees. Furthermore, employees should receive training to understand the best practices in safeguarding sensitive information to protect themselves and the company from attacks. Methods to ensure confidentiality include data encryption, username ID and password, two factor authentication, and minimizing exposure of sensitive information.</p>
+          <p>
+            <b>Integrity</b>
+          </p>
+          <p>Integrity is accuracy, consistency, and trustworthiness of the data during its entire life cycle. Data must be unaltered during transit and not changed by unauthorized entities. File permissions and user access control can prevent unauthorized access. Version control can be used to prevent accidental changes by authorized users. Backups must be available to restore any corrupted data, and checksum hashing can be used to verify integrity of the data during transfer.</p>
+          <p>A checksum is used to verify the integrity of files, or strings of characters, after they have been transferred from one device to another across your local network or the Internet. Checksums are calculated with hash functions. Some of the common checksums are MD5, SHA-1, SHA-256, and SHA-512. A hash function uses a mathematical algorithm to transform the data into fixed-length value that represents the data, as shown in Figure 2. The hashed value is simply there for comparison. From the hashed value, the original data cannot be retrieved directly. For example, if you forgot your password, your password cannot be recovered from the hashed value. The password must be reset. </p>
+          <p>After a file is downloaded, you can verify its integrity by verifying the hash values from the source with the one you generated using any hash calculator. By comparing the hash values, you can ensure that the file has not been tampered with or corrupted during the transfer.</p>
+          <p>
+            <b>Availability</b>
+          </p>
+          <p>Maintaining equipment, performing hardware repairs, keeping operating systems and software up to date, and creating backups ensure the availability of the network and data to the authorized users. Plans should be in place to recover quickly from natural or man-made disasters. Security equipment or software, such as firewalls, guard against downtime due to attacks such as denial of service (DoS). Denial of service occurs when an attacker attempts to overwhelm resources so the services are not available to the users.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0">Figure 1 displays the components of the CIA triad: Confidentiality, Integrity, and Availability. Figure 2 titled creating a hash depicts a plaintext message (data of arbitrary length going through a hash function to create a fixed length hash value of e 8 8 3 a a 0 b 2 4 c 0 9 f.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>

@@ -1,0 +1,7 @@
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+.mtable tr td{
+ padding: 0px 24px !important;
+}

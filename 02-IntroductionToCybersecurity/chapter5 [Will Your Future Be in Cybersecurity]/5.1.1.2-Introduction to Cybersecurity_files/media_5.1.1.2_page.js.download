@@ -1,0 +1,88 @@
+
+function registerSWF(){
+	swfobject.registerObject("flashobject", "9.0.0", "../../../common/libs/expressInstall.swf");
+}
+
+loadScript("../../../common/scripts/swfobject.js", registerSWF);
+
+//Function triggers when all the slides/view contents are loaded
+(slideViewDidLoad = function(){	
+	
+	//Create new div with scroll property into root container
+	$("#commonMediaText").append("<div id='canvasId' style='top:30px;left:40px;position:absolute;width:600px;height:355px;overflow-x:auto;'></div>");	
+	var canvasDOM = new createjs.DOMElement(document.getElementById("canvasId"));
+	canvasDOM.x = 0;
+	canvasDOM.y = 0;
+	root.addChild(canvasDOM);
+	
+	//Create new canvas & stage into new div
+	$("#canvasId").append("<canvas id='childCanvas' width='900' height='333'></canvas>");	
+	var childStage = new createjs.Stage(document.getElementById("childCanvas"));	
+	var im = new Image();
+	
+	//Create Flowchart IMAGE component
+	im.onload = function()
+	{		
+		var _img = new createjs.Bitmap(this);
+		_img.y = -10;
+		_img.x = 30;
+		childStage.addChild(_img);
+		initSlide();	
+	}
+	im.src = "media_5.1.1.2.png";
+	
+	//Create Flowchart TEXT components using an array
+	function initSlide()
+	{
+		var textArray = [{compId:"ID_txt01",x:"38.1",y:"34.45",width:"98.45",expand:"up+down",align:"center"},
+						{compId:"ID_txt02",x:"178.2",y:"34.45",width:"85.35",expand:"up+down",align:"center"},						
+						{compId:"ID_txt03",x:"314.9",y:"34.45",width:"84.6",expand:"up+down",align:"center"},
+						{compId:"ID_txt04",x:"444.2",y:"34.45",width:"92.8",expand:"up+down",align:"center"},
+						{compId:"ID_txt05",x:"570",y:"34.45",width:"110.5",expand:"down",align:"center"},
+						{compId:"ID_txt06",x:"45",y:"70",width:"140.7",expand:"down",align:"center"},	
+						{compId:"ID_txt07",x:"180",y:"70",width:"140.7",expand:"down",align:"center"},
+						{compId:"ID_txt08",x:"315",y:"70",width:"140.7",expand:"down",align:"center"},
+						{compId:"ID_txt09",x:"450",y:"70",width:"140.7",expand:"down",align:"center"},
+						{compId:"ID_txt10",x:"585",y:"70",width:"140.7",expand:"down",align:"center"},
+						// {compId:"ID_txt11",x:"0",y:"120",width:"140.7",expand:"down",align:"center"},					
+						{compId:"ID_s1_txt07",x:"15",y:"150",width:"140.7",expand:"down",align:"center"},
+						{compId:"ID_s1_txt08",x:"182",y:"115",width:"80.7",expand:"down",align:"center"},	
+						{compId:"ID_s1_txt09",x:"315",y:"115",width:"80.7",expand:"down",align:"center"},	
+						{compId:"ID_s1_txt10",x:"448",y:"130",width:"80.7",expand:"down",align:"center"},	
+						{compId:"ID_s1_txt11",x:"588",y:"115",width:"80.7",expand:"down",align:"center"},	
+						{compId:"ID_s1_txt12",x:"728",y:"125",width:"80.7",expand:"down",align:"center"},
+						{compId:"ID_s1_txt13",x:"108",y:"125",width:"80.7",expand:"down",align:"center"},	
+						{compId:"ID_s1_txt14",x:"243",y:"125",width:"80.7",expand:"down",align:"center"},
+						{compId:"ID_s1_txt15",x:"378",y:"125",width:"80.7",expand:"down",align:"center"},
+						{compId:"ID_s1_txt13a",x:"513",y:"125",width:"80.7",expand:"down",align:"center"},
+						{compId:"ID_s1_txt14a",x:"648",y:"125",width:"80.7",expand:"down",align:"center"},	
+						{compId:"ID_s1_txt16",x:"45",y:"293",width:"80.7",expand:"down",align:"center"},	
+						{compId:"ID_s1_txt17",x:"180",y:"293",width:"80.7",expand:"down",align:"center"},
+						{compId:"ID_s1_txt18",x:"315",y:"293",width:"80.7",expand:"down",align:"center"},
+						{compId:"ID_s1_txt19",x:"450",y:"293",width:"80.7",expand:"down",align:"center"},
+						{compId:"ID_s1_txt19a",x:"585",y:"293",width:"80.7",expand:"down",align:"center"},
+						{compId:"ID_s1_txt23",x:"63",y:"243",width:"80.7",expand:"down",align:"center"},
+						{compId:"ID_s1_txt24",x:"198",y:"243",width:"80.7",expand:"down",align:"center"},
+						{compId:"ID_s1_txt25",x:"333",y:"243",width:"80.7",expand:"down",align:"center"},
+						{compId:"ID_s1_txt26",x:"468",y:"243",width:"80.7",expand:"down",align:"center"},
+						{compId:"ID_s1_txt27",x:"603",y:"243",width:"80.7",expand:"down",align:"center"},
+						
+
+
+						
+						];						
+		
+		//Add each text object into the new stage
+		var tComp;				
+		for(var i = 0;i<textArray.length;i++)
+		{
+			textArray[i].div = "canvasId";
+			tComp = getCJSElement("TEXT",textArray[i],"canvasId");
+			childStage.addChild(tComp);
+		}
+		
+		//Update stage for rendering new Image & Text objects
+		update = true;
+		childStage.update();
+	}	
+});

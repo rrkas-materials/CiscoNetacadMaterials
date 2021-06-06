@@ -1,0 +1,9 @@
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#canvasDiv{height:593px !important;}
+
+#ID_instr_title {
+    height:85px !important;
+}

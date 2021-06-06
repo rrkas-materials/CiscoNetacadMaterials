@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/course/module2/2.1.2.1/2.1.2.1.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>2.1.2.1 Categorizing Security Vulnerabilities</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    <script>
+      var media_transcript_file = "media_2.1.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">Categorizing Security Vulnerabilities</h1>
+        <div tabindex="0">
+          <p>Most software security vulnerabilities fall into one of the following categories:</p>
+          <p>
+            <b>Buffer overflow –</b> This vulnerability occurs when data is written beyond the limits of a buffer. Buffers are memory areas allocated to an application. By changing data beyond the boundaries of a buffer, the application accesses memory allocated to other processes. This can lead to a system crash, data compromise, or provide escalation of privileges.</p>
+          <p>
+            <b>Non-validated input –</b> Programs often work with data input. This data coming into the program could have malicious content, designed to force the program to behave in an unintended way. Consider a program that receives an image for processing. A malicious user could craft an image file with invalid image dimensions. The maliciously crafted dimensions could force the program to allocate buffers of incorrect and unexpected sizes. </p>
+          <p>
+            <b>Race conditions –</b> This vulnerability is when the output of an event depends on ordered or timed outputs. A race condition becomes a source of vulnerability when the required ordered or timed events do not occur in the correct order or proper timing.</p>
+          <p>
+            <b>Weaknesses in security practices – </b>Systems and sensitive data can be protected through techniques such as authentication, authorization, and encryption. Developers should not attempt to create their own security algorithms because it will likely introduce vulnerabilities. It is strongly advised that developers use security libraries that have already created, tested, and verified.</p>
+          <p>
+            <b>Access-control problems – </b>Access control is the process of controlling who does what and ranges from managing physical access to equipment to dictating who has access to a resource, such as a file, and what they can do with it, such as read or change the file. Many security vulnerabilities are created by the improper use of access controls.</p>
+          <p>Nearly all access controls and security practices can be overcome if the attacker has physical access to target equipment. For example, no matter what you set a file’s permissions to, the operating system cannot prevent someone from bypassing the operating system and reading the data directly off the disk. To protect the machine and the data it contains, physical access must be restricted and encryption techniques must be used to protect data from being stolen or corrupted.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0">This figure displays a security lock on a computer circuit board surrounded by keys.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>

@@ -1,0 +1,11 @@
+
+/*   load the main media CSS file   */
+@import url('../../../common/styles/media2.css');
+
+#ID_s1_txt06, #ID_s1_txt08, #ID_s1_txt02, #ID_s1_txt07 {
+    color: #FFFFFF !important;
+}
+
+#ID_s1_title{
+	margin-left:-30px !important;
+	}

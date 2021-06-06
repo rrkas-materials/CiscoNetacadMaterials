@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1.3.1.2 -->
+<html class="" dir="ltr" lang="en" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Introduction to Cybersecurity</title>
+    <link rel="stylesheet" type="text/css" href="./1.3.1.2-Introduction to Cybersecurity_files/course.css">
+    <link rel="stylesheet" type="text/css" href="./1.3.1.2-Introduction to Cybersecurity_files/course(1).css">
+    <script async="" src="./1.3.1.2-Introduction to Cybersecurity_files/analytics.js.download"></script><script type="text/javascript" src="./1.3.1.2-Introduction to Cybersecurity_files/jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./1.3.1.2-Introduction to Cybersecurity_files/permission.js.download"></script>
+        <script type="text/javascript" src="./1.3.1.2-Introduction to Cybersecurity_files/jquery-ui-1.10.3.custom.min.js.download"></script>
+    <script type="text/javascript" src="./1.3.1.2-Introduction to Cybersecurity_files/jquery.tabguard1.0.js.download"></script>
+    <script type="text/javascript" src="./1.3.1.2-Introduction to Cybersecurity_files/netacad.js.download"></script>
+    <script type="text/javascript" src="./1.3.1.2-Introduction to Cybersecurity_files/course.js.download"></script>
+    <script>
+
+      netacad.settings.init("CyberSec21");
+
+      netacad.lang.set("Module", "Chapter #");
+      netacad.lang.set("Section", "Section #");
+      netacad.lang.set("Topic", "Topic #");
+      netacad.lang.set("Page", "Page #");
+      netacad.lang.set("Figure", "Figure #");
+      netacad.lang.set("Figures", "Figures");
+      netacad.lang.set("NoItems", "There are no items.");
+      netacad.lang.set("NoVideo", "There are no videos available in this course.");
+      netacad.lang.set("NoPT", "There are no activities in this course that require Cisco Packet Tracer.");
+      netacad.lang.set("NoLab", "There are no lab activities in this course.");
+      netacad.lang.set("NoBookmarks", "There are no bookmarks.");
+      netacad.lang.set("NoRecentPages", "There are no recent pages.");
+      netacad.lang.set("NoSearchResults", "There are no search results.");
+      netacad.lang.set("EnterSearchTerms", "Enter search terms…");
+      netacad.lang.set("PageThumbnail", "Page # thumbnail");
+      netacad.lang.set("BackgroundImage", "Background image");
+
+      var course = function() {
+        var c, m, s, t, p;
+        c = new netacad.models.Course("CyberSec21", "en", "Introduction to Cybersecurity");
+        m = new netacad.models.Module("0", "Course Introduction");
+        s = new netacad.models.Section("0.0", "Welcome to Introduction to Cybersecurity");
+        t = new netacad.models.Topic("0.0.1", "Message to the Student");
+        p = new netacad.models.Page("0.0.1.1", "Welcome", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("0.0.1.2", "Course Overview", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        m = new netacad.models.Module("1", "The Need for Cybersecurity");
+        s = new netacad.models.Section("1.0", "Introduction");
+        t = new netacad.models.Topic("1.0.1", "Welcome");
+        p = new netacad.models.Page("1.0.1.1", "Chapter 1: The Need for Cybersecurity", "Content", "Design this graphic following I2IoE style.");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("1.1", "Personal Data");
+        t = new netacad.models.Topic("1.1.1", "Introduction to Personal Data");
+        p = new netacad.models.Page("1.1.1.1", "What is Cybersecurity?", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.1.2", "Your Online and Offline Identity", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.1.3", "Your Data", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.1.4", "Where is Your Data?", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.1.5", "Your Computing Devices", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("1.1.2", "Personal Data as a Target");
+        p = new netacad.models.Page("1.1.2.1", "They Want Your Money", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.1.2.2", "They Want Your Identity", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("1.2", "Organizational Data");
+        t = new netacad.models.Topic("1.2.1", "Introduction to Organizational Data");
+        p = new netacad.models.Page("1.2.1.1", "Types of Organizational Data", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.2.1.2", "Confidentiality, Integrity, and Availability", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.2.1.3", "Lab – Compare Data with a Hash", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("1.2.2", "The Impact of a Security Breach");
+        p = new netacad.models.Page("1.2.2.1", "The Consequences of a Security Breach", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.2.2.2", "Security Breach Example 1", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.2.2.3", "Security Breach Example 2", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.2.2.4", "Security Breach Example 3", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.2.2.5", "Lab – What Was Taken?", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("1.3", "Attackers and Cybersecurity Professionals");
+        t = new netacad.models.Topic("1.3.1", "The Profile of a Cyber Attacker");
+        p = new netacad.models.Page("1.3.1.1", "Types of Attackers", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.3.1.2", "Internal and External Threats", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("1.4", "Cyberwarfare");
+        t = new netacad.models.Topic("1.4.1", "Overview of Cyberwarfare");
+        p = new netacad.models.Page("1.4.1.1", "What is Cyberwarfare?", "Activity", "Other", "Flash PnC");
+        t.appendChild(p);
+        p = new netacad.models.Page("1.4.1.2", "The Purpose of Cyberwarfare", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("1.5", "Summary");
+        t = new netacad.models.Topic("1.5.1", "Conclusion");
+        p = new netacad.models.Page("1.5.1.1", "Chapter 1: The Need for Cybersecurity", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        m = new netacad.models.Module("2", "Attacks, Concepts and Techniques");
+        s = new netacad.models.Section("2.0", "Introduction");
+        t = new netacad.models.Topic("2.0.1", "Welcome");
+        p = new netacad.models.Page("2.0.1.1", "Chapter 2: Attacks, Concepts and Techniques", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("2.1", "Analyzing a Cyberattack");
+        t = new netacad.models.Topic("2.1.1", "Security Vulnerability and Exploits");
+        p = new netacad.models.Page("2.1.1.1", "Finding Security Vulnerabilities", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("2.1.2", "Types of Security Vulnerabilities");
+        p = new netacad.models.Page("2.1.2.1", "Categorizing Security Vulnerabilities", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.1.2.2", "Activity – Identify Vulnerability Terminology", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("2.1.3", "Types of Malware and Symptoms");
+        p = new netacad.models.Page("2.1.3.1", "Types of Malware", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.1.3.2", "Symptoms of Malware", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.1.3.3", "Activity – Identify Malware Types", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("2.1.4", "Methods of Infiltration");
+        p = new netacad.models.Page("2.1.4.1", "Social Engineering", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.1.4.2", "Wi-Fi Password Cracking", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.1.4.3", "Phishing", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.1.4.4", "Vulnerability Exploitation", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("2.1.5", "DoS, DDos, and SEO");
+        p = new netacad.models.Page("2.1.5.1", "DoS", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.1.5.2", "DDoS", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.1.5.3", "SEO Poisoning", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.1.5.4", "Activity – Identify the Attack Type", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("2.2", "The Cybersecurity Landscape");
+        t = new netacad.models.Topic("2.2.1", "Blended Attack");
+        p = new netacad.models.Page("2.2.1.1", "What is a Blended Attack?", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("2.2.2", "Impact Reduction");
+        p = new netacad.models.Page("2.2.2.1", "What is Impact Reduction?", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("2.3", "Summary");
+        t = new netacad.models.Topic("2.3.1", "Conclusion");
+        p = new netacad.models.Page("2.3.1.1", "Chapter 2: Attacks, Concepts and Techniques", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        m = new netacad.models.Module("3", "Protecting Your Data and Privacy");
+        s = new netacad.models.Section("3.0", "Introduction");
+        t = new netacad.models.Topic("3.0.1", "Welcome");
+        p = new netacad.models.Page("3.0.1.1", "Chapter 3: Protecting Your Data and Privacy", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("3.1", "Protecting Your Data");
+        t = new netacad.models.Topic("3.1.1", "Protecting Your Devices and Network");
+        p = new netacad.models.Page("3.1.1.1", "Protect Your Computing Devices", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.1.1.2", "Use Wireless Networks Safely", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.1.1.3", "Use Unique Passwords for Each Online Account", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.1.1.4", "Use Passphrase Rather Than a Password", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.1.1.5", "Lab – Create and Store Strong Passwords", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("3.1.2", "Data Maintenance");
+        p = new netacad.models.Page("3.1.2.1", "Encrypt Your Data", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.1.2.2", "Back up Your Data", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.1.2.3", "Lab – Back up Data to External Storage", "Activity", "Lab", "Paper");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.1.2.4", "Deleting Your Data Permanently", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.1.2.5", "Lab – Who Owns Your Data?", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("3.2", "Safeguarding Your Online Privacy");
+        t = new netacad.models.Topic("3.2.1", "Strong Authentication");
+        p = new netacad.models.Page("3.2.1.1", "Two Factor Authentication", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.2.1.2", "OAuth 2.0", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("3.2.2", "Sharing Too Much Information?");
+        p = new netacad.models.Page("3.2.2.1", "Do Not Share Too Much on Social Media", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.2.2.2", "Email and Web Browser Privacy", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.2.2.3", "Lab – Discover Your Own Risky Online Behavior", "Activity", "Lab", "Hands-On");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("3.3", "Summary");
+        t = new netacad.models.Topic("3.3.1", "Conclusion");
+        p = new netacad.models.Page("3.3.1.1", "Chapter 3: Protecting Your Data and Privacy", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        m = new netacad.models.Module("4", "Protecting the Organization");
+        s = new netacad.models.Section("4.0", "Introduction");
+        t = new netacad.models.Topic("4.0.1", "Welcome");
+        p = new netacad.models.Page("4.0.1.1", "Chapter 4: Protecting the Organization", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("4.1", "Firewalls");
+        t = new netacad.models.Topic("4.1.1", "Firewall Types");
+        p = new netacad.models.Page("4.1.1.1", "Firewall Types", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.1.1.2", "Activity – Identify the Firewall Type", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.1.1.3", "Port Scanning", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.1.1.4", "Activity – Identify the Port Scan Response", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("4.1.2", "Security Appliances");
+        p = new netacad.models.Page("4.1.2.1", "Security Appliances", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.1.2.2", "Activity – Identify the Security Appliance", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("4.1.3", "Detecting Attacks in Real Time");
+        p = new netacad.models.Page("4.1.3.1", "Detecting Attacks in Real Time", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("4.1.4", "Detecting Malware");
+        p = new netacad.models.Page("4.1.4.1", "Protecting Against Malware", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("4.1.5", "Security Best Practices");
+        p = new netacad.models.Page("4.1.5.1", "Security Best Practices", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("4.2", "Behavior Approach to Cybersecurity");
+        t = new netacad.models.Topic("4.2.1", "Botnet");
+        p = new netacad.models.Page("4.2.1.1", "Botnet", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("4.2.2", "Kill Chain");
+        p = new netacad.models.Page("4.2.2.1", "The Kill Chain in Cyberdefense", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.2.2.2", "Activity – Order the Stages of the Kill Chain", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("4.2.3", "Behavior-Based Security");
+        p = new netacad.models.Page("4.2.3.1", "Behavior-Based Security", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("4.2.4", "NetFlow and Cyberattacks");
+        p = new netacad.models.Page("4.2.4.1", "NetFlow", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("4.3", "Cisco’s Approach to Cybersecurity");
+        t = new netacad.models.Topic("4.3.1", "CSIRT");
+        p = new netacad.models.Page("4.3.1.1", "CSIRT", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("4.3.2", "Security Playbook");
+        p = new netacad.models.Page("4.3.2.1", "Security Playbook", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("4.3.3", "Tools for Incident Prevention and Detection");
+        p = new netacad.models.Page("4.3.3.1", "Tools for Incident Prevention and Detection", "Activity", "Other", "Flash PnC");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("4.3.4", "IDS and IPS");
+        p = new netacad.models.Page("4.3.4.1", "IDS and IPS", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.3.4.2", "Activity – Identify Cybersecurity Approach Terminology", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("4.4", "Summary");
+        t = new netacad.models.Topic("4.4.1", "Conclusion");
+        p = new netacad.models.Page("4.4.1.1", "Chapter 4: Protecting the Organization", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        m = new netacad.models.Module("5", "Will Your Future Be in Cybersecurity?");
+        s = new netacad.models.Section("5.0", "Introduction");
+        t = new netacad.models.Topic("5.0.1", "Welcome");
+        p = new netacad.models.Page("5.0.1.1", "Chapter 5: Will Your Future Be in Cybersecurity", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("5.1", "Cybersecurity Legal and Ethical Issues, Education and Careers");
+        t = new netacad.models.Topic("5.1.1", "Legal and Ethical Issues in Cybersecurity Careers");
+        p = new netacad.models.Page("5.1.1.1", "Legal Issues in Cybersecurity", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.1.1.2", "Ethical Issues in Cybersecurity", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.1.1.3", "Cybersecurity Jobs", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.1.1.4", "Activity – What Color is My Hat?", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("5.2", "Summary");
+        t = new netacad.models.Topic("5.2.1", "Conclusion");
+        p = new netacad.models.Page("5.2.1.1", "Before You Go", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.2.1.2", "Chapter 5: Will Your Future Be in Cybersecurity?", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        return c;
+      }();
+
+    </script>
+  </head>
+  <body aria-live="polite" class="bg-0" style="min-width: 1004px; min-height: 602px;">
+    <div id="login" role="document" aria-hidden="true">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+    <div id="splash" role="document" aria-hidden="true" class="">
+      <div class="logo" title="Cisco Systems, Inc."></div>
+      <h1>Introduction to Cybersecurity</h1>
+      <p>Click any image to begin.</p>
+      <ul>
+        <li>
+          <div class="bg-0">
+            <input id="bg-0" type="image" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-0-S.jpg" alt="Background image 0" aria-label="Background image 0">
+            <label id="bg-0-text" for="bg-0"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-1">
+            <input id="bg-1" type="image" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-1-S.jpg" alt="Background image 1" aria-label="Background image 1">
+            <label id="bg-1-text" for="bg-1"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-2">
+            <input id="bg-2" type="image" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-2-S.jpg" alt="Background image 2" aria-label="Background image 2">
+            <label id="bg-2-text" for="bg-2"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-3">
+            <input id="bg-3" type="image" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-3-S.jpg" alt="Background image 3" aria-label="Background image 3">
+            <label id="bg-3-text" for="bg-3"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-4">
+            <input id="bg-4" type="image" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-4-S.jpg" alt="Background image 4" aria-label="Background image 4">
+            <label id="bg-4-text" for="bg-4"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-5">
+            <input id="bg-5" type="image" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-5-S.jpg" alt="Background image 5" aria-label="Background image 5">
+            <label id="bg-5-text" for="bg-5"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-6">
+            <input id="bg-6" type="image" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-6-S.jpg" alt="Background image 6" aria-label="Background image 6">
+            <label id="bg-6-text" for="bg-6"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-7">
+            <input id="bg-7" type="image" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-7-S.jpg" alt="Background image 7" aria-label="Background image 7">
+            <label id="bg-7-text" for="bg-7"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-8">
+            <input id="bg-8" type="image" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-8-S.jpg" alt="Background image 8" aria-label="Background image 8">
+            <label id="bg-8-text" for="bg-8"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-9">
+            <input id="bg-9" type="image" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-9-S.jpg" alt="Background image 9" aria-label="Background image 9">
+            <label id="bg-9-text" for="bg-9"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-10">
+            <input id="bg-10" type="image" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-10-S.jpg" alt="Background image 10" aria-label="Background image 10">
+            <label id="bg-10-text" for="bg-10"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-11">
+            <input id="bg-11" type="image" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-11-S.jpg" alt="Background image 11" aria-label="Background image 11">
+            <label id="bg-11-text" for="bg-11"></label>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="main" role="document" aria-hidden="false">
+      <div id="header">
+        <div class="logo" title="Cisco Systems, Inc."></div>
+        <h1><a id="course-title" href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html">Introduction to Cybersecurity</a></h1>
+      </div>
+      <div id="map" role="navigation" style="position: absolute; left: 181px; width: 1004px;">
+        <div class="map-container" id="map-modules" aria-live="off">
+          <div class="scroll-pane active">
+            <button type="button" class="scroll-pane-up-button" title="Scroll Up" aria-hidden="true" disabled="">Scroll Up</button>
+            <button type="button" class="scroll-pane-down-button" title="Scroll Down" aria-hidden="true" disabled="">Scroll Down</button>
+            <div class="scroll-pane-content" tabindex="-1"><ul class="items"><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#0" class="Module"><div class="item-header">Chapter 0</div><div class="item-title">Course Introduction</div></a></li><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1" class="Module selected"><div class="item-header">Chapter 1</div><div class="item-title">The Need for Cybersecurity</div></a></li><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#2" class="Module"><div class="item-header">Chapter 2</div><div class="item-title">Attacks, Concepts and Techniques</div></a></li><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#3" class="Module"><div class="item-header">Chapter 3</div><div class="item-title">Protecting Your Data and Privacy</div></a></li><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#4" class="Module"><div class="item-header">Chapter 4</div><div class="item-title">Protecting the Organization</div></a></li><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#5" class="Module"><div class="item-header">Chapter 5</div><div class="item-title">Will Your Future Be in Cybersecurity?</div></a></li></ul></div>
+          </div>
+        </div>
+        <div class="map-container" id="map-sections" aria-live="off">
+          <div class="scroll-pane">
+            <button type="button" class="scroll-pane-up-button" title="Scroll Up" aria-hidden="true" disabled="">Scroll Up</button>
+            <button type="button" class="scroll-pane-down-button" title="Scroll Down" aria-hidden="true">Scroll Down</button>
+            <div class="scroll-pane-content" tabindex="-1"><ul class="items"><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1.0" class="Section"><div class="item-header">Section 1.0</div><div class="item-title">Introduction</div></a></li><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1.1" class="Section"><div class="item-header">Section 1.1</div><div class="item-title">Personal Data</div></a></li><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1.2" class="Section"><div class="item-header">Section 1.2</div><div class="item-title">Organizational Data</div></a></li><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1.3" class="Section selected"><div class="item-header">Section 1.3</div><div class="item-title">Attackers and Cybersecurity Professionals</div></a></li><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1.4" class="Section"><div class="item-header">Section 1.4</div><div class="item-title">Cyberwarfare</div></a></li><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1.5" class="Section"><div class="item-header">Section 1.5</div><div class="item-title">Summary</div></a></li></ul></div>
+          </div>
+        </div>
+        <div class="map-container" id="map-topics" aria-live="off">
+          <div class="scroll-pane">
+            <button type="button" class="scroll-pane-up-button" title="Scroll Up" aria-hidden="true" disabled="">Scroll Up</button>
+            <button type="button" class="scroll-pane-down-button" title="Scroll Down" aria-hidden="true" disabled="">Scroll Down</button>
+            <div class="scroll-pane-content" tabindex="-1"><ul class="items"><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1.3.1" class="Topic selected"><div class="item-header">Topic 1.3.1</div><div class="item-title">The Profile of a Cyber Attacker</div></a></li></ul></div>
+          </div>
+        </div>
+        <div class="map-container" id="map-pages" aria-live="off">
+          <div class="scroll-pane">
+            <button type="button" class="scroll-pane-up-button" title="Scroll Up" aria-hidden="true" disabled="">Scroll Up</button>
+            <button type="button" class="scroll-pane-down-button" title="Scroll Down" aria-hidden="true" disabled="">Scroll Down</button>
+            <div class="scroll-pane-content" tabindex="-1"><ul class="items"><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1.3.1.1" class="Page"><img class="item-thumb" src="./1.3.1.2-Introduction to Cybersecurity_files/media_1.3.1.1_thumb.jpg" role="presentation" alt="" aria-hidden="true"><div class="item-header">Page 1.3.1.1</div><div class="item-title">Types of Attackers</div></a></li><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1.3.1.2" class="Page selected"><img class="item-thumb" src="./1.3.1.2-Introduction to Cybersecurity_files/media_1.3.1.2_thumb.jpg" role="presentation" alt="" aria-hidden="true"><div class="item-header">Page 1.3.1.2</div><div class="item-title">Internal and External Threats</div></a></li></ul></div>
+          </div>
+        </div>
+      </div>
+      <div id="content" style="position: absolute; left: 181px; top: 3px; width: 1004px; height: 602px;">
+        <div id="container" class="active">
+          <div id="page-header">
+            <nav class="breadcrumbs" aria-label="breadcumbs">
+              <ul>
+                <li aria-level="1">
+                  <a id="breadcrumbs-module" href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1">
+                    <span id="breadcrumbs-module-li" class="breadcrumbs-header">Chapter 1</span>
+                    <span id="breadcrumbs-module-title" class="breadcrumbs-title">The Need for Cybersecurity</span>
+                  </a>
+                </li>
+                <li aria-level="2">
+                  <a id="breadcrumbs-section" href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1.3">
+                    <span id="breadcrumbs-section-li" class="breadcrumbs-header">1.3</span>
+                    <span id="breadcrumbs-section-title" class="breadcrumbs-title">Attackers and Cybersecurity Professionals</span>
+                  </a>
+                </li>
+                <li aria-level="3">
+                  <a id="breadcrumbs-topic" href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1.3.1">
+                    <span id="breadcrumbs-topic-li" class="breadcrumbs-header">1.3.1</span>
+                    <span id="breadcrumbs-topic-title" class="breadcrumbs-title">The Profile of a Cyber Attacker</span>
+                  </a>
+                </li>
+                <li aria-level="4">
+                  <a id="breadcrumbs-page" href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1.3.1.2">
+                    <span id="breadcrumbs-page-li" class="breadcrumbs-header">1.3.1.2</span>
+                    <span id="breadcrumbs-page-title" class="breadcrumbs-title">Internal and External Threats</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="page-menu">
+              <button type="button" id="page-menu-close-button" title="Close">
+                <span aria-hidden="true">Close</span>
+              </button>
+            </div>
+          </div>
+          <div id="page-content" role="main" aria-live="polite"><iframe id="frame" title="Page 1.3.1.2" src="./1.3.1.2-Introduction to Cybersecurity_files/1.3.1.2.html"></iframe></div>
+          <div id="page-footer">
+            <div id="page-slide-buttons"></div>
+            <div class="page-menu">
+              <button type="button" id="page-menu-transcript-button" title="Transcript">Transcript</button>
+              <button type="button" id="page-menu-bookmark-button" title="Bookmark">Bookmark</button>
+              <button type="button" id="page-menu-previous-button" title="Previous">Previous</button>
+              <button type="button" id="page-menu-next-button" title="Next">Next</button>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-course-index" aria-hidden="true" aria-labelledby="menu-course-index" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">Course Index</div>
+            <button type="button" class="overlay-close-button" title="Close">
+              <span aria-hidden="true">Close</span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <div id="course-index-buttons" role="menu">
+                <button type="button" class="index-button active" id="index-course" role="menuitem" title="Course Index">
+                  <span class="index-button-icon"></span>
+                  <span class="index-button-label">Course Index</span>
+                </button>
+                <button type="button" class="index-button" id="index-packet-tracer" role="menuitem" title="Packet Tracer Index">
+                  <span class="index-button-icon"></span>
+                  <span class="index-button-label">Packet Tracer Index</span>
+                </button>
+                <button type="button" class="index-button" id="index-lab" role="menuitem" title="Lab Index">
+                  <span class="index-button-icon"></span>
+                  <span class="index-button-label">Lab Index</span>
+                </button>
+                <button type="button" class="index-button" id="index-video" role="menuitem" title="Video Index">
+                  <span class="index-button-icon"></span>
+                  <span class="index-button-label">Video Index</span>
+                </button>
+              </div>
+              <div class="scroll-pane active">
+                <button type="button" class="scroll-pane-up-button" title="Scroll Up" aria-hidden="true" disabled="">Scroll Up</button>
+                <button type="button" class="scroll-pane-down-button" title="Scroll Down" aria-hidden="true" disabled="">Scroll Down</button>
+                <div class="scroll-pane-content" tabindex="-1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-recent-pages" aria-hidden="true" aria-labelledby="menu-recent-pages" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">Recent Pages</div>
+            <button type="button" class="overlay-close-button" title="Close">
+              <span aria-hidden="true">Close</span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <div class="scroll-pane active">
+                <button type="button" class="scroll-pane-up-button" title="Scroll Up" aria-hidden="true" disabled="">Scroll Up</button>
+                <button type="button" class="scroll-pane-down-button" title="Scroll Down" aria-hidden="true" disabled="">Scroll Down</button>
+                <div class="scroll-pane-content" tabindex="-1"><ul class="items"><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1.3.1.2" class="Page"><img class="item-thumb" src="./1.3.1.2-Introduction to Cybersecurity_files/media_1.3.1.2_thumb.jpg" role="presentation" alt="" aria-hidden="true"><div class="item-header">Page 1.3.1.2</div><div class="item-title">Internal and External Threats</div></a></li><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1.3.1.1" class="Page"><img class="item-thumb" src="./1.3.1.2-Introduction to Cybersecurity_files/media_1.3.1.1_thumb.jpg" role="presentation" alt="" aria-hidden="true"><div class="item-header">Page 1.3.1.1</div><div class="item-title">Types of Attackers</div></a></li><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1.2.2.5" class="Page"><img class="item-thumb" src="./1.3.1.2-Introduction to Cybersecurity_files/media_1.2.2.5_thumb.jpg" role="presentation" alt="" aria-hidden="true"><div class="item-header">Page 1.2.2.5</div><div class="item-title">Lab – What Was Taken?</div></a></li><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1.2.2.4" class="Page"><img class="item-thumb" src="./1.3.1.2-Introduction to Cybersecurity_files/media_1.2.2.4_thumb.jpg" role="presentation" alt="" aria-hidden="true"><div class="item-header">Page 1.2.2.4</div><div class="item-title">Security Breach Example 3</div></a></li><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1.2.2.3" class="Page"><img class="item-thumb" src="./1.3.1.2-Introduction to Cybersecurity_files/media_1.2.2.3_thumb.jpg" role="presentation" alt="" aria-hidden="true"><div class="item-header">Page 1.2.2.3</div><div class="item-title">Security Breach Example 2</div></a></li><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1.2.2.2" class="Page"><img class="item-thumb" src="./1.3.1.2-Introduction to Cybersecurity_files/media_1.2.2.2_thumb.jpg" role="presentation" alt="" aria-hidden="true"><div class="item-header">Page 1.2.2.2</div><div class="item-title">Security Breach Example 1</div></a></li><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1.2.2.1" class="Page"><img class="item-thumb" src="./1.3.1.2-Introduction to Cybersecurity_files/media_1.2.2.1_thumb.jpg" role="presentation" alt="" aria-hidden="true"><div class="item-header">Page 1.2.2.1</div><div class="item-title">The Consequences of a Security Breach</div></a></li><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1.2.1.3" class="Page"><img class="item-thumb" src="./1.3.1.2-Introduction to Cybersecurity_files/media_1.2.1.3_thumb.jpg" role="presentation" alt="" aria-hidden="true"><div class="item-header">Page 1.2.1.3</div><div class="item-title">Lab – Compare Data with a Hash</div></a></li><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1.2.1.2" class="Page"><img class="item-thumb" src="./1.3.1.2-Introduction to Cybersecurity_files/media_1.2.1.2_thumb.jpg" role="presentation" alt="" aria-hidden="true"><div class="item-header">Page 1.2.1.2</div><div class="item-title">Confidentiality, Integrity, and Availability</div></a></li><li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#1.2.1.1" class="Page"><img class="item-thumb" src="./1.3.1.2-Introduction to Cybersecurity_files/media_1.2.1.1_thumb.jpg" role="presentation" alt="" aria-hidden="true"><div class="item-header">Page 1.2.1.1</div><div class="item-title">Types of Organizational Data</div></a></li></ul></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-bookmarks" aria-hidden="true" aria-labelledby="menu-bookmarks" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">Bookmarks</div>
+            <button type="button" class="overlay-close-button" title="Close">
+              <span aria-hidden="true">Close</span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <div class="scroll-pane active">
+                <button type="button" class="scroll-pane-up-button" title="Scroll Up" aria-hidden="true" disabled="">Scroll Up</button>
+                <button type="button" class="scroll-pane-down-button" title="Scroll Down" aria-hidden="true" disabled="">Scroll Down</button>
+                <div class="scroll-pane-content" tabindex="-1"><ul class="items"><li class="message"><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#" style="background-color: transparent; pointer-events: none; border: none;">There are no bookmarks.</a></li></ul></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-backgrounds" aria-hidden="true" aria-labelledby="menu-backgrounds" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">Select Background</div>
+            <button type="button" class="overlay-close-button" title="Close">
+              <span aria-hidden="true">Close</span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <div class="scroll-pane active">
+                <button type="button" class="scroll-pane-up-button" title="Scroll Up" aria-hidden="true" disabled="">Scroll Up</button>
+                <button type="button" class="scroll-pane-down-button" title="Scroll Down" aria-hidden="true" disabled="">Scroll Down</button>
+                <div class="scroll-pane-content" tabindex="-1"><ul class="backgrounds"><li><input type="image" data-ident="bg-0" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-0-S.jpg" alt="Background image 0" aria-label="Background image 0"></li><li><input type="image" data-ident="bg-1" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-1-S.jpg" alt="Background image 1" aria-label="Background image 1"></li><li><input type="image" data-ident="bg-2" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-2-S.jpg" alt="Background image 2" aria-label="Background image 2"></li><li><input type="image" data-ident="bg-3" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-3-S.jpg" alt="Background image 3" aria-label="Background image 3"></li><li><input type="image" data-ident="bg-4" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-4-S.jpg" alt="Background image 4" aria-label="Background image 4"></li><li><input type="image" data-ident="bg-5" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-5-S.jpg" alt="Background image 5" aria-label="Background image 5"></li><li><input type="image" data-ident="bg-6" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-6-S.jpg" alt="Background image 6" aria-label="Background image 6"></li><li><input type="image" data-ident="bg-7" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-7-S.jpg" alt="Background image 7" aria-label="Background image 7"></li><li><input type="image" data-ident="bg-8" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-8-S.jpg" alt="Background image 8" aria-label="Background image 8"></li><li><input type="image" data-ident="bg-9" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-9-S.jpg" alt="Background image 9" aria-label="Background image 9"></li><li><input type="image" data-ident="bg-10" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-10-S.jpg" alt="Background image 10" aria-label="Background image 10"></li><li><input type="image" data-ident="bg-11" src="./1.3.1.2-Introduction to Cybersecurity_files/bg-11-S.jpg" alt="Background image 11" aria-label="Background image 11"></li></ul></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-search" aria-hidden="true" aria-labelledby="menu-search" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">Search</div>
+            <button type="button" class="overlay-close-button" title="Close">
+              <span aria-hidden="true">Close</span>
+            </button>
+            <input id="search-input" title="Search" aria-label="Search" type="search">
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <div class="scroll-pane active">
+                <button type="button" class="scroll-pane-up-button" title="Scroll Up" aria-hidden="true" disabled="">Scroll Up</button>
+                <button type="button" class="scroll-pane-down-button" title="Scroll Down" aria-hidden="true" disabled="">Scroll Down</button>
+                <div class="scroll-pane-content" tabindex="-1"><ul class="items"><li class="message"><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#" style="background-color: transparent; pointer-events: none; border: none;">Enter search terms…</a></li></ul></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-languages" aria-hidden="true" aria-labelledby="menu-languages" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">Languages</div>
+            <button type="button" class="overlay-close-button" title="Close">
+              <span aria-hidden="true">Close</span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <div class="scroll-pane active">
+                <button type="button" class="scroll-pane-up-button" title="Scroll Up" aria-hidden="true" disabled="">Scroll Up</button>
+                <button type="button" class="scroll-pane-down-button" title="Scroll Down" aria-hidden="true" disabled="">Scroll Down</button>
+                <div class="scroll-pane-content" tabindex="-1">
+                  <p>Select a language for the course:</p>
+                  <ul>
+                    <li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#" data-lang="ar" lang="ar" title="العربية (Arabic)">العربية</a></li>
+                    <li></li>
+                    <li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#" data-lang="en" lang="en" title="English (English)">English</a></li>
+                    <li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#" data-lang="es" lang="es" title="Español (Spanish)">Español</a></li>
+                    <li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#" data-lang="fr" lang="fr" title="Français (French)">Français</a></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#" data-lang="kk" lang="kk" title=" қазақ тілі (Kazakh)">қазақ тілі</a></li>
+                    <li></li>
+                    <li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#" data-lang="nl" lang="nl" title="Nederlands (Dutch)">Nederlands</a></li>
+                    <li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#" data-lang="pl" lang="pl" title="Polski (Polish)">Polski</a></li>
+                    <li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#" data-lang="pt" lang="pt" title="Português do Brasil (Brazilian Portuguese)">Português do Brasil</a></li>
+                    <li></li>
+                    <li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#" data-lang="ro" lang="ro" title="Română (Romanian)">Română</a></li>
+                    <li></li>
+                    <li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#" data-lang="tr" lang="tr" title="Türkçe (Turkish)">Türkçe</a></li>
+                    <li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#" data-lang="uk" lang="uk" title="Українська (Ukrainian)">Українська</a></li>
+                    <li></li>
+                    <li></li>
+                    <li><a href="http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/index.html#" data-lang="id" lang="id" title="Indonesia (Indonesian)">Indonesia</a></li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-help" aria-hidden="true" aria-labelledby="menu-help" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">Help</div>
+            <button type="button" class="overlay-close-button" title="Close">
+              <span aria-hidden="true">Close</span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <div id="help-buttons" role="menu">
+                <button type="button" class="help-button" id="help-1" role="menuitem" title="Introduction - Tutorial">
+                  <span class="help-button-icon"></span>
+                  <span class="help-button-label">Introduction - Tutorial</span>
+                </button>
+                <button type="button" class="help-button" id="help-2" role="menuitem" title="Course Navigation - Tutorial">
+                  <span class="help-button-icon"></span>
+                  <span class="help-button-label">Course Navigation - Tutorial</span>
+                </button>
+                <button type="button" class="help-button" id="help-3" role="menuitem" title="Assessment and Certificate - Tutorial">
+                  <span class="help-button-icon"></span>
+                  <span class="help-button-label">Assessment and Certificate - Tutorial</span>
+                </button>
+                <button type="button" class="help-button" id="help-4" role="menuitem" title="Packet Tracer – Installation Tutorial">
+                  <span class="help-button-icon"></span>
+                  <span class="help-button-label">Packet Tracer – Installation Tutorial</span>
+                </button>
+                
+                <div class="help-button" role="menuitem" title="Find us on Facebook">
+                  <a href="http://www.facebook.com/cisconetworkingacademy" target="facebook-netacad">
+                    <div class="help-facebook-icon"></div>
+                    <div class="help-button-label">Find us on Facebook</div>
+                  </a>
+                </div>
+              </div>
+              <div id="help-content" tabindex="-1"></div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-developer" aria-hidden="true" aria-labelledby="menu-developer" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">Developer Tools</div>
+            <button type="button" class="overlay-close-button" title="Close">
+              <span aria-hidden="true">Close</span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <ul class="items">
+                <li><button id="clear-local-storage-button">Clear Local Storage</button></li>
+                <li><button id="clear-background-button">Clear Background</button></li>
+                <li>
+                  <button id="enable-pseudolocalization-button">Enable Pseudolocalization</button>
+                  <button id="disable-pseudolocalization-button" style="display: none;">Disable Pseudolocalization</button>
+                </li>
+                <li><button id="disable-developer-tools-button">Disable Developer Tools</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu">
+        <div class="menu-buttons">
+          <button type="button" class="menu-button" id="menu-developer" title="Developer Tools" aria-haspopup="true" style="display: none;">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">Developer Tools</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" id="menu-recent-pages" title="Recent Pages" aria-haspopup="true">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">Recent Pages</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" id="menu-bookmarks" title="Bookmarks" aria-haspopup="true">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">Bookmarks</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" id="menu-course-index" title="Course Index" aria-haspopup="true">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">Course Index</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" id="menu-search" title="Search" aria-haspopup="true">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">Search</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" id="menu-languages" title="Languages" aria-haspopup="true">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">Languages</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" id="menu-backgrounds" title="Select Background" aria-haspopup="true">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">Select Background</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" id="menu-help" title="Help" aria-haspopup="true">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">Help</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" id="menu-return" title="Return to Class" style="display: none;">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">Return to Class</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+
+</body></html>

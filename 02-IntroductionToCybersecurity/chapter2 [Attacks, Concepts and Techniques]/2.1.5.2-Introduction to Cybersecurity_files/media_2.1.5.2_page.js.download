@@ -1,0 +1,18 @@
+function registerSWF(){
+	swfobject.registerObject("flashobject", "9.0.0", "../../../common/libs/expressInstall.swf");
+}
+
+loadScript("../../../common/scripts/swfobject.js", registerSWF);
+var mainMovieClip;
+
+(Animation = function(control,id){		
+		var manifest = [
+		{src:"images/cloud.png", id:"cloud"},
+		{src:"images/computer.png", id:"computer"},
+		{src:"images/image1.png", id:"image1"},
+		{src:"images/image2.png", id:"image2"},
+		{src:"images/image3.png", id:"image3"},
+		{src:"images/server.png", id:"server"}
+	];
+		return manifest;	
+});

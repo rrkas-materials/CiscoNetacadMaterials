@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberSec2.1/en/course/module4/4.1.1.3/4.1.1.3.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>4.1.1.3 Port Scanning</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    <script>
+      var media_transcript_file = "media_4.1.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">Port Scanning</h1>
+        <div tabindex="0">
+          <p>Port-scanning is a process of probing a computer, server or other network host for open ports. In networking, each application running on a device is assigned an identifier called a port number. This port number is used on both ends of the transmission so that the right data is passed to the correct application. Port-scanning can be used maliciously as a reconnaissance tool to identify the operating system and services running on a computer or host, or it can be used harmlessly by a network administrator to verify network security policies on the network.</p>
+          <p>For the purposes of evaluating your own computer network’s firewall and port security, you can use a port-scanning tool like Nmap to find all the open ports on your network. Port-scanning can be seen as a precursor to a network attack and therefore should not be done on public servers on the Internet, or on a company network without permission. </p>
+          <p>To execute an Nmap port-scan of a computer on your local home network, download and launch a program such as Zenmap, provide the target IP address of the computer you would like to scan, choose a default scanning profile, and press scan. The Nmap scan will report any services that are running (e.g., web services, mail services, etc.) and port numbers.  The scanning of a port generally results in one of three responses:</p>
+          <p>
+            </p><ul>
+              <li>
+                <b>Open or Accepted</b> – The host replied indicating a service is listening on the port.</li>
+            </ul>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>
+                <b>Closed, Denied, or Not Listening</b> – The host replied indicating that connections will be denied to the port.</li>
+            </ul>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>
+                <b>Filtered, Dropped, or Blocked</b> – There was no reply from the host.</li>
+            </ul>
+          <p></p>
+          <p>To execute a port-scan of your network from outside of the network, you will need to initiate the scan from outside of the network. This will involve running an Nmap port-scan against your firewall or router’s public IP address. To discover your public IP address, use a search engine such as Google with the query “what is my ip address”. The search engine will return your public IP address. </p>
+          <p>To run a port-scan for six common ports against your home router or firewall, go to the Nmap Online Port Scanner at <a href="https://hackertarget.com/nmap-online-port-scanner/" target="_blank">https://hackertarget.com/nmap-online-port-scanner/</a> and enter your public IP address in the input box<i>: IP address to scan…</i> and press <i>Quick Nmap Scan</i>. If the response is <i>open</i> for any of the ports: 21, 22, 25, 80, 443, or 3389 then most likely, port forwarding has been enabled on your router or firewall, and you are running servers on your private network, as shown in the figure.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0">This figure displays an image of NMAP port scan results. The results for Open Port / Service and OS, Open port / service, NiC / Platform and O S Kernel are highlighted. Open Port / Service and OS: Port 22/t c p, State: Open, Service:SSH, Version: open S S H 6.7 p 1 Raspbian 5 (protocol 2.0), Open port / service: 3389/ t c p open ns-wbt-server xrdp, NiC / Platform: MAC Address: B B : 2 7 : E B : 7 7 : E 3 : E B (Raspberry Pi Foundation), O S Kernel: Running: Linux 3.X | 4.X</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>

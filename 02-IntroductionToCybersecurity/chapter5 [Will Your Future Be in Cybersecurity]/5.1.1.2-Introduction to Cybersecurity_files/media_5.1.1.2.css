@@ -1,0 +1,16 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#canvasId{
+	background-color: rgba(235,247,252, 0.5) !important;
+	border: 1px solid #7DB8CE;
+}
+
+#ID_s1_txt08{
+	line-height: 12px !important;
+}
+#ID_s1_txt20a{
+	letter-spacing: -0.8px !important;
+}

@@ -1,0 +1,22 @@
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+#ID_s3_txt01, #ID_s3_txt02, #ID_s3_txt03, #ID_s3_txt04, #ID_s3_txt05, #ID_s3_txt06, #ID_s3_txt07, #ID_s3_txt08{	
+	color: #393536 !important;
+}
+
+.select-wrapper ,.select{
+	width: 118px !important;
+	    background-color: #EBEBE5;
+	}
+	
+*[id^='select_']{
+    width: 330px !important;
+}
+#highlight_0,#highlight_1,#highlight_2,#highlight_3,#highlight_4,#highlight_5,#highlight_6{
+float: right;
+margin-right: 330px !important;
+margin-left: -25px !important;
+margin-top: -23px !important;
+}
+
