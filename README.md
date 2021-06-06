@@ -1,76 +1,15 @@
 # Cisco Netacad Materials
 
-## DevNet Associate 1.0 (DEVASC)
-Modules:
-1. Course Introduction  
-   1.0 Introduction  
-   1.1 Your Lab Environment  
-   1.2 Linux  
-   1.3 Python  
-   1.4 Course Introduction Summary  
-2. The DevNet Developer Environment  
-   2.0 Introduction  
-   2.1 DevNet Overview  
-   2.2 Exploring DevNet Online Resource  
-   2.3 DevNet Developer Environment Summary  
-3. Software Development and Design  
-   3.0 Introduction  
-   3.1 Software Development  
-   3.2 Software Design Patterns  
-   3.3 Version Control Systems  
-   3.4 Coding Basics  
-   3.5 Code Review and Testing  
-   3.6 Understanding Data Formats  
-   3.7 Software Development and Design Summary  
-4. Understanding and Using APIs  
-   4.0 Introduction  
-   4.1 Introducing APIs  
-   4.2 API Design Styles  
-   4.3 API Architectural Styles  
-   4.4 Introduction to REST APIs  
-   4.5 Authenticating to REST API  
-   4.6 API Rate Limits  
-   4.7 Working with Webhooks  
-   4.8 Troubleshooting API Calls  
-   4.9 Understanding and Using APIs Summary
-5. Network Fundamentals  
-   5.0 Introduction  
-   5.1 Introduction to Network Fundamentals  
-   5.2 Network Interface Layer  
-   5.3 Internetwork Layer  
-   5.4 Network Devices  
-   5.5 Networking Protocols  
-   5.6 Troubleshooting Application Connectivity Issues  
-   5.7 Networking Fundamentals Summary  
-6. Application Deployment and Security  
-   6.0 Introduction to Application Deployment and Security  
-   6.1 Understanding Deployment Choices with Different Models  
-   6.2 Creating and Deploying a Sample Application  
-   6.3 Continuous Integration/Continuous Deployment (CI/CD)  
-   6.4 Networks for Application Development and Security  
-   6.5 Securing Applications  
-   6.6 Summary: Application Deployment and Security  
-7. Infrastructure and Automation  
-   7.0 Introduction to Infrastructure and Automation  
-   7.1 Automating Infrastructure with Cisco  
-   7.2 DevOps and SRE  
-   7.3 Basic Automation Scripting  
-   7.4 Automation Tools  
-   7.5 Infrastructure as Code  
-   7.6 Automating Testing  
-   7.7 Network Simulation  
-   7.8 Infrastructure and Automation Summary  
-8. Cisco Platforms and Development  
-   8.0 Introduction to Cisco Platforms and Development  
-   8.1 Introduction to Cisco Platforms  
-   8.2 Cisco SDKs  
-   8.3 Understanding Network Programmability and Device Models  
-   8.4 Cisco Network Management  
-   8.5 Cisco Compute Management  
-   8.6 Cisco Collaboration Platforms  
-   8.7 Cisco Security Platforms  
-   8.8 Cisco Platforms and Development Summary  
-   8.9 Prepare for Your Exam and Launch Your Career!
+## Introduction To Packet Tracer
+### Modules
+1. Introduction to Packet Tracer  
+2. The User Interface  
+3. Simulation View  
+4. Packet Tracer Usage  
+5. IoT Components in Packet Tracer  
+6. Creating and Controlling a Smart Home Network  
+7. Packet Tracer Environment Controls  
+8. Creating and Programming Objects in PT  
 
 ## CCNA 1
 ### Modules
@@ -219,13 +158,80 @@ Modules:
     17.5 Host and IOS Commands  
     17.6 Troubleshooting Methodologies  
     17.7 Troubleshooting Scenarios  
-    17.8 Module Practice and Quiz  
-
+    17.8 Module Practice and Quiz
     
-   
-
-
-
 ### PDFs
 1. CCNA volume 1
 2. CCNA volume 2
+
+## DevNet Associate 1.0 (DEVASC)
+### Modules
+1. Course Introduction  
+   1.0 Introduction  
+   1.1 Your Lab Environment  
+   1.2 Linux  
+   1.3 Python  
+   1.4 Course Introduction Summary
+2. The DevNet Developer Environment  
+   2.0 Introduction  
+   2.1 DevNet Overview  
+   2.2 Exploring DevNet Online Resource  
+   2.3 DevNet Developer Environment Summary
+3. Software Development and Design  
+   3.0 Introduction  
+   3.1 Software Development  
+   3.2 Software Design Patterns  
+   3.3 Version Control Systems  
+   3.4 Coding Basics  
+   3.5 Code Review and Testing  
+   3.6 Understanding Data Formats  
+   3.7 Software Development and Design Summary
+4. Understanding and Using APIs  
+   4.0 Introduction  
+   4.1 Introducing APIs  
+   4.2 API Design Styles  
+   4.3 API Architectural Styles  
+   4.4 Introduction to REST APIs  
+   4.5 Authenticating to REST API  
+   4.6 API Rate Limits  
+   4.7 Working with Webhooks  
+   4.8 Troubleshooting API Calls  
+   4.9 Understanding and Using APIs Summary
+5. Network Fundamentals  
+   5.0 Introduction  
+   5.1 Introduction to Network Fundamentals  
+   5.2 Network Interface Layer  
+   5.3 Internetwork Layer  
+   5.4 Network Devices  
+   5.5 Networking Protocols  
+   5.6 Troubleshooting Application Connectivity Issues  
+   5.7 Networking Fundamentals Summary
+6. Application Deployment and Security  
+   6.0 Introduction to Application Deployment and Security  
+   6.1 Understanding Deployment Choices with Different Models  
+   6.2 Creating and Deploying a Sample Application  
+   6.3 Continuous Integration/Continuous Deployment (CI/CD)  
+   6.4 Networks for Application Development and Security  
+   6.5 Securing Applications  
+   6.6 Summary: Application Deployment and Security
+7. Infrastructure and Automation  
+   7.0 Introduction to Infrastructure and Automation  
+   7.1 Automating Infrastructure with Cisco  
+   7.2 DevOps and SRE  
+   7.3 Basic Automation Scripting  
+   7.4 Automation Tools  
+   7.5 Infrastructure as Code  
+   7.6 Automating Testing  
+   7.7 Network Simulation  
+   7.8 Infrastructure and Automation Summary
+8. Cisco Platforms and Development  
+   8.0 Introduction to Cisco Platforms and Development  
+   8.1 Introduction to Cisco Platforms  
+   8.2 Cisco SDKs  
+   8.3 Understanding Network Programmability and Device Models  
+   8.4 Cisco Network Management  
+   8.5 Cisco Compute Management  
+   8.6 Cisco Collaboration Platforms  
+   8.7 Cisco Security Platforms  
+   8.8 Cisco Platforms and Development Summary  
+   8.9 Prepare for Your Exam and Launch Your Career!

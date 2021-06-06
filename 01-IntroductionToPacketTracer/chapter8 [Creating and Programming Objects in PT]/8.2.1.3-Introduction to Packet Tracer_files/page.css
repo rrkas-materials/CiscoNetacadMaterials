@@ -1,0 +1,261 @@
+@font-face {
+  font-family: "CiscoSansTTBold";
+  src: url("fonts/CiscoSansTTBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "CiscoSansTTLight";
+  src: url("fonts/CiscoSansTTLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "CiscoSansTTRegular";
+  src: url("fonts/CiscoSansTTRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "CiscoSansTTThin";
+  src: url("fonts/CiscoSansTTThin.woff") format("woff");
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+html.loading {
+  background: #FFFFFF url(images/loader-light.gif) no-repeat center fixed;
+}
+
+html.loading body {
+  visibility: hidden;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #333333;
+  font-family: "CiscoSansTTLight", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+#text-container,
+#media-container {
+  background-color: #FFFFFF;
+  position: absolute;
+}
+
+#text-container {
+  background-color: rgba(255,255,255,0.95);
+  z-index: 1;
+}
+
+.text-on-right #text-container.open {
+  box-shadow: -3px 0px 3px rgba(0,0,0,0.2);
+}
+
+.text-on-left #text-container.open {
+  box-shadow: 3px 0px 3px rgba(0,0,0,0.2);
+}
+
+#media-container {
+  /* allow iframe content to scroll on iPad */
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+  z-index: 0;
+}
+
+/* text-on-right */
+
+html.text-on-right  #text-container {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 25%; /* overwritten by JS */
+}
+
+html.text-on-right #media-container {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 75%; /* overwritten by JS */
+}
+
+/* text-on-left */
+
+html.text-on-left  #text-container {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 25%; /* overwritten by JS */
+}
+
+html.text-on-left #media-container {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 75%; /* overwritten by JS */
+}
+
+/* full-media */
+
+html.full-media  #text-container {
+  display: none;
+}
+
+html.full-media #media-container {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#text {
+  padding: 15px 20px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  line-height: 1.67;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#media {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+iframe {
+  border: none;
+}
+
+h1 {
+  color: #000000;
+  border-bottom: 1px solid #CCCCCC;
+  font-family: "CiscoSansTTThin";
+  font-weight: normal;
+  font-size: 20px;
+  padding: 15px 0;
+  margin: 0 0 15px 0;
+  line-height: 1;
+}
+
+p {
+  margin: 1em 0;
+}
+
+p:first-child {
+  margin-top: 0;
+}
+
+ul, ol{
+  margin-top: 0;
+}
+
+li {
+  margin-left: -1em;
+}
+
+[dir="rtl"] li {
+  margin-left: auto;
+  margin-right: -1em;
+}
+
+span.cmd {
+  font-family: "Courier New", Courier, monospace;
+  direction: ltr;
+}
+
+a {
+  color: hsl(198, 77%, 38%);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#text-handle {
+  background-image: url(images/sprite-handle.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 32px;
+  height: 64px;
+  top: 0;
+  bottom: 0;
+  margin: auto auto;
+  cursor: pointer;
+}
+
+#text-handle:hover {
+  background-position: -32px 0;
+}
+
+.text-on-right #text-handle {
+  left: -6px;
+}
+
+.text-on-left #text-handle {
+  right: -6px;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+html.denied #media-container,
+html.denied #text-container {
+  visibility: hidden;
+}
+
+html.denied body {
+  background-image: none;
+}
+
+html.denied #login {
+  display: block;
+}
+
+#login {
+  display: none;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 16px;
+  text-align: center;
+}
+
+/* intended for screen readers only */
+#media-description {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.transcript #media-description {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 1em;
+  overflow: auto;
+  clip: auto;
+}
+
+.transcript #media {
+  display: none;
+}

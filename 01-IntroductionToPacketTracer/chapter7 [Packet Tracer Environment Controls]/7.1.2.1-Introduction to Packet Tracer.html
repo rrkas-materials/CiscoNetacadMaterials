@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#7.1.2.1 -->
+<html class="" dir="ltr" lang="en" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Introduction to Packet Tracer</title>
+    <link rel="stylesheet" type="text/css" href="./7.1.2.1-Introduction to Packet Tracer_files/course.css">
+    <link rel="stylesheet" type="text/css" href="./7.1.2.1-Introduction to Packet Tracer_files/course(1).css">
+    <script type="text/javascript" src="./7.1.2.1-Introduction to Packet Tracer_files/jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./7.1.2.1-Introduction to Packet Tracer_files/permission.js.download"></script>
+    <script type="text/javascript" src="./7.1.2.1-Introduction to Packet Tracer_files/netacad.js.download"></script>
+    <script type="text/javascript" src="./7.1.2.1-Introduction to Packet Tracer_files/course.js.download"></script>
+    <script>
+
+      netacad.settings.init("I2PTNet1");
+
+      netacad.lang.set("Module", "Chapter #");
+      netacad.lang.set("Section", "Section #");
+      netacad.lang.set("Topic", "Topic #");
+      netacad.lang.set("Page", "Page #");
+      netacad.lang.set("Figure", "Figure #");
+      netacad.lang.set("Figures", "Figures");
+      netacad.lang.set("NoItems", "There are no items.");
+      netacad.lang.set("NoBookmarks", "There are no bookmarks.");
+      netacad.lang.set("NoRecentPages", "There are no recent pages.");
+      netacad.lang.set("NoSearchResults", "There are no search results.");
+      netacad.lang.set("EnterSearchTerms", "Enter search terms…");
+      netacad.lang.set("PageThumbnail", "Page # thumbnail");
+      netacad.lang.set("BackgroundImage", "Background image");
+
+      var course = function() {
+        var c, m, s, t, p;
+        c = new netacad.models.Course("I2PTNet1", "en", "Introduction to Packet Tracer");
+        m = new netacad.models.Module("1", "Introduction to Packet Tracer");
+        s = new netacad.models.Section("1.0", "Introduction");
+        t = new netacad.models.Topic("1.0.1", "Welcome");
+        p = new netacad.models.Page("1.0.1.1", "Chapter 1: Introduction to Packet Tracer", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("1.1", "Introduction to Packet Tracer");
+        t = new netacad.models.Topic("1.1.1", "What is Packet Tracer?");
+        p = new netacad.models.Page("1.1.1.1", "Overview of Packet Tracer", "Activity", "Other", "Flash PnC");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("1.1.2", "How do I Setup Packet Tracer?");
+        p = new netacad.models.Page("1.1.2.1", "Download and Install Packet Tracer", "Activity", "Other", "Flash PnC");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("1.2", "Summary");
+        t = new netacad.models.Topic("1.2.1", "Conclusion");
+        p = new netacad.models.Page("1.2.1.1", "Chapter 1: Introduction to Packet Tracer", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        m = new netacad.models.Module("2", "The User Interface");
+        s = new netacad.models.Section("2.0", "Introduction");
+        t = new netacad.models.Topic("2.0.1", "Welcome");
+        p = new netacad.models.Page("2.0.1.1", "Chapter 2: The User Interface", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("2.1", "Simulation Mode");
+        t = new netacad.models.Topic("2.1.1", "The Packet Tracer User Interface");
+        p = new netacad.models.Page("2.1.1.1", "Packet Tracer User Interface", "Activity", "Other", "Flash PnC");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.1.1.2", "Packet Tracer - Finding and Deploying Devices", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.1.1.3", "Device Configuration", "Activity", "Other", "Flash PnC");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.1.1.4", "Packet Tracer - GUI and CLI Configuration", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        p = new netacad.models.Page("2.1.1.5", "Packet Tracer – Creating a Simple Network Using Packet Tracer", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("2.2", "Summary");
+        t = new netacad.models.Topic("2.2.1", "Conclusion");
+        p = new netacad.models.Page("2.2.1.1", "Chapter 2: The User Interface", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        m = new netacad.models.Module("3", "Simulation Mode");
+        s = new netacad.models.Section("3.0", "Introduction");
+        t = new netacad.models.Topic("3.0.1", "Welcome");
+        p = new netacad.models.Page("3.0.1.1", "Chapter 3: Simulation Mode", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("3.1", "Simulation Mode");
+        t = new netacad.models.Topic("3.1.1", "Protocol Data Units");
+        p = new netacad.models.Page("3.1.1.1", "Creating PDUs in Simulation Mode", "Activity", "Other", "Flash PnC");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.1.1.2", "Viewing the Contents of PDUs", "Activity", "Other", "Flash PnC");
+        t.appendChild(p);
+        p = new netacad.models.Page("3.1.1.3", "Packet Tracer – Explore Network Functionality Using PDUs", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("3.2", "Summary");
+        t = new netacad.models.Topic("3.2.1", "Conclusion");
+        p = new netacad.models.Page("3.2.1.1", "Chapter 3: Simulation Mode", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        m = new netacad.models.Module("4", "Packet Tracer Physical View and File Assessment Types");
+        s = new netacad.models.Section("4.0", "Introduction");
+        t = new netacad.models.Topic("4.0.1", "Welcome");
+        p = new netacad.models.Page("4.0.1.1", "Chapter 4: Packet Tracer Usage", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("4.1", "Physical View");
+        t = new netacad.models.Topic("4.1.1", "Physical View Functionality");
+        p = new netacad.models.Page("4.1.1.1", "The Packet Tracer Physical View", "Activity", "Other", "Flash PnC");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.1.1.2", "Packet Tracer - Packet Tracer Physical View", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("4.2", "Packet Tracer File Types and Assessment Usage");
+        t = new netacad.models.Topic("4.2.1", "Packet Tracer File Types");
+        p = new netacad.models.Page("4.2.1.1", "Packet Tracer File Types", "Activity", "Other", "Flash PnC");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("4.2.2", "PTMO / PTSA");
+        p = new netacad.models.Page("4.2.2.1", "Packet Tracer Assessment Types", "Activity", "Other", "Flash PnC");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("4.3", "Summary");
+        t = new netacad.models.Topic("4.3.1", "Conclusion");
+        p = new netacad.models.Page("4.3.1.1", "Chapter 4: Packet Tracer Usage", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("4.3.1.2", "Packet Tracer Basics Quiz", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        m = new netacad.models.Module("5", "IoT Components in Packet Tracer");
+        s = new netacad.models.Section("5.0", "Introduction");
+        t = new netacad.models.Topic("5.0.1", "Welcome");
+        p = new netacad.models.Page("5.0.1.1", "Introduction: IoT Components in Packet Tracer", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("5.1", "Using IoT Devices in Packet Tracer");
+        t = new netacad.models.Topic("5.1.1", "Configuring IoT Devices");
+        p = new netacad.models.Page("5.1.1.1", "Configure IoT Devices using Packet Tracer.", "Activity", "Other", "Flash PnC");
+        t.appendChild(p);
+        p = new netacad.models.Page("5.1.1.2", "Packet Tracer - Add IoT Devices to a Smart Home", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("5.2", "Summary");
+        t = new netacad.models.Topic("5.2.1", "Conclusion");
+        p = new netacad.models.Page("5.2.1.1", "Chapter 5: IoT Components in Packet Tracer", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        m = new netacad.models.Module("6", "Creating and Controlling a Small Smart Home Network");
+        s = new netacad.models.Section("6.0", "Introduction");
+        t = new netacad.models.Topic("6.0.1", "Welcome");
+        p = new netacad.models.Page("6.0.1.1", "Introduction: Creating and Controlling a Small Smart Home Network", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("6.1", "Using IoT Devices in Packet Tracer");
+        t = new netacad.models.Topic("6.1.1", "Configuring IoT Devices");
+        p = new netacad.models.Page("6.1.1.1", "Connecting and Monitoring IoT Devices Using a Home Gateway.", "Activity", "Other", "Flash PnC");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.1.1.2", "Packet Tracer - Connect Devices to a Home Gateway and Monitor.", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("6.2", "Connect IoT Devices to a Registration Server.");
+        t = new netacad.models.Topic("6.2.1", "Registration Server");
+        p = new netacad.models.Page("6.2.1.1", "Registering Devices to a Dedicated Registration Server.", "Activity", "Other", "Flash PnC");
+        t.appendChild(p);
+        p = new netacad.models.Page("6.2.1.2", "Packet Tracer - Connect and Control Devices using a Registration Server.", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("6.3", "Summary");
+        t = new netacad.models.Topic("6.3.1", "Conclusion");
+        p = new netacad.models.Page("6.3.1.1", "Chapter 6: Accessing and Monitoring Smart Devices", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        m = new netacad.models.Module("7", "Packet Tracer Environment Controls");
+        s = new netacad.models.Section("7.0", "Packet Tracer Environment Controls");
+        t = new netacad.models.Topic("7.0.1", "Welcome");
+        p = new netacad.models.Page("7.0.1.1", "Introduction: Packet Tracer Environment Controls", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("7.1", "Environmental Controls available in Packet Tracer.");
+        t = new netacad.models.Topic("7.1.1", "Controlling the Environment in Packet Tracer.");
+        p = new netacad.models.Page("7.1.1.1", "Environmental Controls available in Packet Tracer.", "Activity", "Other", "Flash PnC");
+        t.appendChild(p);
+        s.appendChild(t);
+        t = new netacad.models.Topic("7.1.2", "Modifying the Environment in Packet Tracer.");
+        p = new netacad.models.Page("7.1.2.1", "Configuring the Environment using Containers", "Content", "Other");
+        t.appendChild(p);
+        p = new netacad.models.Page("7.1.2.2", "Packet Tracer – Modify and Monitor Environmental Controls in Packet Tracer.", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("7.2", "Summary");
+        t = new netacad.models.Topic("7.2.1", "Conclusion");
+        p = new netacad.models.Page("7.2.1.1", "Chapter 7: Packet Tracer Environment Controls", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        m = new netacad.models.Module("8", "Creating and Programming Objects in Packet Tracer");
+        s = new netacad.models.Section("8.0", "Introduction");
+        t = new netacad.models.Topic("8.0.1", "Welcome");
+        p = new netacad.models.Page("8.0.1.1", "Introduction: Creating and Programming Objects in Packet Tracer", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("8.1", "Creating Things in Packet Tracer.");
+        t = new netacad.models.Topic("8.1.1", "What is a Thing?");
+        p = new netacad.models.Page("8.1.1.1", "Creating and Connecting a Thing.", "Activity", "Other", "Flash PnC");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.1.1.2", "Packet Tracer – Create Your Own Thing.", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("8.2", "The Packet Tracer Programming Environment.");
+        t = new netacad.models.Topic("8.2.1", "The Packet Tracer Programming Environment.");
+        p = new netacad.models.Page("8.2.1.1", "The Programming Environment.", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.2.1.2", "Reviewing and Modifying Scripts.", "Activity", "Other", "Flash PnC");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.2.1.3", "Packet Tracer - Modify existing script for an IoT Thing.", "Activity", "Packet Tracer", "Skills Integration Challenge");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        s = new netacad.models.Section("8.3", "Summary");
+        t = new netacad.models.Topic("8.3.1", "Conclusion");
+        p = new netacad.models.Page("8.3.1.1", "Chapter 8: Creating and Programming Objects in Packet Tracer", "Content");
+        t.appendChild(p);
+        p = new netacad.models.Page("8.3.1.2", "Packet Tracer IoT Basics Quiz", "Content");
+        t.appendChild(p);
+        s.appendChild(t);
+        m.appendChild(s);
+        c.appendChild(m);
+        return c;
+      }();
+
+    </script>
+  </head>
+  <body aria-live="polite" class="bg-6" style="min-width: 1004px; min-height: 602px;">
+    <div id="login" role="document" aria-hidden="true">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+    <div id="splash" role="document" aria-hidden="true" class="">
+      <div class="logo" title="Cisco Systems, Inc."></div>
+      <h1>Introduction to Packet Tracer</h1>
+      <p>Click any image to begin.</p>
+      <ul>
+        <li>
+          <div class="bg-0">
+            <input id="bg-0" type="image" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-0-S.jpg" alt="Background image 0" aria-label="Background image 0">
+            <label id="bg-0-text" for="bg-0"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-1">
+            <input id="bg-1" type="image" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-1-S.jpg" alt="Background image 1" aria-label="Background image 1">
+            <label id="bg-1-text" for="bg-1"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-2">
+            <input id="bg-2" type="image" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-2-S.jpg" alt="Background image 2" aria-label="Background image 2">
+            <label id="bg-2-text" for="bg-2"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-3">
+            <input id="bg-3" type="image" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-3-S.jpg" alt="Background image 3" aria-label="Background image 3">
+            <label id="bg-3-text" for="bg-3"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-4">
+            <input id="bg-4" type="image" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-4-S.jpg" alt="Background image 4" aria-label="Background image 4">
+            <label id="bg-4-text" for="bg-4"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-5">
+            <input id="bg-5" type="image" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-5-S.jpg" alt="Background image 5" aria-label="Background image 5">
+            <label id="bg-5-text" for="bg-5"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-6">
+            <input id="bg-6" type="image" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-6-S.jpg" alt="Background image 6" aria-label="Background image 6">
+            <label id="bg-6-text" for="bg-6"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-7">
+            <input id="bg-7" type="image" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-7-S.jpg" alt="Background image 7" aria-label="Background image 7">
+            <label id="bg-7-text" for="bg-7"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-8">
+            <input id="bg-8" type="image" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-8-S.jpg" alt="Background image 8" aria-label="Background image 8">
+            <label id="bg-8-text" for="bg-8"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-9">
+            <input id="bg-9" type="image" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-9-S.jpg" alt="Background image 9" aria-label="Background image 9">
+            <label id="bg-9-text" for="bg-9"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-10">
+            <input id="bg-10" type="image" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-10-S.jpg" alt="Background image 10" aria-label="Background image 10">
+            <label id="bg-10-text" for="bg-10"></label>
+          </div>
+        </li>
+        <li>
+          <div class="bg-11">
+            <input id="bg-11" type="image" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-11-S.jpg" alt="Background image 11" aria-label="Background image 11">
+            <label id="bg-11-text" for="bg-11"></label>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="main" role="document" aria-hidden="false">
+      <div id="header">
+        <div class="logo" title="Cisco Systems, Inc."></div>
+        <h1><a id="course-title" href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html">Introduction to Packet Tracer</a></h1>
+      </div>
+      <div id="map" role="navigation" style="position: absolute; left: 352px; width: 1004px;">
+        <div class="map-container" id="map-modules" aria-live="off">
+          <div class="scroll-pane active">
+            <button type="button" class="scroll-pane-up-button" title="Scroll Up" aria-hidden="true" disabled="">Scroll Up</button>
+            <button type="button" class="scroll-pane-down-button" title="Scroll Down" aria-hidden="true" disabled="">Scroll Down</button>
+            <div class="scroll-pane-content" tabindex="-1"><ul class="items"><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#1" class="Module"><div class="item-header">Chapter 1</div><div class="item-title">Introduction to Packet Tracer</div></a></li><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#2" class="Module"><div class="item-header">Chapter 2</div><div class="item-title">The User Interface</div></a></li><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#3" class="Module"><div class="item-header">Chapter 3</div><div class="item-title">Simulation Mode</div></a></li><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#4" class="Module"><div class="item-header">Chapter 4</div><div class="item-title">Packet Tracer Physical View and File Assessment Types</div></a></li><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#5" class="Module"><div class="item-header">Chapter 5</div><div class="item-title">IoT Components in Packet Tracer</div></a></li><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#6" class="Module"><div class="item-header">Chapter 6</div><div class="item-title">Creating and Controlling a Small Smart Home Network</div></a></li><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#7" class="Module selected"><div class="item-header">Chapter 7</div><div class="item-title">Packet Tracer Environment Controls</div></a></li><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#8" class="Module"><div class="item-header">Chapter 8</div><div class="item-title">Creating and Programming Objects in Packet Tracer</div></a></li></ul></div>
+          </div>
+        </div>
+        <div class="map-container" id="map-sections" aria-live="off">
+          <div class="scroll-pane">
+            <button type="button" class="scroll-pane-up-button" title="Scroll Up" aria-hidden="true" disabled="">Scroll Up</button>
+            <button type="button" class="scroll-pane-down-button" title="Scroll Down" aria-hidden="true" disabled="">Scroll Down</button>
+            <div class="scroll-pane-content" tabindex="-1"><ul class="items"><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#7.0" class="Section"><div class="item-header">Section 7.0</div><div class="item-title">Packet Tracer Environment Controls</div></a></li><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#7.1" class="Section selected"><div class="item-header">Section 7.1</div><div class="item-title">Environmental Controls available in Packet Tracer.</div></a></li><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#7.2" class="Section"><div class="item-header">Section 7.2</div><div class="item-title">Summary</div></a></li></ul></div>
+          </div>
+        </div>
+        <div class="map-container" id="map-topics" aria-live="off">
+          <div class="scroll-pane">
+            <button type="button" class="scroll-pane-up-button" title="Scroll Up" aria-hidden="true" disabled="">Scroll Up</button>
+            <button type="button" class="scroll-pane-down-button" title="Scroll Down" aria-hidden="true" disabled="">Scroll Down</button>
+            <div class="scroll-pane-content" tabindex="-1"><ul class="items"><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#7.1.1" class="Topic"><div class="item-header">Topic 7.1.1</div><div class="item-title">Controlling the Environment in Packet Tracer.</div></a></li><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#7.1.2" class="Topic selected"><div class="item-header">Topic 7.1.2</div><div class="item-title">Modifying the Environment in Packet Tracer.</div></a></li></ul></div>
+          </div>
+        </div>
+        <div class="map-container" id="map-pages" aria-live="off">
+          <div class="scroll-pane">
+            <button type="button" class="scroll-pane-up-button" title="Scroll Up" aria-hidden="true" disabled="">Scroll Up</button>
+            <button type="button" class="scroll-pane-down-button" title="Scroll Down" aria-hidden="true" disabled="">Scroll Down</button>
+            <div class="scroll-pane-content" tabindex="-1"><ul class="items"><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#7.1.2.1" class="Page selected"><img class="item-thumb" src="./7.1.2.1-Introduction to Packet Tracer_files/media_7.1.2.1_thumb.jpg" alt="Page 7.1.2.1 thumbnail" aria-hidden="true"><div class="item-header">Page 7.1.2.1</div><div class="item-title">Configuring the Environment using Containers</div></a></li><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#7.1.2.2" class="Page"><img class="item-thumb" src="./7.1.2.1-Introduction to Packet Tracer_files/media_7.1.2.2_thumb.jpg" alt="Page 7.1.2.2 thumbnail" aria-hidden="true"><div class="item-header">Page 7.1.2.2</div><div class="item-title">Packet Tracer – Modify and Monitor Environmental Controls in Packet Tracer.</div></a></li></ul></div>
+          </div>
+        </div>
+      </div>
+      <div id="content" style="position: absolute; left: 352px; top: 63px; width: 1004px; height: 602px;">
+        <div id="container" class="active">
+          <div id="page-header">
+            <nav class="breadcrumbs" aria-label="breadcumbs">
+              <ul>
+                <li aria-level="1">
+                  <a id="breadcrumbs-module" href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#7">
+                    <span id="breadcrumbs-module-li" class="breadcrumbs-header">Chapter 7</span>
+                    <span id="breadcrumbs-module-title" class="breadcrumbs-title">Packet Tracer Environment Controls</span>
+                  </a>
+                </li>
+                <li aria-level="2">
+                  <a id="breadcrumbs-section" href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#7.1">
+                    <span id="breadcrumbs-section-li" class="breadcrumbs-header">7.1</span>
+                    <span id="breadcrumbs-section-title" class="breadcrumbs-title">Environmental Controls available in Packet Tracer.</span>
+                  </a>
+                </li>
+                <li aria-level="3">
+                  <a id="breadcrumbs-topic" href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#7.1.2">
+                    <span id="breadcrumbs-topic-li" class="breadcrumbs-header">7.1.2</span>
+                    <span id="breadcrumbs-topic-title" class="breadcrumbs-title">Modifying the Environment in Packet Tracer.</span>
+                  </a>
+                </li>
+                <li aria-level="4">
+                  <a id="breadcrumbs-page" href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#7.1.2.1">
+                    <span id="breadcrumbs-page-li" class="breadcrumbs-header">7.1.2.1</span>
+                    <span id="breadcrumbs-page-title" class="breadcrumbs-title">Configuring the Environment using Containers</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="page-menu">
+              <button type="button" id="page-menu-close-button" title="Close">
+                <span aria-hidden="true">Close</span>
+              </button>
+            </div>
+          </div>
+          <div id="page-content" role="main" aria-live="polite"><iframe id="frame" title="Page 7.1.2.1" src="./7.1.2.1-Introduction to Packet Tracer_files/7.1.2.1.html"></iframe></div>
+          <div id="page-footer">
+            <div id="page-slide-buttons"><fieldset><legend>Figures</legend><ol><li><button title="Figure 1" value="1" class="active">1</button></li><li><button title="Figure 2" value="2">2</button></li><li><button title="Figure 3" value="3">3</button></li></ol></fieldset></div>
+            <div class="page-menu" role="menu">
+              <button type="button" id="page-menu-transcript-button" role="menuitem" title="Transcript">Transcript</button>
+              <button type="button" id="page-menu-bookmark-button" role="menuitem" title="Bookmark">Bookmark</button>
+              <button type="button" id="page-menu-previous-button" role="menuitem" title="Previous">Previous</button>
+              <button type="button" id="page-menu-next-button" role="menuitem" title="Next">Next</button>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-course-index" aria-hidden="true" aria-labelledby="menu-course-index" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">Course Index</div>
+            <button type="button" class="overlay-close-button" title="Close">
+              <span aria-hidden="true">Close</span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <div id="course-index-buttons" role="menu">
+                <button type="button" class="index-button active" id="index-course" role="menuitem" title="Course Index">
+                  <span class="index-button-icon"></span>
+                  <span class="index-button-label">Course Index</span>
+                </button>
+                <button type="button" class="index-button" id="index-packet-tracer" role="menuitem" title="Packet Tracer Index">
+                  <span class="index-button-icon"></span>
+                  <span class="index-button-label">Packet Tracer Index</span>
+                </button>
+                <button type="button" class="index-button" id="index-lab" role="menuitem" title="Lab Index">
+                  <span class="index-button-icon"></span>
+                  <span class="index-button-label">Lab Index</span>
+                </button>
+                <button type="button" class="index-button" id="index-video" role="menuitem" title="Video Index">
+                  <span class="index-button-icon"></span>
+                  <span class="index-button-label">Video Index</span>
+                </button>
+              </div>
+              <div class="scroll-pane active">
+                <button type="button" class="scroll-pane-up-button" title="Scroll Up" aria-hidden="true" disabled="">Scroll Up</button>
+                <button type="button" class="scroll-pane-down-button" title="Scroll Down" aria-hidden="true" disabled="">Scroll Down</button>
+                <div class="scroll-pane-content" tabindex="-1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-recent-pages" aria-hidden="true" aria-labelledby="menu-recent-pages" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">Recent Pages</div>
+            <button type="button" class="overlay-close-button" title="Close">
+              <span aria-hidden="true">Close</span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <div class="scroll-pane active">
+                <button type="button" class="scroll-pane-up-button" title="Scroll Up" aria-hidden="true" disabled="">Scroll Up</button>
+                <button type="button" class="scroll-pane-down-button" title="Scroll Down" aria-hidden="true" disabled="">Scroll Down</button>
+                <div class="scroll-pane-content" tabindex="-1"><ul class="items"><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#7.1.2.1" class="Page"><img class="item-thumb" src="./7.1.2.1-Introduction to Packet Tracer_files/media_7.1.2.1_thumb.jpg" alt="Page 7.1.2.1 thumbnail" aria-hidden="true"><div class="item-header">Page 7.1.2.1</div><div class="item-title">Configuring the Environment using Containers</div></a></li><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#7.1.1.1" class="Page"><img class="item-thumb" src="./7.1.2.1-Introduction to Packet Tracer_files/media_7.1.1.1_thumb.jpg" alt="Page 7.1.1.1 thumbnail" aria-hidden="true"><div class="item-header">Page 7.1.1.1</div><div class="item-title">Environmental Controls available in Packet Tracer.</div></a></li><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#7.0.1.1" class="Page"><img class="item-thumb" src="./7.1.2.1-Introduction to Packet Tracer_files/media_7.0.1.1_thumb.jpg" alt="Page 7.0.1.1 thumbnail" aria-hidden="true"><div class="item-header">Page 7.0.1.1</div><div class="item-title">Introduction: Packet Tracer Environment Controls</div></a></li><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#6.3.1.1" class="Page"><img class="item-thumb" src="./7.1.2.1-Introduction to Packet Tracer_files/media_6.3.1.1_thumb.jpg" alt="Page 6.3.1.1 thumbnail" aria-hidden="true"><div class="item-header">Page 6.3.1.1</div><div class="item-title">Chapter 6: Accessing and Monitoring Smart Devices</div></a></li><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#6.2.1.2" class="Page"><img class="item-thumb" src="./7.1.2.1-Introduction to Packet Tracer_files/media_6.2.1.2_thumb.jpg" alt="Page 6.2.1.2 thumbnail" aria-hidden="true"><div class="item-header">Page 6.2.1.2</div><div class="item-title">Packet Tracer - Connect and Control Devices using a Registration Server.</div></a></li><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#6.2.1.1" class="Page"><img class="item-thumb" src="./7.1.2.1-Introduction to Packet Tracer_files/media_6.2.1.1_thumb.jpg" alt="Page 6.2.1.1 thumbnail" aria-hidden="true"><div class="item-header">Page 6.2.1.1</div><div class="item-title">Registering Devices to a Dedicated Registration Server.</div></a></li><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#6.1.1.2" class="Page"><img class="item-thumb" src="./7.1.2.1-Introduction to Packet Tracer_files/media_6.1.1.2_thumb.jpg" alt="Page 6.1.1.2 thumbnail" aria-hidden="true"><div class="item-header">Page 6.1.1.2</div><div class="item-title">Packet Tracer - Connect Devices to a Home Gateway and Monitor.</div></a></li><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#6.1.1.1" class="Page"><img class="item-thumb" src="./7.1.2.1-Introduction to Packet Tracer_files/media_6.1.1.1_thumb.jpg" alt="Page 6.1.1.1 thumbnail" aria-hidden="true"><div class="item-header">Page 6.1.1.1</div><div class="item-title">Connecting and Monitoring IoT Devices Using a Home Gateway.</div></a></li><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#6.0.1.1" class="Page"><img class="item-thumb" src="./7.1.2.1-Introduction to Packet Tracer_files/media_6.0.1.1_thumb.jpg" alt="Page 6.0.1.1 thumbnail" aria-hidden="true"><div class="item-header">Page 6.0.1.1</div><div class="item-title">Introduction: Creating and Controlling a Small Smart Home Network</div></a></li><li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#5.2.1.1" class="Page"><img class="item-thumb" src="./7.1.2.1-Introduction to Packet Tracer_files/media_5.2.1.1_thumb.jpg" alt="Page 5.2.1.1 thumbnail" aria-hidden="true"><div class="item-header">Page 5.2.1.1</div><div class="item-title">Chapter 5: IoT Components in Packet Tracer</div></a></li></ul></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-bookmarks" aria-hidden="true" aria-labelledby="menu-bookmarks" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">Bookmarks</div>
+            <button type="button" class="overlay-close-button" title="Close">
+              <span aria-hidden="true">Close</span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <div class="scroll-pane active">
+                <button type="button" class="scroll-pane-up-button" title="Scroll Up" aria-hidden="true" disabled="">Scroll Up</button>
+                <button type="button" class="scroll-pane-down-button" title="Scroll Down" aria-hidden="true" disabled="">Scroll Down</button>
+                <div class="scroll-pane-content" tabindex="-1"><ul class="items"><li class="message">There are no bookmarks.</li></ul></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-backgrounds" aria-hidden="true" aria-labelledby="menu-backgrounds" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">Select Background</div>
+            <button type="button" class="overlay-close-button" title="Close">
+              <span aria-hidden="true">Close</span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <div class="scroll-pane active">
+                <button type="button" class="scroll-pane-up-button" title="Scroll Up" aria-hidden="true" disabled="">Scroll Up</button>
+                <button type="button" class="scroll-pane-down-button" title="Scroll Down" aria-hidden="true" disabled="">Scroll Down</button>
+                <div class="scroll-pane-content" tabindex="-1"><ul class="backgrounds"><li><input type="image" data-ident="bg-0" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-0-S.jpg" alt="Background image 0" aria-label="Background image 0"></li><li><input type="image" data-ident="bg-1" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-1-S.jpg" alt="Background image 1" aria-label="Background image 1"></li><li><input type="image" data-ident="bg-2" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-2-S.jpg" alt="Background image 2" aria-label="Background image 2"></li><li><input type="image" data-ident="bg-3" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-3-S.jpg" alt="Background image 3" aria-label="Background image 3"></li><li><input type="image" data-ident="bg-4" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-4-S.jpg" alt="Background image 4" aria-label="Background image 4"></li><li><input type="image" data-ident="bg-5" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-5-S.jpg" alt="Background image 5" aria-label="Background image 5"></li><li><input type="image" data-ident="bg-6" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-6-S.jpg" alt="Background image 6" aria-label="Background image 6"></li><li><input type="image" data-ident="bg-7" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-7-S.jpg" alt="Background image 7" aria-label="Background image 7"></li><li><input type="image" data-ident="bg-8" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-8-S.jpg" alt="Background image 8" aria-label="Background image 8"></li><li><input type="image" data-ident="bg-9" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-9-S.jpg" alt="Background image 9" aria-label="Background image 9"></li><li><input type="image" data-ident="bg-10" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-10-S.jpg" alt="Background image 10" aria-label="Background image 10"></li><li><input type="image" data-ident="bg-11" src="./7.1.2.1-Introduction to Packet Tracer_files/bg-11-S.jpg" alt="Background image 11" aria-label="Background image 11"></li></ul></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-search" aria-hidden="true" aria-labelledby="menu-search" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">Search</div>
+            <button type="button" class="overlay-close-button" title="Close">
+              <span aria-hidden="true">Close</span>
+            </button>
+            <input id="search-input" title="Search" aria-label="Search" type="search">
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <div class="scroll-pane active">
+                <button type="button" class="scroll-pane-up-button" title="Scroll Up" aria-hidden="true" disabled="">Scroll Up</button>
+                <button type="button" class="scroll-pane-down-button" title="Scroll Down" aria-hidden="true" disabled="">Scroll Down</button>
+                <div class="scroll-pane-content" tabindex="-1"><ul class="items"><li class="message">Enter search terms…</li></ul></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-languages" aria-hidden="true" aria-labelledby="menu-languages" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">Languages</div>
+            <button type="button" class="overlay-close-button" title="Close">
+              <span aria-hidden="true">Close</span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <div class="scroll-pane active">
+                <button type="button" class="scroll-pane-up-button" title="Scroll Up" aria-hidden="true" disabled="">Scroll Up</button>
+                <button type="button" class="scroll-pane-down-button" title="Scroll Down" aria-hidden="true" disabled="">Scroll Down</button>
+                <div class="scroll-pane-content" tabindex="-1">
+                  <p>Select a language for the course:</p>
+                  <ul>
+                    <li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#" data-lang="ar" lang="ar" title="العربية (Arabic)">العربية</a></li>
+                    <li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#" data-lang="de" lang="de" title="Deutsch (German)">Deutsch</a></li>
+                    <li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#" data-lang="en" lang="en" title="English (English)">English</a></li>
+                    <li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#" data-lang="es" lang="es" title="Español (Spanish)">Español</a></li>
+                    <li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#" data-lang="fr" lang="fr" title="Français (French)">Français</a></li>
+                    <li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#" data-lang="he" lang="he" title="עברית (Hebrew)">עברית</a></li>
+                    <li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#" data-lang="hr" lang="hr" title="Hrvatski (Croatian)">Hrvatski</a></li>
+                    <li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#" data-lang="hu" lang="hu" title="Magyar (Hungarian)">Magyar</a></li>
+                    <li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#" data-lang="hy" lang="hy" title="Հայերեն (Armenian)">Հայերեն</a></li>
+                    <li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#" data-lang="it" lang="it" title="Italiano (Italian)">Italiano</a></li>
+                    <li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#" data-lang="jp" lang="ja" title="日本語 (Japanese)">日本語</a></li>
+                    <li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#" data-lang="ka" lang="ka" title="ქართული (Georgian)">ქართული</a></li>
+                    <li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#" data-lang="ko" lang="ko" title="한국어 (Korean)">한국어</a></li>
+                    <li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#" data-lang="nl" lang="nl" title="Nederlands (Dutch)">Nederlands</a></li>
+                    <li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#" data-lang="pl" lang="pl" title="Polski (Polish)">Polski</a></li>
+                    <li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#" data-lang="pt" lang="pt" title="Português (Portuguese)">Português</a></li>
+                    <li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#" data-lang="ro" lang="ro" title="Română (Romanian)">Română</a></li>
+                    <li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#" data-lang="ru" lang="ru" title="Русский (Russian)">Русский</a></li>
+                    <li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#" data-lang="tr" lang="tr" title="Türkçe (Turkish)">Türkçe</a></li>
+                    <li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#" data-lang="uk" lang="uk" title="Українська (Ukrainian)">Українська</a></li>
+                    <li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#" data-lang="zh" lang="zh-Hans" title="简体中文 (Simplified Chinese)">简体中文</a></li>
+                    <li><a href="https://contenthub.netacad.com/legacy/I2PT/1.1/en/index.html#" data-lang="ch" lang="zh-Hant" title="繁體中文 (Traditional Chinese)">繁體中文</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-help" aria-hidden="true" aria-labelledby="menu-help" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">Help</div>
+            <button type="button" class="overlay-close-button" title="Close">
+              <span aria-hidden="true">Close</span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <div id="help-buttons" role="menu">
+                <button type="button" class="help-button" id="help-1" role="menuitem" title="Introduction">
+                  <span class="help-button-icon"></span>
+                  <span class="help-button-label">Introduction</span>
+                </button>
+                <button type="button" class="help-button" id="help-2" role="menuitem" title="Course Navigation">
+                  <span class="help-button-icon"></span>
+                  <span class="help-button-label">Course Navigation</span>
+                </button>
+                <button type="button" class="help-button" id="help-3" role="menuitem" title="Assessment and Certificate">
+                  <span class="help-button-icon"></span>
+                  <span class="help-button-label">Assessment and Certificate</span>
+                </button>
+                <button type="button" class="help-button" id="help-4" role="menuitem" title="Packet Tracer – Installation Tutorial">
+                  <span class="help-button-icon"></span>
+                  <span class="help-button-label">Packet Tracer – Installation Tutorial</span>
+                </button>
+                <button type="button" class="help-button" id="help-5" role="menuitem" title="Packet Tracer – Navigation Tutorial">
+                  <span class="help-button-icon"></span>
+                  <span class="help-button-label">Packet Tracer – Navigation Tutorial</span>
+                </button>
+                <div class="help-button" role="menuitem" title="Find us on Facebook">
+                  <a href="http://www.facebook.com/cisconetworkingacademy" target="facebook-netacad">
+                    <div class="help-facebook-icon"></div>
+                    <div class="help-button-label">Find us on Facebook</div>
+                  </a>
+                </div>
+              </div>
+              <div id="help-content" tabindex="-1"></div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay" id="overlay-developer" aria-hidden="true" aria-labelledby="menu-developer" aria-live="polite" tabindex="0">
+          <div class="overlay-header">
+            <div class="overlay-icon"></div>
+            <div class="overlay-label">Developer Tools</div>
+            <button type="button" class="overlay-close-button" title="Close">
+              <span aria-hidden="true">Close</span>
+            </button>
+          </div>
+          <div class="overlay-content">
+            <div class="overlay-container">
+              <ul class="items">
+                <li><button id="clear-local-storage-button">Clear Local Storage</button></li>
+                <li><button id="clear-background-button">Clear Background</button></li>
+                <li>
+                  <button id="enable-pseudolocalization-button">Enable Pseudolocalization</button>
+                  <button id="disable-pseudolocalization-button" style="display: none;">Disable Pseudolocalization</button>
+                </li>
+                <li><button id="disable-developer-tools-button">Disable Developer Tools</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu" role="menu">
+        <div class="menu-buttons">
+          <button type="button" class="menu-button" role="menuitem" id="menu-developer" title="Developer Tools" aria-haspopup="true" style="display: none;">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">Developer Tools</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" role="menuitem" id="menu-recent-pages" title="Recent Pages" aria-haspopup="true">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">Recent Pages</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" role="menuitem" id="menu-bookmarks" title="Bookmarks" aria-haspopup="true">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">Bookmarks</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" role="menuitem" id="menu-course-index" title="Course Index" aria-haspopup="true">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">Course Index</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" role="menuitem" id="menu-search" title="Search" aria-haspopup="true">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">Search</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" role="menuitem" id="menu-languages" title="Languages" aria-haspopup="true" style="display: none;">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">Languages</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" role="menuitem" id="menu-backgrounds" title="Select Background" aria-haspopup="true">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">Select Background</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" role="menuitem" id="menu-help" title="Help" aria-haspopup="true">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">Help</span>
+            </span>
+          </button>
+          <button type="button" class="menu-button" role="menuitem" id="menu-return" title="Return to Class" style="display: none;">
+            <span class="menu-button-icon"></span>
+            <span class="menu-button-box">
+              <span class="menu-button-label">Return to Class</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  
+
+</body></html>

@@ -1,0 +1,57 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-use-before-define */
+/* eslint-disable no-undef */
+/* eslint-disable vars-on-top */
+function handleValidityCheck(responseValidity, callback) {
+  if (
+    responseValidity.valid &&
+    window.location.href.includes(responseValidity.course)
+  ) {
+    callback(true);
+  } else if (
+    !responseValidity.valid
+  ) {
+    sessionCheckFailed('âš  Your session is no longer valid.');
+  } else if (
+    !window.location.href.includes(responseValidity.course)
+  ) {
+    sessionCheckFailed('âš  You do not have access to this course.');
+  }
+}
+
+function sessionCheckFailed(message) {
+  var topWindowDocument = window.top.document;
+  var login = topWindowDocument.getElementById('login');
+  while (topWindowDocument.body.hasChildNodes()) {
+    topWindowDocument.body.removeChild(topWindowDocument.body.lastChild);
+  }
+  topWindowDocument.body.appendChild(login);
+  $(topWindowDocument.documentElement).addClass('denied');
+  $(topWindowDocument.documentElement).removeClass('loading');
+  $(login)
+    .css({ color: 'orange', fontSize: '22px' })
+    .html(message);
+}
+
+var permission = {
+  initialized: false,
+  check: function check(callback) {
+    $.ajax({
+      type: 'get',
+      url: '/validateLTI/',
+      success: function(response) {
+        handleValidityCheck($.parseJSON(response), callback);
+      }
+    });
+  },
+  checkSession: function checkSession(callback) {
+    $.ajax({
+      type: 'get',
+      url: '/checkSession/',
+      success: function(response) {
+        handleValidityCheck($.parseJSON(response), callback);
+      }
+    });
+  }
+};
+
