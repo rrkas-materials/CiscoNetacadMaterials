@@ -1,0 +1,34 @@
+@import url('../../../common/styles/media2.css');
+
+#ID_s1_txt03, #ID_s1_txt04, #ID_s2_txt03{
+
+	background-color: #FFFADD !important;
+	height: 55px !important;
+	line-height: 18px !important;
+	padding-left: 5px !important;
+}
+
+#ID_txt07, #ID_s2_txt08{
+	border: 2px solid #fff !important;
+	background-color: #663399 !important;
+	height: 20px !important;
+	line-height: 20px !important;
+	color: #fff !important;
+}
+
+#ID_txt08{
+	
+	background-color: #663399 !important;
+	height: 20px !important;
+	line-height: 20px !important;
+	color: #fff !important;
+}
+
+#ID_s2_txt04{
+	border: 2px solid #fff !important;
+	background-color: #336666 !important;
+	height: 80px !important;
+	line-height: 20px !important;
+	color: #fff !important;
+
+}

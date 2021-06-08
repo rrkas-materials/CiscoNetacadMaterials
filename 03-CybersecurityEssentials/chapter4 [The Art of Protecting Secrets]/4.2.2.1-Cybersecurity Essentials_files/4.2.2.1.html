@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberEss1.1/en/course/module4/4.2.2.1/4.2.2.1.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>4.2.2.1 Mandatory Access Control</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    
+    <link rel="stylesheet" type="text/css" href="./responsive.css">
+    <script type="text/javascript" src="./responsive.js.download"></script>
+    
+    <script>
+      var media_transcript_file = "media_4.2.2.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">Mandatory Access Control</h1>
+        <div tabindex="0">
+          <p>Mandatory access control (MAC) restricts the actions that a subject can perform on an object. A subject can be a user or a process. An object can be a file, a port, or an input/output device. An authorization rule enforces whether or not a subject can access the object. </p>
+          <p></p>
+          <p>Organizations use MAC where different levels of security classifications exist. Every object has a label and every subject has a clearance. A MAC system restricts a subject based on the security classification of the object and the label attached to the user.</p>
+          <p></p>
+          <p>For example, take the military security classifications Secret and Top Secret.  If a file (an object) is considered top secret, it is classified (labeled) Top Secret. The only people (subjects) that may view the file (object) are those with a Top Secret clearance. It is up to the access control mechanism to ensure that an individual (subject) with only a Secret clearance, never gains access to a file labeled as Top Secret. Similarly, a user (subject) cleared for Top Secret access cannot change the classification of a file (object) labeled Top Secret to Secret. Additionally, a Top Secret user cannot send a Top Secret file to a user cleared only to see Secret information.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0"> The figure on this page is a top secret file on the wooden table. </div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>

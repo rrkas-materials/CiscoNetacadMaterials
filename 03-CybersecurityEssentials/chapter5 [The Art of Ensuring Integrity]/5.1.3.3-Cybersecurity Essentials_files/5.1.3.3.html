@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberEss1.1/en/course/module5/5.1.3.3/5.1.3.3.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>5.1.3.3 Application of HMAC</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    <script>
+      var media_transcript_file = "media_5.1.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">Application of HMAC</h1>
+        <div tabindex="0">
+          <p>HMACs can also authenticate a web user. Many web services use basic authentication, which does not encrypt the username and password during transmission. Using HMAC, the user sends a private key identifier and an HMAC. The server looks up the user’s private key and creates an HMAC. The user’s HMAC must match the one calculated by the server.</p>
+          <p></p>
+          <p>VPNs using IPsec rely on HMAC functions to authenticate the origin of every packet and provide data integrity checking.</p>
+          <p></p>
+          <p>As shown in the figure, Cisco products use hashing for entity authentication, data integrity, and data authenticity purposes:</p>
+          <p>
+            </p><ul>
+              <li>Cisco IOS routers use hashing with secret keys in an HMAC-like manner to add authentication information to routing protocol updates.</li>
+            </ul>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>IPsec gateways and clients use hashing algorithms, such as MD5 and SHA-1 in HMAC mode, to provide packet integrity and authenticity.</li>
+            </ul>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>Cisco software images on Cisco.com have an MD5-based checksum available so that customers can check the integrity of downloaded images.</li>
+            </ul>
+          <p></p>
+          <p>
+            <b>Note</b>: The term entity can refer to devices or systems within an organization.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0">The figure shows there are three hashing uses, data integrity, data authenticity, and entity authentication.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>

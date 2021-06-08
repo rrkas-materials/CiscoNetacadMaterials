@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberEss1.1/en/course/module6/6.2.3.6/6.2.3.6.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>6.2.3.6 Router Redundancy Options</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    
+    <link rel="stylesheet" type="text/css" href="./responsive.css">
+    <script type="text/javascript" src="./responsive.js.download"></script>
+    
+    <script>
+      var media_transcript_file = "media_6.2.3.6_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">Router Redundancy Options</h1>
+        <div tabindex="0">
+          <p>The following list defines the options available for router redundancy based on the protocol that defines communication between network devices:</p>
+          <p>
+            </p><ul>
+              <li>
+                <b>Hot Standby Router Protocol (HSRP)</b> - HSRP provides high network availability by providing first-hop routing redundancy. A group of routers use HSRP for selecting an active device and a standby device. In a group of device interfaces, the active device is the device that routes packets; the standby device is the device that takes over when the active device fails. The function of the HSRP standby router is to monitor the operational status of the HSRP group and to quickly assume packet-forwarding responsibility if the active router fails.</li>
+            </ul>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>
+                <b>Virtual Router Redundancy Protocol (VRRP)</b> - A VRRP router runs the VRRP protocol in conjunction with one or more other routers attached to a LAN. In a VRRP configuration, the elected router is the virtual router master, and the other routers act as backups, in case the virtual router master fails.</li>
+            </ul>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>
+                <b>Gateway Load Balancing Protocol (GLBP)</b> - GLBP protects data traffic from a failed router or circuit, like HSRP and VRRP, while also allowing load balancing (also called load sharing) between a group of redundant routers.</li>
+            </ul>
+          <p></p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0">The figure shows a drawing of 3 routers connected together.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>

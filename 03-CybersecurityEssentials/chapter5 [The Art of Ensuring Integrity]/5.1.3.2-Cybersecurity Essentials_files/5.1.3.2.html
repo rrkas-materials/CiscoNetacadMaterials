@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberEss1.1/en/course/module5/5.1.3.2/5.1.3.2.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>5.1.3.2 HMAC Operation</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    <script>
+      var media_transcript_file = "media_5.1.3.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">HMAC Operation</h1>
+        <div tabindex="0">
+          <p>Consider an example where a sender wants to ensure that a message remains unchanged in transit and wants to provide a way for the receiver to authenticate the origin of the message.</p>
+          <p></p>
+          <p>As shown in Figure 1, the sending device inputs data (such as Terry Smith’s pay of $100 and the secret key) into the hashing algorithm and calculates the fixed-length HMAC digest or fingerprint. The receiver gets the authenticated fingerprint attached to the message.</p>
+          <p></p>
+          <p>In Figure 2, the receiving device removes the fingerprint from the message and uses the plaintext message with its secret key as input to the same hashing function. If the receiving device calculates a fingerprint equal to the fingerprint sent, the message is still in its original form. Additionally, the receiver knows the origin of the message because only the sender possesses a copy of the shared secret key. The HMAC function proved the authenticity of the message.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0">Figure 1 shows the HMAC operation using the data of pay to terry smith $100.00. Figure two also shows this operation stating that if the generated HMAC matches the sent HMAC, then integrity and authenticity have been verified. If the do not match, discard the message.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>

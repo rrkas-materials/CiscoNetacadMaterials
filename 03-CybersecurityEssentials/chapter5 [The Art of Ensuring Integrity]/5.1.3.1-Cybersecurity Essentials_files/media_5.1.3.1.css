@@ -1,0 +1,18 @@
+@import url('../../../common/styles/media2.css');
+
+#ID_txt05{
+	border: 2px solid #fff !important;
+	background-color: #fff !important;
+	height: 20px !important;
+	line-height: 20px !important;
+	box-shadow: 1px 1px #888 !important;
+}
+
+#ID_txt07{
+	border: 2px solid #fff !important;
+	background-color: #663399 !important;
+	height: 20px !important;
+	line-height: 20px !important;
+	color: #fff !important;
+
+}

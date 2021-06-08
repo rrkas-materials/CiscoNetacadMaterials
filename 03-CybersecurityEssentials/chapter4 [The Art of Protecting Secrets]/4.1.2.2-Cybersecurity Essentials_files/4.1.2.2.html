@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberEss1.1/en/course/module4/4.1.2.2/4.1.2.2.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>4.1.2.2 Types of Cryptography</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    
+    <link rel="stylesheet" type="text/css" href="./responsive.css">
+    <script type="text/javascript" src="./responsive.js.download"></script>
+    
+    <script>
+      var media_transcript_file = "media_4.1.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">Types of Cryptography</h1>
+        <div tabindex="0">
+          <p>The most common types of cryptography are block ciphers and stream ciphers. Each method differs in the way that it groups bits of data to encrypt it. </p>
+          <p></p>
+          <p>
+            <b>Block Ciphers</b>
+          </p>
+          <p></p>
+          <p>Block ciphers transform a fixed-length block of plaintext into a common block of ciphertext of 64 or 128 bits. Block size is the amount of data encrypted at any one time. To decrypt this ciphertext, apply the reverse transformation to the ciphertext block, using the same secret key.</p>
+          <p>Block ciphers usually result in output data that is larger than the input data, because the ciphertext must be a multiple of the block size. For example, Data Encryption Standard (DES) is a symmetric algorithm that encrypts blocks in 64-bit chunks using a 56-bit key. To accomplish this, the block algorithm takes data one chunk at a time, for example, 8 bytes per chunk, until the entire block is full. If there is less input data than one full block, the algorithm adds artificial data, or blanks, until it uses the full 64 bits, as shown in Figure 1 for the 64 bits on the left.</p>
+          <p></p>
+          <p>
+            <b>Stream Ciphers</b>
+          </p>
+          <p></p>
+          <p>Unlike block ciphers, stream ciphers encrypt plaintext one byte or one bit at a time, as shown in Figure 2. Think of stream ciphers as a block cipher with a block size of one bit. With a stream cipher, the transformation of these smaller plaintext units varies, depending on when they are encountered during the encryption process. Stream ciphers can be much faster than block ciphers, and generally do not increase the message size, because they can encrypt an arbitrary number of bits.</p>
+          <p></p>
+          <p>A5 is a stream cipher that provides voice privacy and encrypts cell phone communications. It is also possible to use DES in stream cipher mode.</p>
+          <p></p>
+          <p>Complex cryptographic systems can combine block and stream in the same process.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0">There are two figures on this page. Figure 1 titled Block Cipher is an illustration of a block cipher. Plaintext message is broken into blocks of 64 bits and encrypted to become the encrypted message. The text below the figure: Block cipher - encryption is completed in 64 bit blocks. Figure 2 titled stream cipher is an illustration of a stream cipher. The plaintext message is encrypted in a stream to the encrypted message. The text below the figure: stream cipher - encryption is one bit at a time.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>

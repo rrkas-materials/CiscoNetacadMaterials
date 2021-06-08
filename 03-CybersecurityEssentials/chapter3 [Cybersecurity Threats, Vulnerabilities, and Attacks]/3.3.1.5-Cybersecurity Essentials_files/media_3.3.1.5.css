@@ -1,0 +1,11 @@
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+#ID_s3_txt01{
+	
+	left:-5px !important;
+	width:250px !important;
+	height:100px !important;
+	top:35px !important
+
+}

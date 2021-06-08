@@ -1,0 +1,141 @@
+function registerSWF(){
+	swfobject.registerObject("flashobject", "9.0.0", "../../../common/libs/expressInstall.swf");
+}
+
+loadScript("../../../common/scripts/swfobject.js", registerSWF);
+
+(slideViewDidLoad = function(_container,_id)
+{
+	btnXPosArr=[44,284,44,432];
+	btnYPosArr=[50,50,258,258];
+	buttonArr=[];
+	buttonClickArr=[];
+	buttonOverArr=[];
+	sampleArray=[];
+	var lastBtnClick;
+
+
+sampleArray = ["https://www.uscyberpatriot.org", "http://www.skillsusa.org", "http://www.uscyberchallenge.org", "http://www.nationalcyberleague.org"];
+
+
+for(var i=0;i<4;i++)
+{
+var container=new createjs.Container()
+_container.addChild(container);
+container.id=i;
+
+container.cursor="pointer";
+
+
+btn = getCJSElement("IMAGE",{x:btnXPosArr[i],y:btnYPosArr[i],width:48,height:58.70,src:"plus_btn.png",});
+
+buttonArr.push(btn);
+container.addChild(btn);
+
+btn1 = getCJSElement("IMAGE",{x:btnXPosArr[i],y:btnYPosArr[i],width:48,height:58.70,src:"plus_btn_over.png",});
+
+buttonOverArr.push(btn1);
+container.addChild(btn1);
+btn1.visible=false;
+
+btn4 = getCJSElement("IMAGE",{x:btnXPosArr[i]+5,y:btnYPosArr[i]+3,width:35,height:35,src:"plus_btn_over2.png",});
+
+buttonClickArr.push(btn4);
+container.addChild(btn4);
+btn4.visible=false;
+
+container.addEventListener("click", handlerMethod);
+container.addEventListener("mouseover", handlerOverMethod);
+container.addEventListener("mouseout", handlerOutMethod);
+/*var btn2 = getCJSElement("TEXTBOX",{x:411.95,y:135,width:234.75,height:230.95,size:11,titleId:bubbleTitleArr[i],bodyId:bubbleTextArr[i]});
+_container.addChild(btn2);
+
+bubbleArr[i]=btn2;
+bubbleArr[i].visible=false;*/
+
+//accessibility fix -------------------------------------
+        var label = new ButtonLabelComp({ x: 5, y: 4, width: 35, height: 35, compId: "text_id_0" + (i+1), align: "center", color: "#343434", bold: "obj.bold", style: "pointer-events:all;cursor:pointer;" + "line-height:" + "1.1" });
+        btn.addChild(label);
+        
+        btn.mouseOver = function(event) {
+            //buttonClickArr[this.parent.id].visible = false;
+            buttonOverArr[this.parent.id].visible = true;
+        }
+        //Mouse out function
+        btn.mouseOut = function() {
+            //buttonClickArr[this.parent.id].visible = false;
+            buttonOverArr[this.parent.id].visible = false;
+        }
+        //Mouse click function
+        btn.mouseClick = function(event) {
+
+
+        	var url = sampleArray[this.parent.id];
+	      	window.open(url , "_blank");
+
+
+            for (var i = 0; i < 4; i++) {
+
+                //bubbleArr[i].visible = false;
+                buttonClickArr[i].visible = false;
+            }
+            if (lastBtnClick) {
+                buttonOverArr[lastBtnClick.id].visible = false;
+                lastBtnClick.addEventListener("mouseover", handlerOverMethod);
+                lastBtnClick.addEventListener("mouseout", handlerOutMethod);
+            }
+            //
+            buttonClickArr[this.parent.id].visible = true;
+
+            //target.removeEventListener("mouseover", handlerOverMethod);
+            //target.removeEventListener("mouseout", handlerOutMethod);
+            lastBtnClick = this.parent;
+
+
+        }
+
+}
+
+
+	 function handlerMethod(event) {
+		
+		for(var i=0;i<4;i++)
+		{
+	
+		//bubbleArr[i].visible=false;
+		buttonClickArr[i].visible=false;
+		
+		}
+		if(lastBtnClick)
+		{
+		buttonOverArr[lastBtnClick.id].visible=false;
+		lastBtnClick.addEventListener("mouseover", handlerOverMethod);
+		lastBtnClick.addEventListener("mouseout", handlerOutMethod);
+		}
+		//bubbleArr[event.target.id].visible=true;
+		buttonClickArr[event.target.id].visible=true;
+
+       event.target.removeEventListener("mouseover", handlerOverMethod);
+       event.target.removeEventListener("mouseout", handlerOutMethod);
+	   lastBtnClick=event.target;
+	   
+	   //redirect to new page
+		  var url = sampleArray[event.target.id];
+	      window.open(url , "_blank");
+	   
+ }
+ 
+ function handlerOverMethod(event)
+ {
+
+	buttonOverArr[event.target.id].visible=true;
+	
+
+ }
+  function handlerOutMethod(event)
+ {
+	buttonOverArr[event.target.id].visible=false;
+	}
+
+	
+});

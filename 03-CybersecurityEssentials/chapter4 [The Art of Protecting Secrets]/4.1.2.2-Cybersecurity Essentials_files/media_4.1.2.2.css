@@ -1,0 +1,18 @@
+@import url('../../../common/styles/media2.css');
+
+#ID_s1_txt07{
+	color: #660099 !important;
+}
+
+#ID_s1_txt02, #ID_s1_txt03, #ID_s1_txt04{
+	background-color: #660099 !important;
+	border: 2px solid #fff;
+	color: #fff  !important;
+	top: 5px !important;
+}
+
+#ID_s2_txt04{
+	color: #660099 !important;
+	letter-spacing: -0.8px !important;
+
+}

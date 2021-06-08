@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberEss1.1/en/course/module7/7.3.1.4/7.3.1.4.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>7.3.1.4 Network and Routing Services</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    
+    <link rel="stylesheet" type="text/css" href="./responsive.css">
+    <script type="text/javascript" src="./responsive.js.download"></script>
+    
+    <script>
+      var media_transcript_file = "media_7.3.1.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">Network and Routing Services</h1>
+        <div tabindex="0">
+          <p>Cyber criminals use vulnerable network services to attack a device or to use it as part of the attack. To check for insecure network services, review a device for open ports using a port scanner. A port scanner is an application that probes a device for open ports by sending a message to each port and waiting for a response. The response indicates how the port is used. Cyber criminals will also use port scanners for the same reason. Securing network services ensures that only necessary ports are exposed and available. </p>
+          <p></p>
+          <p>
+            <b>Dynamic Host Control Protocol (DHCP)</b>
+          </p>
+          <p></p>
+          <p>DHCP uses a server to assign an IP address and other configuration information automatically to network devices. In effect, the device is getting a permission slip from the DHCP server to use the network. Attackers can target DHCP servers in order to deny access to devices on the network. Figure 1 provides a security checklist for DHCP.</p>
+          <p></p>
+          <p>
+            <b>Domain Name System (DNS)</b>
+          </p>
+          <p></p>
+          <p>DNS resolves a Uniform Resource Locator URL or website address (http://www.cisco.com) to the IP address of the site.  When users type a web address into the address bar they depend on DNS servers to resolve the actual IP address of that destination. Attackers can target DNS servers in order to deny access to network resources or redirect traffic to rogue websites. Click on Figure 2 to view a security checklist for DNS. Use secure service and authentication between DNS servers to protect them from these attacks.  </p>
+          <p></p>
+          <p>
+            <b>Internet Control Messaging Protocol (ICMP)</b>
+          </p>
+          <p></p>
+          <p>Network devices use ICMP to send error messages like a requested service is not available or that the host could not reach the router. The ping command is a network utility that uses ICMP to test the reachability of a host on a network. Ping sends ICMP messages to the host and waits for a reply. Cyber criminals can alter the use of ICMP for the evil purposes listed in Figure 3. Denial-of-Service attacks use ICMP, so many networks filter certain ICMP requests to prevent such attacks.</p>
+          <p></p>
+          <p>
+            <b>Routing Information Protocol (RIP)</b>
+          </p>
+          <p></p>
+          <p>RIP limits the number of hops allowed in a path on a network from the source device to the destination. The maximum number of hops allowed for RIP is fifteen. RIP is a routing protocol used to exchange routing information about which networks each router can reach and how far away those networks are. RIP calculates the best route based on hop count. Figure 4 lists RIP vulnerabilities and defenses against RIP attack. Hackers can target routers and the RIP protocol. Attacks on routing services can effect performance and availability.  Some attacks can even result in traffic redirection. Use secure services with authentication and implement system patching and updates to protect routing services such as RIP. </p>
+          <p></p>
+          <p>
+            <b>Network Time Protocol (NTP)</b>
+          </p>
+          <p></p>
+          <p>Having the correct time within networks is important. Correct time stamps accurately track network events such as security violations. Additionally, clock synchronization is critical for the correct interpretation of events within syslog data files as well as for digital certificates.</p>
+          <p>Network Time Protocol (NTP) is a protocol that synchronizes the clocks of computer systems over data networks. NTP allows network devices to synchronize their time settings with an NTP server. Figure 5 lists the various methods used to provide secure clocking for the network. Cyber criminals attack timeservers to disrupt secure communication that depends on digital certificates and to hide attack information like accurate time stamps.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0">The DHCP security checklist in figure 1 includes physically securing the DHCP server, applying software patches, locating the DHCP server behind a firewall, monitoring DHCP activity by reviewing DHCP logs, maintaining a strong antivirus solution, uninstalling unused services and applications, and closing unused ports. The DNS security checklist in Figure 2 includes keeping DNS software up to date, preventing version string from revealing information, separating internal and external DNS servers, restricting allowed transactions by client IP address, using transaction signature to authenticate transactions, disabling or restricting zone transfers and dynamic updates, enabling logging, analyzing logs, using Domain Name System Security Extensions. The ICMP abuse tactics outlined in Figure 3 include reconnaissance, in which cyber criminals manipulate ICMP messages to gather the following information: hosts that are reachable from the Internet; network topology; the ACL filtering device used by the host; the protocols the host is using; and the operating system running on the host. Many DoS attacks use ICMP as part of the attack by sending ICMP messages to a target that are oversized and can crash the host since it does not know how to handle these messages, sending large number of identical fragmented ICMP messages to the target causing the host to stop responding, and flooding the target with a lot of ICMP messages that will degrade the performance of the host and network. Many firewalls and networks allow ping traffic to pass through. The use of ping traffic can open up a covert channel which allows the transfer of information objects through existing information channels or networks. It carries the data in small parts making it virtually undetectable by administrators. The RIP vulnerabilities listed in Figure 5 includes advertising bogus routing information, claiming a route to a particular unused host (impersonation), claiming a route to an active host to draw in traffic for inspection or alteration, and compromising address-based authentication protocol. Defenses against RIP attack include filtering packets at gateway based on source/destination address, checking the routes before accepting them, authenticate RIP packet, and reviewing logs. The secure methods for providing clocking in Figure 5 include obtaining time and date information from a single source to provide consistent time settings, implementing private network master clocks, synchronizing master clock to Coordinated Universal Time (UTC) using satellite or radio, and using NTP authentication of every device to prevent cyber criminals from accessing the network’s time reference.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>

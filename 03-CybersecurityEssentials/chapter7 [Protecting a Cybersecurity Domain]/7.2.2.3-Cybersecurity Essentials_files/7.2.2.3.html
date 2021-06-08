@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberEss1.1/en/course/module7/7.2.2.3/7.2.2.3.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>7.2.2.3 Group Policies</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    
+    <link rel="stylesheet" type="text/css" href="./responsive.css">
+    <script type="text/javascript" src="./responsive.js.download"></script>
+    
+    <script>
+      var media_transcript_file = "media_7.2.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">Group Policies</h1>
+        <div tabindex="0">
+          <p>In most networks that use Windows computers, an administrator configures Active Directory with Domains on a Windows Server. Windows computers are members of a domain. The administrator configures a Domain Security Policy that applies to all computers that join. Account policies are automatically set when a user logs in to Windows.</p>
+          <p></p>
+          <p>When a computer is not part of an Active Directory domain, the user configures policies through Windows Local Security Policy. In all versions of Windows except Home edition, enter <b>secpol.msc</b> at the Run command to open the Local Security Policy tool. </p>
+          <p></p>
+          <p>An administrator configures user account policies such as password policies and lockout policies by expanding Account Policies &gt; Password Policy. With the settings shown in Figure 1, users must change their passwords every 90 days and use the new password for at least one (1) day. Passwords must contain eight (8) characters and three of the following four categories: uppercase letters, lowercase letters, numbers, and symbols. Lastly, the user can reuse a password after 24 unique passwords. </p>
+          <p></p>
+          <p>An account Lockout Policy locks a computer for a configured duration when too many incorrect login attempts occur. For example, the policy shown in Figure 2 allows the user to enter the wrong username and/or password five times. After five attempts, the account locks users out for 30 minutes. After 30 minutes, the number of attempts resets to zero and the user can attempt to login again.</p>
+          <p></p>
+          <p>More security settings are available by expanding the <b>Local Policies </b>folder. An Audit Policy creates a security log file used to track the events listed in Figure 3.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0">Figure 1 shows the Password Policy configuration on the Local Security Policy utility on a Windows system. Figure 2 shows the Account Lockout Policy. In Figure 3, auditing the account logon events for successes and failures is configured.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>

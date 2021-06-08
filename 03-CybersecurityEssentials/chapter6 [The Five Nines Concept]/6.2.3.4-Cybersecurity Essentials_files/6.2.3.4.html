@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberEss1.1/en/course/module6/6.2.3.4/6.2.3.4.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>6.2.3.4 Spanning Tree</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    
+    <link rel="stylesheet" type="text/css" href="./responsive.css">
+    <script type="text/javascript" src="./responsive.js.download"></script>
+    
+    <script>
+      var media_transcript_file = "media_6.2.3.4_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">Spanning Tree</h1>
+        <div tabindex="0">
+          <p>Redundancy increases the availability of the infrastructure by protecting the network from a single point of failure, such as a failed network cable or a failed switch. When designers build physical redundancy in to a network, loops and duplicate frames occur. Loops and duplicate frames have severe consequences for a switched network. </p>
+          <p></p>
+          <p>Spanning Tree Protocol (STP) addresses these issues. The basic function of STP is to prevent loops on a network when switches interconnect via multiple paths. STP ensures that redundant physical links are loop-free. It ensures that there is only one logical path between all destinations on the network. STP intentionally blocks redundant paths that could cause a loop. </p>
+          <p></p>
+          <p>Blocking the redundant paths is critical to preventing loops on the network. The physical paths still exist to provide redundancy, but STP disables these paths to prevent the loops from occurring. If a network cable or switch fails, STP recalculates the paths and unblocks the necessary ports to allow the redundant path to become active.</p>
+          <p></p>
+          <p>Click Play in the figure to view STP when a failure occurs:</p>
+          <p>
+            </p><ul>
+              <li>PC1 sends a broadcast out onto the network.</li>
+            </ul>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>The trunk link between S2 and S1 fails, resulting in disruption of the original path.</li>
+            </ul>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>S2 unblocks the previously blocked port for Trunk2 and allows the broadcast traffic to traverse the alternate path around the network, permitting communication to continue. </li>
+            </ul>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>If the link between S2 and S1 comes back up, STP again blocks the link between S2 and S3.</li>
+            </ul>
+          <p></p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0">Figure is an animated representation of STP compensating for network failure.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>

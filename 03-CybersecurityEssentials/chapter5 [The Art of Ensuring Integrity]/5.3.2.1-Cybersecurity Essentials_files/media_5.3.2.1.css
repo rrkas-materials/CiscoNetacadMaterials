@@ -1,0 +1,23 @@
+@import url('../../../common/styles/media2.css');
+
+#ID_s1_txt01,#ID_s1_txt02,#ID_s1_txt03,#ID_s1_txt04,#ID_s1_txt05,#ID_s1_txt06,#ID_s1_txt07,#ID_s1_txt08,#ID_s1_txt09,#ID_s1_txt10,#ID_s1_txt11{
+	z-index:-2!important
+}
+
+.whiteCallOut{
+border:1px solid ##d1d1d1;
+-webkit-box-shadow: -1px 0px 5px 2px rgba(143,143,143,1);
+-moz-box-shadow: -1px 0px 5px 2px rgba(143,143,143,1);
+box-shadow: -1px 0px 5px 2px rgba(143,143,143,1);
+border-radius:5px;
+-moz-border-radius:5px; /* Firefox 3.6 and earlier */
+-webkit-border-radius:5px;
+-khtml-border-radius:5px;
+padding:2px 0 3px 3px;
+background:#ffffff;
+padding:10px 4px 10px 4px;
+}
+
+#ID_titleTxt08{
+	line-height: 18px;
+}

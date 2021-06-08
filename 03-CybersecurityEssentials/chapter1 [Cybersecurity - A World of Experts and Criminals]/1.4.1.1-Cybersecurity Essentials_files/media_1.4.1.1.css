@@ -1,0 +1,23 @@
+@import url('../../../common/styles/media2.css');
+
+#ID_s1_txt03B{
+	top:44px !important ;
+}
+
+#ID_s1_txt03{
+	top: 22px !important;
+}
+
+#ID_s1_txt05B{
+	top: 22px !important;
+	left: 10px !important;
+}
+
+#ID_s1_txt04B{
+	top: 25px !important;
+	left:35px !important;
+}
+
+#ID_s1_txt04{
+	left: 25px !important;
+}

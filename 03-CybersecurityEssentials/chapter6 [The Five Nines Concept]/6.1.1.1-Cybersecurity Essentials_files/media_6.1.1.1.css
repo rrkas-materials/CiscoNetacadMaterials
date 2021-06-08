@@ -1,0 +1,9 @@
+@import url('../../../common/styles/media2.css');
+#ID_trans01 {
+	height: 80px !important;
+	padding-top: 30px;
+}
+#ID_trans02 {
+	height: 30px !important;
+	padding-top: 5px;
+}

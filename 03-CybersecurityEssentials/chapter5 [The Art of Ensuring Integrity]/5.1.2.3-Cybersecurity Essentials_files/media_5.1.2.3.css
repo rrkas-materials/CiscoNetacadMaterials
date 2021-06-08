@@ -1,0 +1,12 @@
+@import url('../../../common/styles/media2.css');
+
+#ID_s1_instr_body,#ID_s1_instr_body1 {
+	line-height: 20px !important;
+	margin-left: -25px !important; 
+	margin-top: -10px !important; 
+}
+#ID_s1_instr_body1 {
+	line-height: 17px !important;
+	margin-left: -25px !important; 
+	margin-top: -10px !important; 
+}

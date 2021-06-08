@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberEss1.1/en/course/module5/5.1.1.3/5.1.1.3.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>5.1.1.3 Hashing Algorithms</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    <script>
+      var media_transcript_file = "media_5.1.1.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">Hashing Algorithms</h1>
+        <div tabindex="0">
+          <p>Hash functions are helpful to ensure that a user or communication error does not change the data accidentally. For instance, a sender may want to make sure that no one alters a message on its way to the recipient. The sending device inputs the message into a hashing algorithm and computes its fixed-length digest or fingerprint.</p>
+          <p></p>
+          <p>
+            <b>Simple Hash Algorithm (8-bit Checksum)</b>
+          </p>
+          <p></p>
+          <p>The 8-bit checksum is one of the first hashing algorithms, and it is the simplest form of a hash function. An 8-bit checksum calculates the hash by converting the message into binary numbers and then organizing the string of binary numbers into 8-bit chucks. The algorithm adds up the 8-bit values. The final step is to convert the result using a process called 2’s complement.  The 2’s complement converts a binary to its opposite value, and then it adds one. This means that a zero converts to a one, and a one converts to a zero.  The final step is to add 1 resulting in an 8-bit hash value. </p>
+          <p></p>
+          <p>Click <a href="http://easyonlineconverter.com/converters/checksum_converter.html" target="_blank">here</a> to calculate the 8-bit hash for the message <b>BOB</b>. </p>
+          <p>1. Convert BOB to binary using the ASCII code, as shown in Figure 1.</p>
+          <p>2. Convert the binary numbers to hexadecimal, as shown in Figure 2.  </p>
+          <p>3. Enter the hexadecimal numbers into the calculator (42 4F 42). </p>
+          <p>4. Click the <b>Calculate</b> button. The result is the hash value <b>2D</b>.</p>
+          <p></p>
+          <p>Try the following examples:</p>
+          <p></p>
+          <p>SECRET = “S”=53 “E”=45 “C”=43 “R”=52 “E”=45 “T”=54</p>
+          <p>HASH VALUE = 3A</p>
+          <p></p>
+          <p>MESSAGE = “M”=4D “E”=45 “S”=53 “S”=53 “A”=41 “G”=47 “E”=45</p>
+          <p>HASH VALUE = FB</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0">Figure 1 shows the binary values for BOB. Figure 2 details the calculations that the Checksum calculator uses to generate the 8-bit checksum.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>

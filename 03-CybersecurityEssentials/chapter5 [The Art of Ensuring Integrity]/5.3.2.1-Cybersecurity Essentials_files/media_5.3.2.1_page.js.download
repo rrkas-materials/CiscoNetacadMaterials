@@ -1,0 +1,108 @@
+function registerSWF(){
+	swfobject.registerObject("flashobject", "9.0.0", "../../../common/libs/expressInstall.swf");
+}
+
+loadScript("../../../common/scripts/swfobject.js", registerSWF);
+
+(slideViewDidLoad = function(_container,_id)
+{
+   btnXPosArr=[323.10,389.4,429,445,418,360.4,286,226.95,202,217,256];
+  btnYPosArr=[94.4,121.95,175.75,241.95,295.7,342.25,342.3,295.7,241.95,175.75,121.95];
+	buttonArr=[];	
+	sampleArray=[];
+	bubbleArr=[];
+	var lastBtnClick;
+    bubbleTitleArr=["ID_titleTxt01","ID_titleTxt02","ID_titleTxt03","ID_titleTxt04","ID_titleTxt05","ID_titleTxt06","ID_titleTxt07","ID_titleTxt08","ID_titleTxt09","ID_titleTxt10","ID_titleTxt11"]
+    bubbleTextArr=["ID_bodyTxt01","ID_bodyTxt02","ID_bodyTxt03","ID_bodyTxt04","ID_bodyTxt05","ID_bodyTxt06","ID_bodyTxt07","ID_bodyTxt08","ID_bodyTxt09","ID_bodyTxt10","ID_bodyTxt11"]
+	for(var i=0;i<11;i++)
+	{
+      var btn2 = getCJSElement("TEXTBOX",{subType:"CLOSABLE",x:196.65,y:90.35,width:288,height:292,size:11,titleId:bubbleTitleArr[i],bodyId:bubbleTextArr[i]});
+		_container.addChild(btn2);		
+		bubbleArr[i]=btn2;
+		bubbleArr[i].visible=false;
+		
+		var htmlElement = document.createElement("div");
+		htmlElement.style.cssText = "position:absolute;";
+		htmlElement.id = "domElement_"+i;
+		htmlElement.innerHTML = "<img id="+i+" 'height='50' width='50' src='plus_btn.png'></img>";
+		
+		$("#mediaContainer").append(htmlElement)
+		$("#"+i).on("click",clickFunction)
+		$("#"+i).on("mouseover",mouseOverFunc);
+		$("#"+i).on("mouseout",mouseOutFunc);
+		$("#domElement_"+i).css("top",btnYPosArr[i]+"px")
+		$("#domElement_"+i).css("left",btnXPosArr[i]+"px")
+		$("#domElement_"+i).css("cursor","pointer")	
+		$("#domElement_"+i).css("z-index","-1")	
+		
+	
+        var _btn = document.createElement("button");
+        _btn.style.cssText = "border: 1px solid rgb(0,0,0,0);padding: 0;background-color: transparent;opacity:0;top:2px;left:2px;width:30px;height:30px;cursor:pointer;visibility:visible;pointer-events:none;";
+        _btn.innerHTML = " ";
+        _btn.id = "domElement_dummy" + i;
+        _btn.tabIndex = i + 1;
+
+        $("#mediaContainer").append(_btn);
+        $("#domElement_dummy" + i).on("focus", mouseOverFunc1);
+        $("#domElement_dummy" + i).on("focusout", mouseOutFunc1);
+        $("#domElement_dummy" + i).on("click", clickFunction1);
+        $("#domElement_dummy" + i).css({ "position": "absolute", "margin-top": btnYPosArr[i] + 3 + "px", "margin-left": btnXPosArr[i] + 5 + "px" })
+
+
+    }
+
+    function mouseOverFunc1(e) {
+        $("#" + e.target.id.split('_dummy')[1]).attr("src", "plus_btn_over.png");
+
+        if (lastBtnClick == e.target.id.split('_dummy')[1]) {
+            $("#" + e.target.id.split('_dummy')[1]).attr("src", "plus_btn_over2.png");
+        }
+    }
+
+    function mouseOutFunc1(e) {
+        $("#" + e.target.id.split('_dummy')[1]).attr("src", "plus_btn.png");
+        if (lastBtnClick == e.target.id.split('_dummy')[1]) {
+            $("#" + e.target.id.split('_dummy')[1]).attr("src", "plus_btn_over2.png");
+        }
+
+    }
+
+    function clickFunction1(e) {
+        if (lastBtnClick != null) {
+            $("#" + lastBtnClick).attr("src", "plus_btn.png");
+            $("#" + lastBtnClick).on("mouseover", mouseOverFunc);
+            $("#" + lastBtnClick).on("mouseout", mouseOutFunc);
+            bubbleArr[lastBtnClick].visible = false;
+        }
+        lastBtnClick = e.target.id.split('_dummy')[1];
+        $("#" + e.target.id.split('_dummy')[1]).attr("src", "plus_btn_over2.png");
+        bubbleArr[e.target.id.split('_dummy')[1]].visible = true;
+    }
+	function clickFunction(e){
+		
+		if(lastBtnClick!=null){
+			$("#"+lastBtnClick).attr("src","plus_btn.png");
+			$("#"+lastBtnClick).on("mouseover",mouseOverFunc);
+			$("#"+lastBtnClick).on("mouseout",mouseOutFunc);
+			bubbleArr[lastBtnClick].visible=false;
+		}
+	    lastBtnClick=e.target.id
+		$("#"+e.target.id).attr("src","plus_btn_over2.png");		
+		$("#"+e.target.id).off("mouseover",mouseOverFunc);
+		$("#"+e.target.id).off("mouseout",mouseOutFunc);
+		bubbleArr[e.target.id].visible=true;
+	}
+	
+	
+	function mouseOverFunc(e){	
+		$("#"+e.target.id).attr("src","plus_btn_over.png");
+	}
+	
+	
+	function mouseOutFunc(e){
+		$("#"+e.target.id).attr("src","plus_btn.png");
+	}	
+		
+	var domElement = new createjs.DOMElement(htmlElement);
+	
+});

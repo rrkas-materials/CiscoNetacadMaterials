@@ -1,0 +1,19 @@
+@import url('../../../common/styles/media2.css');
+.li1
+{
+	margin-left: 9px;
+	margin-top: -2px;
+}
+#ID_s1_txt01
+{
+	margin-top: -5px;
+	text-align: center;
+}
+.li2
+{
+	margin-top: 5px;
+}
+#ID_s2_txt01
+{
+	margin-left: 11px;
+}

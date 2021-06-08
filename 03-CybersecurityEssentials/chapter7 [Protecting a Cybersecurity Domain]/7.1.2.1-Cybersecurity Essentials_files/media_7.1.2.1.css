@@ -1,0 +1,13 @@
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_s1_txt01 {
+	height: 119px !important;
+	padding-top: 50px;
+
+}
+#ID_s1_txt02 {
+	height: 80px !important;
+	padding-top: 24px;
+}

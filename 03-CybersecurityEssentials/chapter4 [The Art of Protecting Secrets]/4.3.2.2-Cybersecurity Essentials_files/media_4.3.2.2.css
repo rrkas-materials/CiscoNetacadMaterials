@@ -1,0 +1,12 @@
+@import url('../../../common/styles/media2.css');
+.blueColor
+{
+	color: #0D658B;
+	font-weight: bold;
+}
+#ID_static_2,#ID_static_1
+{
+	font-size: 12px;
+	line-height: 26px;
+	margin-top: -3px;
+}

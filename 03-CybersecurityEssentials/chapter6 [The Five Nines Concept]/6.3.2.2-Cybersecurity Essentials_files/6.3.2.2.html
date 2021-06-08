@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberEss1.1/en/course/module6/6.3.2.2/6.3.2.2.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>6.3.2.2 Intrusion Detection Systems</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    
+    <link rel="stylesheet" type="text/css" href="./responsive.css">
+    <script type="text/javascript" src="./responsive.js.download"></script>
+    
+    <script>
+      var media_transcript_file = "media_6.3.2.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">Intrusion Detection Systems</h1>
+        <div tabindex="0">
+          <p>Intrusion Detection Systems (IDSs) passively monitor the traffic on a network. The figure shows that an IDS-enabled device copies the traffic stream and analyzes the copied traffic rather than the actual forwarded packets. Working offline, it compares the captured traffic stream with known malicious signatures, similar to software that checks for viruses. Working offline means several things:</p>
+          <p>
+            </p><ul>
+              <li>IDS works passively</li>
+            </ul>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>IDS device is physically positioned in the network so that traffic must be mirrored in order to reach it</li>
+            </ul>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>Network traffic does not pass through the IDS unless it is mirrored</li>
+            </ul>
+          <p></p>
+          <p></p>
+          <p>Passive means that the IDS monitors and reports on traffic. It does not take any action. This is the definition of operating in promiscuous mode.</p>
+          <p></p>
+          <p>The advantage of operating with a copy of the traffic is that the IDS does not negatively affect the packet flow of the forwarded traffic. The disadvantage of operating on a copy of the traffic is that the IDS cannot stop malicious single-packet attacks from reaching the target before responding to the attack. An IDS often requires assistance from other networking devices, such as routers and firewalls, to respond to an attack.</p>
+          <p></p>
+          <p>A better solution is to use a device that can immediately detect and stop an attack. An Intrusion Prevention System (IPS) performs this function.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0">The figure shows a depiction of an intrusion detection system in operation. A user connects to a router over the internet, which then connects to a switch. The traffic then goes to an ids enabled sensor while at the same time reaching its target. A management console is shown managing the ids enabled sensor.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>

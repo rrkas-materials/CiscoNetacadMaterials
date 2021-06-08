@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberEss1.1/en/course/module6/6.2.3.3/6.2.3.3.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>6.2.3.3 RAID</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    
+    <link rel="stylesheet" type="text/css" href="./responsive.css">
+    <script type="text/javascript" src="./responsive.js.download"></script>
+    
+    <script>
+      var media_transcript_file = "media_6.2.3.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">RAID</h1>
+        <div tabindex="0">
+          <p>A redundant array of independent disks (RAID) combines multiple physical hard drives into a single logical unit to provide data redundancy and improve performance. RAID takes data that is normally stored on a single disk and spreads it out among several drives. If any single disk is lost, the user can recover data from the other disks where the data also resides. </p>
+          <p></p>
+          <p>RAID can also increase the speed of data recovery. Using multiple drives will be faster retrieving requested data instead of relying on just one disk to do the work.</p>
+          <p></p>
+          <p>A RAID solution can be either hardware-based or software-based. A hardware-based solution requires a specialized hardware controller on the system that contains the RAID drives. The following terms describe how RAID stores data on the various disks:</p>
+          <p>
+            </p><ul>
+              <li>
+                <b>Parity</b> - Detects data errors.</li>
+            </ul>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>
+                <b>Striping</b> - Writes data across multiple drives.</li>
+            </ul>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>
+                <b>Mirroring</b> - Stores duplicate data on a second drive.</li>
+            </ul>
+          <p></p>
+          <p></p>
+          <p>There are several levels of RAID available as shown in the figure.</p>
+          <p>Click <a href="http://www.acnc.com/raid" target="_blank">here</a> to view a RAID level tutorial that explains RAID technology.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0">This figure shows a table comparing the following different RAID levels. RAID Level: 0, Minimum Number of Drives: 2, Description: Data striping without redundancy, Advantages: Highest Performance, Disadvantages: No Data protection, failure of one drive results in all loss of all data. RAID Level: 1, Minimum Number of Drives: 2, Description: Disk mirroring, Advantages: High performance, high data protection because all data is duplicated, Disadvantages: High cost of implementation because additional drive of equal or larger capacity is required. RAID Level: 2, Minimum Number of Drives: 2, Description: Error-Correcting Coding, Advantages: This level is no longer used, Disadvantages: Same performance can be achieved at a lower cost using RAID 3. RAID Level: 3, Minimum Number of Drives: 3, Description: Byte-Level data striping with dedicated parity, Advantages: For large, sequential data requests, Disadvantages: Does not support multiple, simultaneous read and write requests. RAID Level: 4, Minimum Number of Drives: 3, Description: Block-level data striping with dedicated parity, Advantages: Supports multiple read requests, if a disk fails the dedicated parity disk is used to create a replacement disk, Disadvantages: Write requests are bottlenecked due to the dedicated parity drive. RAID Level: 5, minimum Number of Drives: 3, Description: Combination of data striping and parity, Advantages: Supports multiple simultaneous reads and writes, data is written across all drives with parity, data can be rebuilt from information found on the other drives, Disadvantages: Write performance is slower than RAID 0 and 1. RAID level: 6, Minimum Number of Drives: 4, Description: Independent Data Disks with Double Parity, Advantages: Block-level striping with parity data distributed across all disks, can handle two simultaneous drive failures, Disadvantages: Lower performance than RAID 5, not supported on all disk controllers. RAID Level: RAID 0+1, Minimum Number of Drives: 4, Description: Combination of data striping and mirroring, Advantages: High performance, highest data protection, Disadvantages: High cost overhead because duplication of data requires twice the storage capacity. RAID Level: 10, Minimum Number of Drives: 4 (must be even number), Description: Mirrored set in a striped set, Advantages: Provides fault tolerance and improved performance, Disadvantages: High cost overhead because duplication of data requires twice the storage capacity.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>

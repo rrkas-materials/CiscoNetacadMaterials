@@ -1,0 +1,17 @@
+@import url('../../../common/styles/media2.css');
+
+#ID_txt12{
+	color: #990000 !important;
+}
+
+#ID_txt04{
+	color: #336633 !important;
+}
+
+#ID_txt08{
+	color: #999966 !important;
+}
+
+#ID_txt01, #ID_txt02, #ID_txt03, #ID_txt05, #ID_txt06, #ID_txt07, #ID_txt09, #ID_txt09, #ID_txt10, #ID_txt11{
+	color: #fff !important;
+}

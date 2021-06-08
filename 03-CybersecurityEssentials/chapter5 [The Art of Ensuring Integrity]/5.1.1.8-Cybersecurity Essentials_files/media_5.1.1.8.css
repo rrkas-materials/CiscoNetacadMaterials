@@ -1,0 +1,27 @@
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_trans01 {
+	height: 43px !important;
+	padding-top: 13px;
+}
+#ID_trans02,#ID_trans03 {
+	height: 23px !important;
+	padding-top: 7px;
+} 
+#ID_trans04 {
+	height: 40px !important;
+	padding-top: 13px;
+}
+#ID_trans05 {
+	height: 32px !important;
+	padding-top: 7px;
+}
+#ID_trans06 {
+	height: 25px !important;
+	padding-top: 2px;
+}
+#ID_trans07 {
+	height: 166px !important;
+}

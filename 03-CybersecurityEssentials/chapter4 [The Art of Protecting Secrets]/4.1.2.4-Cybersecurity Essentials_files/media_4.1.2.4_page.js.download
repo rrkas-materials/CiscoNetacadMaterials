@@ -1,0 +1,292 @@
+function registerSWF(){
+	swfobject.registerObject("flashobject", "9.0.0", "../../../common/libs/expressInstall.swf");
+}
+
+loadScript("../../../common/scripts/swfobject.js", registerSWF);
+
+/*(FIBActivity = function(container,id,answerArr){
+	//alert('test');
+    for(var i=0;i<5;i++)
+    {               
+        var bitIn = document.createElement('input');
+        bitIn.id = "iTxt0"+id+"_0"+i;
+        
+        
+        bitIn.data = i;
+        bitIn.style.cssText = "position:absolute;width:40px;top:0px;left:0px;";
+        bitIn.onchange = function(event) {
+            validateThis(this.value,this.data,this.id);
+        }
+        bitIn.onfocus = function(event){
+            container.getChildByName("wrong_" + this.data).visible = 0;
+        }
+        $("#commonMediaText").append(bitIn);
+        
+        var _domBitIn = new createjs.DOMElement(document.getElementById(bitIn.id));
+        _domBitIn.x = 350 ;
+        _domBitIn.y = i*49.7+184;              
+    $("#"+bitIn.id).css("text-align","center")
+    $("#"+bitIn.id).attr('maxlength','4')
+        container.addChild(_domBitIn);      
+        
+        
+        
+        
+        var bitmap = new createjs.Bitmap("../../../common/images/tick.png");
+        container.addChild(bitmap);
+        bitmap.x=i*49.7+358;
+        bitmap.y=202;
+        bitmap.name="tick_"+i;
+        bitmap.visible=0;
+        
+        //wrong image
+        bitmap = new createjs.Bitmap("../../../common/images/wrong.png");
+        container.addChild(bitmap);
+        bitmap.x=i*49.7+358;
+        bitmap.y=202;
+        bitmap.name="wrong_"+i;
+        bitmap.visible=0;
+    }
+    
+    
+    bitIn = document.createElement('input');
+    bitIn.id = "iTxt0"+id+"_08";
+    
+    bitIn.data = 8;
+    bitIn.style.cssText = "position:absolute;width:380px;text-align:left;top:0px;left:3px";
+    bitIn.onchange = function(event) {
+        //validateThis(this.value,this.data,this.id);
+    }
+    $("#commonMediaText").append(bitIn);
+    
+    var _domBitIn = new createjs.DOMElement(document.getElementById(bitIn.id));
+    _domBitIn.x = 350 ;
+    _domBitIn.y = 234;              
+
+    container.addChild(_domBitIn);
+    $("#"+bitIn.id).css("text-align","center")
+    
+    
+    bitmap = new createjs.Bitmap("../../../common/images/tick.png");
+    container.addChild(bitmap);
+    bitmap.x=530;
+    bitmap.y=252;
+    bitmap.name="tick_8";
+    bitmap.visible=0;
+    
+    //wrong image
+    bitmap = new createjs.Bitmap("../../../common/images/wrong.png");
+    container.addChild(bitmap);
+    bitmap.x=530;
+    bitmap.y=252;
+    bitmap.name="wrong_8";
+    bitmap.visible=0;
+        
+    for (var i = 0; i < 9; i++) {
+        $("#iTxt0" + id + "_0" + i).css("margin-left", "-10px");
+        $("#iTxt0" + id + "_0" + i).bind('keyup change keydown' , function() {
+            txt = $(this);
+           
+            text = txt.val().replace(/[^a-fA-F0-9-:]/g, "").toUpperCase();
+            txt.val(text);
+        });
+    }
+    
+    
+    function validateThis(val, i, id){
+        
+        var tf = $("#"+id);
+        
+        container.getChildByName("wrong_"+i).visible=0;
+        container.getChildByName("tick_"+i).visible=0;
+        if(answerArr[i]!=val){
+            container.getChildByName("wrong_"+i).visible=1;
+            tf.css( "color", "#E31C23" );
+        }else{
+            container.getChildByName("tick_"+i).visible=1;
+            tf.css( "color", "#46A040" );
+        }
+        
+    }
+    
+    
+    function checkHandler(){
+        hideAll();
+        var allCorrect=true;
+        for(var i=0;i<9;i++)
+        {
+            var tf = $("#iTxt0"+id+"_0"+i);
+            var txt=tf.val();
+            if(answerArr[i]!=txt){
+                allCorrect=false;
+                container.getChildByName("wrong_"+i).visible=1;
+                tf.css( "color", "#E31C23" );
+            }else{
+                container.getChildByName("tick_"+i).visible=1;
+                tf.css( "color", "#46A040" );
+            }
+             
+            
+        }
+        
+        
+        
+        
+        if(allCorrect){
+            ansPopupWindow.visible=1;
+        }else{
+            
+        }
+        update=true;
+
+    }
+    
+    
+    function resetHandler(){
+        for(var i=0;i<9;i++)
+        {
+            var tf = $("#iTxt0"+id+"_0"+i);
+            tf.css( "color", "#393536" );
+            tf.val("");
+        }
+        hideAll();
+        
+    }
+
+    function hideAll(){
+        ansPopupWindow.visible=0;
+        for(var i=0;i<9;i++)
+        {
+            container.getChildByName("wrong_"+i).visible=0;
+            container.getChildByName("tick_"+i).visible=0;
+        }
+    }
+    
+    
+    var btn;
+    
+    btn = getCJSElement("BLUE_BUTTON",{x:514.05,y:291,width:100,height:21,compId:"ID_s1_check",id:"check",callback:checkHandler});
+    container.addChild(btn);
+    
+    btn = getCJSElement("BLUE_BUTTON",{x:640.05,y:291,width:100,height:21,compId:"ID_s1_reset",id:"reset",callback:resetHandler});
+    container.addChild(btn);
+    
+    var ansPopupWindow = getCJSElement("TEXTBOX",{x:250,y:288.75,width:250,height:110,subType:"CLOSABLE",titleId:"ID_correctTitle",bodyId:"ID_correctBody",visible:"0"});
+    container.addChild(ansPopupWindow);
+
+    
+});*/
+
+(slideViewDidLoad = function(container,id){
+
+        var answerArr = ["23-78-1f-e9-97-30-a8-32","a5-41-e5-b9-05-e9-15-fd","9e-d4-62-45-55-b4-8f-40","03-9d-8d-18-dc-50-d7-30","57-6a-4e-d2-e3-80-f6-f9"];
+        //var act = new FIBActivity(container,1,answerArr);
+
+        for(var i=0;i<answerArr.length;i++) {               
+       		var bitIn = document.createElement('input');
+        	bitIn.id = "inptxt_"+i;
+        
+        
+        	bitIn.data = i;
+        	bitIn.style.cssText = "position:absolute;width:178px;top:0px;left:0px;background:transparent;border:0;";
+	        bitIn.onchange = function(event) {
+	            validateThis(this.value,this.data,this.id);
+	        }
+	        bitIn.onfocus = function(event){
+	            container.getChildByName("wrong_" + this.data).visible = 0;
+	        }
+       		
+       		$("#commonMediaText").append(bitIn);
+        
+        	var _domBitIn = new createjs.DOMElement(document.getElementById(bitIn.id));
+        	_domBitIn.x = 754;
+        	_domBitIn.y = (i*28)+204;              
+    		$("#"+bitIn.id).css("text-align","center")
+    		//$("#"+bitIn.id).attr('maxlength','4')
+        	container.addChild(_domBitIn);     
+
+        	var bitmap = new createjs.Bitmap("../../../common/images/tick.png");
+	        container.addChild(bitmap);
+	        bitmap.x=948;
+	        bitmap.y=(i*30)+204;
+	        bitmap.name="tick_"+i;
+	        bitmap.visible=0; 
+
+	        //wrong image
+	        bitmap = new createjs.Bitmap("../../../common/images/wrong.png");
+	        container.addChild(bitmap);
+	        bitmap.x=948;
+	        bitmap.y=(i*28)+204;
+	        bitmap.name="wrong_"+i;
+	        bitmap.visible=0;
+        } 
+
+        function checkHandler(){
+        	//alert('check');
+	        hideAll();
+	        var allCorrect=true;
+	        for(var i=0;i<answerArr.length;i++)
+	        {
+	            var tf = $("#inptxt_"+i);
+	            var txt=tf.val();
+	            //alert('txt: '+txt);
+	            if(answerArr[i]!=txt){
+	                allCorrect=false;
+	                //if(txt.length > 0) {
+	                	container.getChildByName("wrong_"+i).visible=1;
+	                //}
+	            }else{
+	                container.getChildByName("tick_"+i).visible=1;
+	            }
+	             
+	            
+	        }
+	        
+	        
+	        
+	        
+	        if(allCorrect){
+	            corrPopupWindow.visible=1;
+	        }else{
+	            incorrPopupWindow.visible=1;
+	        }
+	        update=true;
+
+	    }
+	    
+	    
+	    function resetHandler(){
+	        for(var i=0;i<answerArr.length;i++)
+	        {
+	            var tf = $("#inptxt_"+i);
+	            tf.css( "color", "#393536" );
+	            tf.val("");
+	        }
+	        hideAll();
+	        
+	    }
+
+	    function hideAll(){
+	        corrPopupWindow.visible=0;
+	        incorrPopupWindow.visible=0;
+	        for(var i=0;i<answerArr.length;i++)
+	        {
+	            container.getChildByName("wrong_"+i).visible=0;
+	            container.getChildByName("tick_"+i).visible=0;
+	        }
+	    }
+
+        var btn;
+    
+	    btn = getCJSElement("BLUE_BUTTON",{x:25,y:447,width:115,height:21,compId:"ID_s1_CHECK",id:"check",callback:checkHandler});
+	    container.addChild(btn);
+	    
+	    btn = getCJSElement("BLUE_BUTTON",{x:160,y:447,width:115,height:21,compId:"ID_s1_RESET",id:"reset",callback:resetHandler});
+	    container.addChild(btn);
+	    
+	    var corrPopupWindow = getCJSElement("TEXTBOX",{x:350,y:145,width:300,height:200,subType:"CLOSABLE",titleId:"ID_s1_CORRECT_TITLE",bodyId:"ID_s1_CORRECT_BODY",visible:"0"});
+	    container.addChild(corrPopupWindow);   
+
+	    var incorrPopupWindow = getCJSElement("TEXTBOX",{x:350,y:145,width:300,height:200,subType:"CLOSABLE",titleId:"ID_s1_INCORRECT_TITLE",bodyId:"ID_s1_INCORRECT_BODY",visible:"0"});
+	    container.addChild(incorrPopupWindow);   
+}); 

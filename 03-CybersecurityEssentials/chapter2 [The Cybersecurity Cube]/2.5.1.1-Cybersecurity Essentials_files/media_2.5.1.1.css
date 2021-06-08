@@ -1,0 +1,7 @@
+@import url('../../../common/styles/media2.css');
+
+#ID_txt01{
+	padding-top: 25px !important;
+	padding-bottom: 25px !important;
+	height: 70px !important;
+}

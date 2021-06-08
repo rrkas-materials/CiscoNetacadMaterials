@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0099)http://static-course-assets.s3.amazonaws.com/CyberEss1.1/en/course/module6/6.2.3.3/media/index.html -->
+<html dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>6.2.3.3</title>
+		<link type="text/css" rel="stylesheet" href="./media.css">
+    <link type="text/css" rel="stylesheet" href="./media(1).css">
+    <link type="text/css" rel="stylesheet" href="./media_6.2.3.3.css">
+    <script type="text/javascript" src="./swfobject.js.download"></script>
+    <script type="text/javascript" src="./media.js.download"></script>
+    <script type="text/javascript" src="./media.js(1).download"></script>
+    <script type="text/javascript" src="./templates.js.download"></script>
+    <script type="text/javascript" src="./media_6.2.3.3_page.js.download"></script><script type="text/javascript" src="./swfobject.js(1).download"></script>
+  <script type="text/javascript" src="./jquery-2.2.4.min.js.download"></script><script type="text/javascript" src="./createJS_bundle_060.min.js.download"></script></head>
+  <body onload="init()" spellcheck="false">
+<img src="./preloader.gif" id="preloader" alt="Loading..." style="position: absolute; top: 50%; left: 50%; display: none;"><div id="htmlMedia" style="width: 100%; height: 100%;"><canvas id="canvas" width="680" height="490"></canvas><div id="mediaContainer" style="top: 0px; left: 0px; user-select: none; cursor: default; text-transform: none; position: absolute; transform-origin: 0% 0%; visibility: visible; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><div id="commonMediaText"><div class="mtable" id="ID_s7_table_html" tabindex="0" style="top: 0px; left: 0px; width: 600px; text-align: left; font-size: 0.916667em; color: rgb(57, 53, 54); max-height: 385px; overflow: auto; visibility: visible; position: absolute; transform-origin: 0% 0%; opacity: 1; transform: matrix(1, 0, 0, 1, 40, 60);">
+        
+            <table header="none" bordercolor="#FFFFFF" borderwidth="3" shadow="false" shadowcolor="#000000" glow="true" glowcolor="#808080" cellpadding="4">
+	
+		<caption colspan="5" class="mtable_title" bgcolor="#FFFFFF"><font size="16" color="#393536"><b>RAID Level Comparison</b></font></caption>
+			
+		
+		<tbody><tr class="mtable_top">
+			<td colspan="5" bgcolor="#4E4C4D"><font size="1" color="#4E4C4D">.</font></td>
+		</tr>
+		
+		<tr>
+			<th id="Level" scope="col" bgcolor="#666263" valign="top" width="70"><font color="#FFFFFF"><b>RAID Level</b></font></th>
+			<th id="Drives" scope="col" bgcolor="#666263" valign="top" width="70"><font color="#FFFFFF"><b>Min # of Drives</b></font></th>
+			<th id="Description" scope="col" bgcolor="#666263" valign="top" width="110"><font color="#FFFFFF"><b>Description</b></font></th>
+			<th id="Advantages" scope="col" bgcolor="#666263" valign="top"><font color="#FFFFFF"><b>Advantages</b></font></th>
+			<th id="Disadvantages" scope="col" bgcolor="#666263" valign="top"><font color="#FFFFFF"><b>Disadvantages</b></font></th>
+		</tr>
+		
+		<tr>
+			<td headers="Level" scope="row" bgcolor="#E9E7E8"><b>0</b></td>
+			<td headers="Drives" bgcolor="#E9E7E8">2</td>
+			<td headers="Description" bgcolor="#E9E7E8">Data striping without redundancy</td>
+			<td headers="Advantages" bgcolor="#E9E7E8">Highest performance</td>
+			<td headers="Disadvantages" bgcolor="#E9E7E8">No data protection, failure of one drive results in all loss of all data</td>
+		</tr>
+		<tr>
+			<td headers="Level" scope="row" bgcolor="#E9E7E8"><b>1</b></td>
+			<td headers="Drives" bgcolor="#E9E7E8">2</td>
+			<td headers="Description" bgcolor="#E9E7E8">Disk mirroring</td>
+			<td headers="Advantages" bgcolor="#E9E7E8">High performance, high data protection because all data is duplicated</td>
+			<td headers="Disadvantages" bgcolor="#E9E7E8">High cost of implementation because an additional drive of equal or larger capacity is required</td>
+		</tr>
+		<tr>
+			<td headers="Level" scope="row" bgcolor="#E9E7E8"><b>2</b></td>
+			<td headers="Drives" bgcolor="#E9E7E8">2</td>
+			<td headers="Description" bgcolor="#E9E7E8">Error-Correcting Coding</td>
+			<td headers="Advantages" bgcolor="#E9E7E8">This level is no longer used</td>
+			<td headers="Disadvantages" bgcolor="#E9E7E8">Same performance can be achieved at a lower cost using RAID 3</td>
+		</tr>
+		<tr>
+			<td headers="Level" scope="row" bgcolor="#E9E7E8"><b>3</b></td>
+			<td headers="Drives" bgcolor="#E9E7E8">3</td>
+			<td headers="Description" bgcolor="#E9E7E8">Byte-level data striping with dedicated parity</td>
+			<td headers="Advantages" bgcolor="#E9E7E8">For large, sequential data requests</td>
+			<td headers="Disadvantages" bgcolor="#E9E7E8">Does not support multiple, simultaneous read and write requests</td>
+		</tr>
+		<tr>
+			<td headers="Level" scope="row" bgcolor="#E9E7E8"><b>4</b></td>
+			<td headers="Drives" bgcolor="#E9E7E8">3</td>
+			<td headers="Description" bgcolor="#E9E7E8">Block-level data striping with dedicated parity</td>
+			<td headers="Advantages" bgcolor="#E9E7E8">Supports multiple read requests, if a disk fails the dedicated parity disk is used to create a replacement disk</td>
+			<td headers="Disadvantages" bgcolor="#E9E7E8">Write requests are bottlenecked due to the dedicated parity drive</td>
+		</tr>
+		
+		<tr>
+			<td headers="Level" scope="row" bgcolor="#E9E7E8"><b>5</b></td>
+			<td headers="Drives" bgcolor="#E9E7E8">3</td>
+			<td headers="Description" bgcolor="#E9E7E8">Combination of data striping and parity</td>
+			<td headers="Advantages" bgcolor="#E9E7E8"><textformat blockindent="-16"><ul><li style="font-size:10px">Supports multiple simultaneous reads and writes</li><li style="font-size:10px">Data is written across all drives with parity</li><li style="font-size:10px">Data can be rebuilt from information found on the other drives</li></ul></textformat></td>
+			<td headers="Disadvantages" bgcolor="#E9E7E8">Write performance is slower than RAID 0 and 1</td>
+		</tr>
+		<tr>
+			<td headers="Level" scope="row" bgcolor="#E9E7E8"><b>6</b></td>
+			<td headers="Drives" bgcolor="#E9E7E8">4</td>
+			<td headers="Description" bgcolor="#E9E7E8">Independent Data Disks with Double Parity</td>
+			<td headers="Advantages" bgcolor="#E9E7E8">Block-level striping with parity data distributed across all disks, can handle two simultaneous drive failures</td>
+			<td headers="Disadvantages" bgcolor="#E9E7E8">Lower performance than RAID 5, not supported on all disk controllers</td>
+		</tr>
+		
+		<tr>
+			<td headers="Level" scope="row" bgcolor="#E9E7E8"><b>RAID 0+1</b></td>
+			<td headers="Drives" bgcolor="#E9E7E8">4</td>
+			<td headers="Description" bgcolor="#E9E7E8">Combination of data striping and mirroring</td>
+			<td headers="Advantages" bgcolor="#E9E7E8">High performance, highest data protection</td>
+			<td headers="Disadvantages" bgcolor="#E9E7E8">High cost overhead because duplication of data requires twice the storage capacity</td>
+		</tr>
+		
+		<tr>
+			<td headers="Level" scope="row" bgcolor="#E9E7E8"><b>10</b></td>
+			<td headers="Drives" bgcolor="#E9E7E8">4 (must be even number)</td>
+			<td headers="Description" bgcolor="#E9E7E8">Mirrored set in a striped set</td>
+			<td headers="Advantages" bgcolor="#E9E7E8">Provides fault tolerance and improved performance</td>
+			<td headers="Disadvantages" bgcolor="#E9E7E8">High cost overhead because duplication of data requires twice the storage capacity</td>
+		</tr>
+		
+	</tbody></table>
+        
+    </div><div id="ID_s7_title" tabindex="1" style="top: 0px; left: 0px; width: 670px; text-align: center; font-size: 1.41667em; color: rgb(255, 255, 255); visibility: visible; position: absolute; transform-origin: 0% 0%; opacity: 1; transform: matrix(1, 0, 0, 1, 5, 7);">
+        
+            <b>RAID Level Comparison</b>
+    </div></div></div></div><script type="text/javascript" src="./templates_base_dev.js.download"></script></body></html>

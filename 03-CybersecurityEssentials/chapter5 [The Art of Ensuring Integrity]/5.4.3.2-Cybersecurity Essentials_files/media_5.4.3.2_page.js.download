@@ -1,0 +1,21 @@
+function registerSWF(){
+	swfobject.registerObject("flashobject", "9.0.0", "../../../common/libs/expressInstall.swf");
+}
+
+loadScript("../../../common/scripts/swfobject.js", registerSWF);
+
+(slideViewDidLoad = function(_container,_id) {
+	/*var img_dom = 
+	var container=new createjs.Container()
+	_container.addChild(container);
+	//container.id = "imgs";
+	_img = getCJSElement("IMAGE",{x:0,y:0,width:680,height:490,src:"media_5.4.3.1.png"});
+	container.addChild(_img);*/
+
+	var htmlElement = document.createElement("div");
+   	htmlElement.style.cssText = "position:absolute;";
+   	htmlElement.id = "domElement_img";
+   	htmlElement.innerHTML = "<img id='domElement_img' height='490' width='680' src='media_5.4.3.2.png'></img>";
+   	$("#commonMediaText").append(htmlElement)
+   	var domElement = new createjs.DOMElement(htmlElement);
+});

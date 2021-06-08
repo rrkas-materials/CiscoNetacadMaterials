@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberEss1.1/en/course/module5/5.1.3.1/5.1.3.1.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>5.1.3.1 What is an HMAC?</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    <script>
+      var media_transcript_file = "media_5.1.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">What is an HMAC?</h1>
+        <div tabindex="0">
+          <p>The next step in preventing a cybercriminal from launching a dictionary or brute-force attack on a hash is to add a secret key to the hash. Only the person who knows the hash can validate a password. One way to do this is to include the secret key in the hash using a hash algorithm called keyed-hash message authentication code (HMAC or KHMAC). HMACs use an additional secret key as input to the hash function. The use of HMAC goes a step further than just integrity assurance by adding authentication. An HMAC uses a specific algorithm that combines a cryptographic hash function with a secret key, as shown in the figure.</p>
+          <p></p>
+          <p>Only the sender and the receiver know the secret key, and the output of the hash function now depends on the input data and the secret key. Only parties who have access to that secret key can compute the digest of an HMAC function. This characteristic defeats man-in-the-middle attacks and provides authentication of the data origin.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0">The figure shows a plaintext message with a secret key going into a funnel. The funnel is labeled has function. The output is a fixed length authenticated hash value. The caption states that the same procedure is used for generation and verification of secure fingerprints.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>

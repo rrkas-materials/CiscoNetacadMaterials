@@ -1,0 +1,5 @@
+@import url('../../../common/styles/media2.css');
+#ID_trans01,#ID_trans02,#ID_trans03,#ID_trans04,#ID_trans05,#ID_trans06,#ID_trans07,#ID_trans08,#ID_trans09
+{
+	height: 20px !important;
+}

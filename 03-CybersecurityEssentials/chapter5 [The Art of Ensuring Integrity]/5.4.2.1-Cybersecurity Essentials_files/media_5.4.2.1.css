@@ -1,0 +1,9 @@
+@import url('../../../common/styles/media2.css');
+
+#ID_txt05
+{
+	background-color: #E9E7E8;
+	border:3px solid #4E4C4D;
+	border-radius: 5px;
+	padding:10px;
+}

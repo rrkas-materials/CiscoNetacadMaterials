@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberEss1.1/en/course/module5/5.1.1.7/5.1.1.7.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>5.1.1.7 Applications</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    <script>
+      var media_transcript_file = "media_5.1.1.7_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">Applications</h1>
+        <div tabindex="0">
+          <p>Use cryptographic hash functions in the following situations:</p>
+          <p>
+            </p><ul>
+              <li>To provide proof of authenticity when it is used with a symmetric secret authentication key, such as IP Security (IPsec) or routing protocol authentication</li>
+            </ul>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>To provide authentication by generating one-time and one-way responses to challenges in authentication protocols</li>
+            </ul>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>To provide message integrity check proof, such as those used in digitally signed contracts, and public key infrastructure (PKI) certificates, like those accepted when accessing a secure site using a browser</li>
+            </ul>
+          <p></p>
+          <p></p>
+          <p>When choosing a hashing algorithm, use SHA-256 or higher as they are currently the most secure. Avoid SHA-1 and MD5 due to the discovery of security flaws. In production networks, implement SHA-256 or higher. </p>
+          <p></p>
+          <p>While hashing can detect accidental changes, it cannot guard against deliberate changes. There is no unique identifying information from the sender in the hashing procedure. This means that anyone can compute a hash for any data, as long as they have the correct hash function. For example, when a message traverses the network, a potential attacker could intercept the message, change it, recalculate the hash, and append the hash to the message. The receiving device will only validate against whatever hash is appended. Therefore, hashing is vulnerable to man-in-the-middle attacks and does not provide security to transmitted data.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0">Hashing is used to ensure data integrity, prove data authenticity, and provide entity authentication.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>

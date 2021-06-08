@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberEss1.1/en/course/module5/5.1.2.3/5.1.2.3.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>5.1.2.3 Implementing Salting</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    <script>
+      var media_transcript_file = "media_5.1.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">Implementing Salting</h1>
+        <div tabindex="0">
+          <p>A Cryptographically Secure Pseudo-Random Number Generator (CSPRNG) is the best choice to generate salt. CSPRNGs generate a random number that has a high level of randomness and is completely unpredictable, so it is cryptographically secure.</p>
+          <p></p>
+          <p>To implement salting successfully, use the following recommendations:</p>
+          <p>
+            </p><ul>
+              <li>The salt needs to be unique for every user password. </li>
+            </ul>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>Never reuse a salt. </li>
+            </ul>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>The length of the salt should match the length of the hash function’s output.</li>
+            </ul>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>Always hash on the server in a web application.</li>
+            </ul>
+          <p></p>
+          <p>Using a technique called key stretching will also help to protect against attack. Key stretching makes the hash function very slowly. This prevents high-end hardware that can compute billions of hashes per second less effective.</p>
+          <p></p>
+          <p>The steps a database application uses to store and validate a salted password are shown in the figure.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0">To store a password, use CSPRNG to generate a long, random salt. Add the salt to the beginning of the password. Hash with SHA-256, a standard cryptographic has function. Save the salt and the hash as part of the user's database record. To validate a password, retrieve a user's salt and hash from the database. Add the salt to the password and hash it with the same hash function. Compare the hash of the given password to the one stored in the database. If the hashes do not match, the password is incorrect.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberEss1.1/en/course/module7/7.1.3.1/7.1.3.1.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>7.1.3.1 File Access Control</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    
+    <link rel="stylesheet" type="text/css" href="./responsive.css">
+    <script type="text/javascript" src="./responsive.js.download"></script>
+    
+    <script>
+      var media_transcript_file = "media_7.1.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">File Access Control</h1>
+        <div tabindex="0">
+          <p>Permissions are rules configured to limit folder or file access for an individual or for a group of users. The figure lists the permissions that are available for files and folders. </p>
+          <p></p>
+          <p>
+            <b>Principle of Least Privilege</b>
+          </p>
+          <p></p>
+          <p>Users should be limited to only the resources they need on a computer system or on a network. For example, they should not be able to access all files on a server if they only need access to a single folder. It may be easier to provide users access to the entire drive, but it is more secure to limit access to only the folder that they need to perform their job. This is the principle of least privilege. Limiting access to resources also prevents malicious programs from accessing those resources if the user’s computer becomes infected.</p>
+          <p></p>
+          <p>
+            <b>Restricting User Permissions</b>
+          </p>
+          <p></p>
+          <p>If an administrator denies permissions to a network share for an individual or a group, this denial overrides any other permission settings. For example, if the administrator denies someone permission to a network share, the user cannot access that share, even if the user is the administrator or part of the administrator group. The local security policy must outline which resources and the type of access allowed for each user and group.</p>
+          <p></p>
+          <p>When a user changes the permissions of a folder, she has the option to apply the same permissions to all sub-folders. This is permission propagation. Permission propagation is an easy way to apply permissions to many files and folders quickly. After parent folder permissions have been set, folders and files created inside the parent folder inherit the permissions of the parent folder.</p>
+          <p></p>
+          <p>In addition, the location of the data and the action performed on the data determine the permission propagation:</p>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>Data moved to the same volume will keep the original permissions</li>
+            </ul>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>Data copied to the same volume will inherit new permissions</li>
+            </ul>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>Data moved to a different volume will inherit new permissions</li>
+            </ul>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>Data copied to a different volume will inherit new permission</li>
+            </ul>
+          <p></p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0">Full control permissions allows users to see the contents of a file or folder, change and delete existing files and folders, create new files and folders, and run programs in a folder. Modify permissions allow user to change and delete existing files and folders, but they cannot create new ones. Read and Execute permissions allow users to see the contents of existing files and folders and can run programs in a folder. Read permissions allow users to see the contents of a folder and open files and folders. Write permissions allow users to create new files and folders and make changes to existing files and folders.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>

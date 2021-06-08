@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberEss1.1/en/course/module5/5.3.1.2/5.3.1.2.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>5.3.1.2 Using Digital Certificates</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    <script>
+      var media_transcript_file = "media_5.3.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">Using Digital Certificates</h1>
+        <div tabindex="0">
+          <p>Refer to the figure to help understand how digital certificates are used to authenticate a person or entity. In this scenario, Bob is purchasing an online item from Alice's website. Bob's browser will use Alice's digital certificate to ensure he is actually shopping on Alice's website and to secure traffic between them.</p>
+          <p>
+            <b>Step 1</b>: Bob decides to buy something on Alice's website and clicks on "Proceed to Checkout". His browser initiates a secure connection with Alice's web server and displays a lock icon in the security status bar.</p>
+          <p>
+            <b>Step 2</b>: Alice's web server receives the request and replies by sending its digital certificate containing the web server public key and other information to Bob's browser.</p>
+          <p>
+            <b>Step 3</b>: Bob's browser checks the digital certificate against stored certificates and confirms that he is indeed connected to Alice's web server. Only trusted certificates permit the transaction to go forward. If the certificate is not valid, then communication fails.</p>
+          <p>
+            <b>Step 4</b>: Bob's web browser creates a unique session key that will be used for secure communication with Alice's web server.</p>
+          <p>
+            <b>Step 5</b>: Bob's browser encrypts the session key using Alice's public key and sends it to Alice's web server.</p>
+          <p>
+            <b>Step 6</b>: Alice's web server receives the encrypted message from Bob's browser. It uses its private key to decrypt the message and discover the session key. Future exchange between the web server and browser will now use the session key to encrypt data.</p>
+        </div>
+      </div>
+      <div id="text-handle" title="Resize" role="button"></div>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0">The figure shows the 5 steps of using a digital certificate in a drawing.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>

@@ -1,0 +1,6 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_txt04 font {font-size: 9px !important;}

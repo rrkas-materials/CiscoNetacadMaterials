@@ -1,0 +1,10 @@
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+#ID_trans01{
+height: 100px !important;
+}
+
+#ID_trans02{
+height: 100px !important;
+}

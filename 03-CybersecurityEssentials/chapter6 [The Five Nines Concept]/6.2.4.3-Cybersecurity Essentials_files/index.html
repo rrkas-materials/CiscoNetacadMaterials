@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- saved from url=(0099)http://static-course-assets.s3.amazonaws.com/CyberEss1.1/en/course/module6/6.2.4.3/media/index.html -->
+<html dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>6.2.4.3</title>
+		<link type="text/css" rel="stylesheet" href="./media.css">
+    <link type="text/css" rel="stylesheet" href="./media(1).css">
+    <link type="text/css" rel="stylesheet" href="./media_6.2.4.3.css">
+    <script type="text/javascript" src="./swfobject.js.download"></script>
+    <script type="text/javascript" src="./media.js.download"></script>
+    <script type="text/javascript" src="./media.js(1).download"></script>
+    <script type="text/javascript" src="./templates.js.download"></script>
+    <script type="text/javascript" src="./media_6.2.4.3_page.js.download"></script><script type="text/javascript" src="./swfobject.js(1).download"></script>
+  <script type="text/javascript" src="./jquery-2.2.4.min.js.download"></script><script type="text/javascript" src="./createJS_bundle_060.min.js.download"></script></head>
+  <body onload="init()" spellcheck="false">
+<img src="./preloader.gif" id="preloader" alt="Loading..." style="position: absolute; top: 50%; left: 50%; display: none;"><div id="htmlMedia" style="width: 100%; height: 100%;"><canvas id="canvas" width="680" height="490"></canvas><div id="mediaContainer" style="top: 0px; left: 0px; user-select: none; cursor: default; text-transform: none; position: absolute; transform-origin: 0% 0%; visibility: visible; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><div id="commonMediaText"><div id="ID_title" tabindex="1" style="top: 0px; left: 0px; width: 670px; text-align: center; font-size: 1.41667em; color: rgb(255, 255, 255); visibility: visible; position: absolute; transform-origin: 0% 0%; opacity: 1; transform: matrix(1, 0, 0, 1, 5, 7);">
+		<b>Enable and Verify Cisco IOS Resilient Feature</b>
+	</div><div id="ID_router_txt1" tabindex="0" style="top: 0px; left: 0px; width: 582px; text-align: left; font-size: 0.916667em; color: rgb(255, 255, 255); font-family: &quot;courier new&quot;; overflow: auto; padding-left: 2px; padding-top: 1px; height: 374px; visibility: visible; position: absolute; transform-origin: 0% 0%; opacity: 1; transform: matrix(1, 0, 0, 1, 47, 67);"><pre>R1# <b>conf t</b>
+R1(config)# <b>secure boot-image</b>         
+R1(config)#
+*Feb 18 17:57:29.035: %IOS_RESILIENCE-5-IMAGE_RESIL_ACTIVE: 
+Successfully secured running image
+R1(config)# <b>secure boot-config</b>
+R1(config)#
+*Feb 18 18:02:29.459: %IOS_RESILIENCE-5-CONFIG_RESIL_ACTIVE: 
+Successfully secured config archive [flash0:.runcfg-20150218-180228.ar]
+R1(config)# <b>exit</b>
+R1# <b>show secure bootset</b>
+IOS resilience router id FTX1636848Z
+
+IOS image resilience version 15.4 activated at 18:02:04 UTC Wed Feb 
+18 2015
+Secure archive flash0:c1900-universalk9-mz.SPA.154-3.M2.bin type is 
+image (elf) []
+  file size is 75551300 bytes, run size is 75730352 bytes
+  Runnable image, entry point 0x81000000, run from ram
+
+IOS configuration resilience version 15.4 activated at 18:02:29 UTC 
+Wed Feb 18 2015
+Secure archive flash0:.runcfg-20150218-180228.ar type is config
+configuration archive size 2182 bytes
+
+R1#</pre></div></div></div></div><script type="text/javascript" src="./templates_base_dev.js.download"></script></body></html>

@@ -1,0 +1,209 @@
+function registerSWF(){
+	swfobject.registerObject("flashobject", "9.0.0", "../../../common/libs/expressInstall.swf");
+}
+
+loadScript("../../../common/scripts/swfobject.js", registerSWF);
+
+(slideViewDidLoad = function(_container,_id)
+{
+var clickBool=false;
+btnXPos=22.5
+btnYPos=86;
+var textContainer;
+
+
+
+
+  var hit = new createjs.Shape();
+		hit.graphics.beginFill("#000000").drawRect(0,0,680,490);
+		hit.alpha=0.4;
+		 _container.addChild(hit);
+		 hit.visible=false;
+
+var container=new createjs.Container()
+_container.addChild(container);
+container.cursor="pointer";
+
+
+  
+
+btn = getCJSElement("IMAGE",{x:btnXPos,y:btnYPos,width:43,height:43,src:"trans_btn.png",});
+container.addChild(btn);
+
+
+btn1 = getCJSElement("IMAGE",{x:btnXPos,y:btnYPos,width:43,height:43,src:"trans_btn_over.png",});
+container.addChild(btn1);
+btn1.visible=false;
+
+
+btn2 = getCJSElement("IMAGE",{x:btnXPos,y:btnYPos,width:43,height:43,src:"cross.png",});
+container.addChild(btn2);
+btn2.visible=false;
+
+
+
+		ID_txt01 = getCJSElement("TEXT",{x:54,y:120.5,compId:"ID_trans01",width:80,color:"#ffffff",bgColor:"#000000",align:"center",expand:"up+down",bgWithoutBorder:"true",corner:3});
+        _container.addChild(ID_txt01);
+		ID_txt01.visible=false;
+		
+		ID_txt02 = getCJSElement("TEXT",{x:146,y:120,compId:"ID_trans02",width:102,color:"#ffffff",bgColor:"#000000",align:"center",expand:"up+down",bgWithoutBorder:"true",corner:3});
+        _container.addChild(ID_txt02);
+		ID_txt02.visible=false;
+		
+		ID_txt03 = getCJSElement("TEXT",{x:255,y:213.5,compId:"ID_trans07",width:84,color:"#ffffff",bgColor:"#000000",align:"center",expand:"up+down",bgWithoutBorder:"true",corner:3});
+        _container.addChild(ID_txt03);
+		ID_txt03.visible=false;
+	
+		
+			ID_txt04 = getCJSElement("TEXT",{x:257.3,y:129.1,compId:"ID_trans03",width:72,color:"#ffffff",bgColor:"#000000",align:"center",expand:"up+down",bgWithoutBorder:"true",corner:3});
+        _container.addChild(ID_txt04);
+		ID_txt04.visible=false;
+		
+			ID_txt05 = getCJSElement("TEXT",{x:54.5,y:250.1,compId:"ID_trans08",width:95,color:"#ffffff",bgColor:"#000000",align:"center",expand:"up+down",bgWithoutBorder:"true",corner:3});
+        _container.addChild(ID_txt05);
+		ID_txt05.visible=false;
+		
+		
+			ID_txt06 = getCJSElement("TEXT",{x:66.1,y:158.7,compId:"ID_trans04",width:95,color:"#ffffff",bgColor:"#000000",align:"center",expand:"up+down",bgWithoutBorder:"true",corner:3});
+        _container.addChild(ID_txt06);
+		ID_txt06.visible=false;
+		
+			ID_txt07 = getCJSElement("TEXT",{x:231.3,y:265.5,compId:"ID_trans09",width:104,color:"#ffffff",bgColor:"#000000",align:"center",expand:"up+down",bgWithoutBorder:"true",corner:3});
+        _container.addChild(ID_txt07);
+		ID_txt07.visible=false;
+		
+		
+			ID_txt08 = getCJSElement("TEXT",{x:74,y:210.5,compId:"ID_trans06",width:155,color:"#ffffff",bgColor:"#000000",align:"center",expand:"up+down",bgWithoutBorder:"true",corner:3});
+        _container.addChild(ID_txt08);
+		ID_txt08.visible=false;
+		
+		
+			ID_txt09 = getCJSElement("TEXT",{x:191.3,y:172.5,compId:"ID_trans05",width:125,color:"#ffffff",bgColor:"#000000",align:"center",expand:"up+down",bgWithoutBorder:"true",corner:3});
+        _container.addChild(ID_txt09);
+		ID_txt09.visible=false;
+		
+			ID_txt10 = getCJSElement("TEXT",{x:77.3,y:280.1,compId:"ID_trans10",width:140,color:"#ffffff",bgColor:"#000000",align:"center",expand:"up+down",bgWithoutBorder:"true",corner:3});
+        _container.addChild(ID_txt10);
+		ID_txt10.visible=false;
+		
+		
+	
+			ID_txt11 = getCJSElement("TEXT",{x:57.5,y:312.95,compId:"ID_trans11",width:60,color:"#ffffff",bgColor:"#000000",align:"center",expand:"up+down",bgWithoutBorder:"true",corner:3});
+        _container.addChild(ID_txt11);
+		ID_txt11.visible=false;
+
+			ID_txt12 = getCJSElement("TEXT",{x:216.3,y:306.95,compId:"ID_trans12",width:118,color:"#ffffff",bgColor:"#000000",align:"center",expand:"up+down",bgWithoutBorder:"true",corner:3});
+        _container.addChild(ID_txt12);
+		ID_txt12.visible=false;
+
+		ID_txt13 = getCJSElement("TEXT",{x:128,y:322.5,compId:"ID_trans13",width:95,color:"#ffffff",bgColor:"#000000",align:"center",expand:"up+down",bgWithoutBorder:"true",corner:3});
+        _container.addChild(ID_txt13);
+		ID_txt13.visible=false;
+
+		ID_txt14 = getCJSElement("TEXT",{x:63.5,y:355.5,compId:"ID_trans14",width:125,color:"#ffffff",bgColor:"#000000",align:"center",expand:"up+down",bgWithoutBorder:"true",corner:3});
+        _container.addChild(ID_txt14);
+		ID_txt14.visible=false;
+
+		ID_txt15 = getCJSElement("TEXT",{x:216.25,y:350.05,compId:"ID_trans15",width:120,color:"#ffffff",bgColor:"#000000",align:"center",expand:"up+down",bgWithoutBorder:"true",corner:3});
+        _container.addChild(ID_txt15);
+		ID_txt15.visible=false;
+     
+
+
+container.addEventListener("click", handlerMethod);
+container.addEventListener("mouseover", handlerOverMethod);
+container.addEventListener("mouseout", handlerOutMethod);
+//var btn2 = getCJSElement("TEXTBOX",{x:405.95,y:96,width:234.75,height:287,size:11,titleId:bubbleTitleArr[i],bodyId:bubbleTextArr[i]});
+//_container.addChild(btn2);
+
+
+
+
+//accessbility fix
+   var label = new ButtonLabelComp({ x: 5, y: 4, width: 40, height: 40, compId: "text_id_0" + (1 + 1), align: "center", color: "#343434", bold: "obj.bold", style: "pointer-events:all;cursor:pointer;" + "line-height:" + "1.1" });
+   btn.addChild(label);
+
+   btn.mouseOver = function(event) {
+       btn1.visible = true;
+   }
+   //Mouse out function
+   btn.mouseOut = function() {
+       btn1.visible = false;
+   }
+   //Mouse click function
+   btn.mouseClick = function(event) {
+       handlerMethod(event);
+   }
+ 
+
+
+	 function handlerMethod(event) {
+		
+		if(clickBool==false)
+		{
+	
+		ID_txt02.visible=true;
+		ID_txt01.visible=true;
+		ID_txt03.visible=true;
+		ID_txt04.visible=true;
+		ID_txt05.visible=true;
+		ID_txt06.visible=true;
+		ID_txt07.visible=true;
+		ID_txt08.visible=true;
+		ID_txt09.visible=true;
+		ID_txt10.visible=true;
+		ID_txt11.visible=true;
+		ID_txt12.visible=true;
+		ID_txt13.visible=true;
+		ID_txt14.visible=true;
+		ID_txt15.visible=true;
+	
+		btn2.visible=true;
+		
+		hit.visible=true;
+		$("#ID_title").css("opacity","0.4");
+		clickBool=true;
+		}
+		else 
+		{
+			
+		ID_txt02.visible=false;
+		ID_txt01.visible=false;
+		ID_txt03.visible=false;
+		ID_txt04.visible=false;
+		ID_txt05.visible=false;
+		ID_txt06.visible=false;
+		ID_txt07.visible=false;
+		ID_txt08.visible=false;
+		ID_txt09.visible=false;
+		ID_txt10.visible=false;
+		ID_txt11.visible=false;
+		ID_txt12.visible=false;
+		ID_txt13.visible=false;
+		ID_txt14.visible=false;
+		ID_txt15.visible=false;
+		
+			clickBool=false;
+			
+			btn2.visible=false;
+			hit.visible=false;
+			$("#ID_title").css("opacity","1");
+		}
+	
+	   
+ }
+ 
+ function handlerOverMethod(event)
+ {
+
+	btn1.visible=true;
+	
+
+ }
+  function handlerOutMethod(event)
+ {
+	btn1.visible=false;
+	}
+
+	
+});

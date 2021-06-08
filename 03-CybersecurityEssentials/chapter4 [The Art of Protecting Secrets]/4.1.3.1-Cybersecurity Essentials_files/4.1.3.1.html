@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberEss1.1/en/course/module4/4.1.3.1/4.1.3.1.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>4.1.3.1 The Asymmetrical Encryption Process</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    
+    <link rel="stylesheet" type="text/css" href="./responsive.css">
+    <script type="text/javascript" src="./responsive.js.download"></script>
+    
+    <script>
+      var media_transcript_file = "media_4.1.3.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">The Asymmetrical Encryption Process</h1>
+        <div tabindex="0">
+          <p>Asymmetric encryption, also called public-key encryption, uses one key for encryption that is different from the key used for decryption. A criminal cannot calculate the decryption key based on knowledge of the encryption key, and vice versa, in any reasonable amount of time.</p>
+          <p></p>
+          <p>If Alice and Bob exchange a secret message using public-key encryption, they use an asymmetric algorithm. This time Bob and Alice do not exchange keys prior to sending secret messages. Instead, Bob and Alice each have a separate padlock with separate corresponding keys. For Alice to send a secret message to Bob, she must first contact him and ask him to send his open padlock to her. Bob sends the padlock but keeps his key. When Alice receives the padlock, she writes her secret message and puts it in a small box. She also puts her open padlock in the box but keeps her key. She then locks the box with Bob’s padlock. When Alice locks the box, she is no longer able to get inside because she does not have a key to that padlock. She mails the box to Bob and, as the box travels through the mail system, no one is able to open it. When Bob receives the box, he can use his key to unlock the box and retrieve the message from Alice. To send a secure reply, Bob puts his secret message in the box, along with his open padlock, and locks the box using Alice’s padlock. Bob mails the secured box back to Alice.</p>
+          <p></p>
+          <p>For example, in Figure 1, Alice requests and obtains Bob’s public key. In Figure 2, Alice uses Bob’s public key to encrypt a message using an agreed-upon algorithm. Alice sends the encrypted message to Bob, and Bob then uses his private key to decrypt the message, as shown in Figure 3.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0"> There are three figures on this page. Figure 1 titled public-key encryption displaying two computers, Alice and Bob. The computer Alice requests: Can I get your public key please? The computer Bob sends the public key to Alice. The text below: Public key (encrypted) + private key (decrypt) = confidentiality.  Figure 2 titled public-key encryption. An encrypted message is created by encrypted the message with Bob's public key using an encryption algorithm. Figure 3 titled public-key encryption. To retrieve the original message, the encrypted text with the bob's private key using the encrypted algorithm.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>

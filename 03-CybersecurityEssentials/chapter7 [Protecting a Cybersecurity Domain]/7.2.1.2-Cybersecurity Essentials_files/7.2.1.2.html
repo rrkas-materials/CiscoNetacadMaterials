@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberEss1.1/en/course/module7/7.2.1.2/7.2.1.2.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>7.2.1.2 Telnet, SSH, and SCP</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    
+    <link rel="stylesheet" type="text/css" href="./responsive.css">
+    <script type="text/javascript" src="./responsive.js.download"></script>
+    
+    <script>
+      var media_transcript_file = "media_7.2.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">Telnet, SSH, and SCP</h1>
+        <div tabindex="0">
+          <p>Secure Shell (SSH) is a protocol that provides a secure (encrypted) management connection to a remote device. SSH should replace Telnet for management connections. Telnet is an older protocol that uses unsecure plaintext transmission of both the login authentication (username and password) and the data transmitted between the communicating devices. SSH provides security for remote connections by providing strong encryption when a device authenticates (username and password) and for transmitting data between the communicating devices. SSH uses TCP port 22. Telnet uses TCP port 23.</p>
+          <p></p>
+          <p>In Figure 1, cyber criminals monitor packets using Wireshark. In Figure 2, cyber criminals capture the username and password of the administrator from the plaintext Telnet session.</p>
+          <p></p>
+          <p>Figure 3 shows the Wireshark view of an SSH session. Cyber criminals track the session using the IP address of the administrator device, but in Figure 4, the session encrypts the username and password.</p>
+          <p></p>
+          <p>Secure copy (SCP) securely transfers computer files between two remote systems. SCP uses SSH for data transfer (including the authentication element), so SCP ensures the authenticity and confidentiality of the data in transit.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0">Figure 1 displays the output of a Wireshark Telnet capture. Figure 2 displays the captured username and password. Figure 3 displays the output of a Wireshark SSH capture. Figure 4 shows that the SSH traffic is encrypted and unreadable.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>

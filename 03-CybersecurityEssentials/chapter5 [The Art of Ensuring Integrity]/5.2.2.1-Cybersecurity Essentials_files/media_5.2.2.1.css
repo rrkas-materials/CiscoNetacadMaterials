@@ -1,0 +1,11 @@
+@import url('../../../common/styles/media2.css');
+
+#ID_txt02 {
+	color : #CB6D25 !important;
+
+}
+
+#ID_txt04,#ID_s2_txt02,#ID_s2_txt05,#ID_s3_txt03
+{
+	color : #164F6A !important;
+}

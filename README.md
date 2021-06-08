@@ -20,6 +20,16 @@
 4. Protecting the Organization  
 5. Will Your Future Be in Cybersecurity?
 
+## Cybersecurity Essentials
+### Modules
+1. Cybersecurity - A World of Experts and Criminals  
+2. The Cybersecurity Cube  
+3. Cybersecurity Threats, Vulnerabilities, and Attacks  
+4. The Art of Protecting Secrets  
+5. The Art of Ensuring Integrity  
+6. The Five Nines Concept  
+7. Protecting a Cybersecurity Domain  
+8. Becoming a Cybersecurity Specialist  
 
 ## CCNA 1
 ### Modules

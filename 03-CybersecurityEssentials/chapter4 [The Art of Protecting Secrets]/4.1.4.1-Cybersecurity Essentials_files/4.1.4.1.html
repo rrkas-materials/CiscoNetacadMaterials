@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberEss1.1/en/course/module4/4.1.4.1/4.1.4.1.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>4.1.4.1 Key Management</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    
+    <link rel="stylesheet" type="text/css" href="./responsive.css">
+    <script type="text/javascript" src="./responsive.js.download"></script>
+    
+    <script>
+      var media_transcript_file = "media_4.1.4.1_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">Key Management</h1>
+        <div tabindex="0">
+          <p>Key management includes the generation, exchange, storage, use, and replacement of keys used in an encryption algorithm.</p>
+          <p></p>
+          <p>Key management is the most difficult part of designing a cryptosystem. Many cryptosystems have failed because of mistakes in their key management procedures. In practice, most attacks on cryptographic systems target the key management level, rather than the cryptographic algorithm itself.</p>
+          <p></p>
+          <p>As shown in the figure, there are several essential characteristics of key management to consider.</p>
+          <p></p>
+          <p>Two terms used to describe keys are:</p>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>
+                <b>Key length</b> - Also called the key size, this is the measure in bits. </li>
+            </ul>
+          <p></p>
+          <p>
+            </p><ul>
+              <li>
+                <b>Keyspace</b> - This is the number of possibilities that a specific key length can generate.</li>
+            </ul>
+          <p></p>
+          <p>As key length increase, the keyspace increases exponentially. The keyspace of an algorithm is the set of all possible key values. Longer keys are more secure; however, they are also more resource intensive. Almost every algorithm has some weak keys in its keyspace that enable a criminal to break the encryption via a shortcut.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0">Key Generation - It was up to Caesar to choose the key of his cipher. The Vigenère cipher key is also chosen by the sender and receiver. In a modern cryptographic system, key generation is usually automated and not left to the end user. The use of good random number generators is needed to ensure that all keys are equally generated so that the attacker cannot predict which keys are more likely to be used. Key Verification - Some keys are better than others. Almost all cryptographic algorithms have some weak keys that should not be used. With the help of key verification procedures, weak keys can be identified and regenerated to provide a more secure encryption. With the Caesar cipher, using a key of 0 or 25 does not encrypt the message, so it should not be used. Key Exchange - Key management procedures should provide a secure key exchange mechanism that allows secure agreement on the keying material with the other party, probably over an untrusted medium. Key Storage - On a modern multi-user operating system that uses cryptography, a key can be stored in memory. This presents a possible problem when that memory is swapped to the disk, because a Trojan horse program installed on the PC of a user could then have access to the private keys of that user. Key Lifetime - Using short key lifetimes improves the security of legacy ciphers that are used on high-speed connections. In IPsec a 24-hour lifetime is typical. However, changing the lifetime to 30 minutes improves the security of the algorithms. Key Revocation and Destruction - Revocation notifies all interested parties that a certain key has been compromised and should no longer be used. Destruction erases old keys in a manner that prevents malicious attackers from recovering them.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>

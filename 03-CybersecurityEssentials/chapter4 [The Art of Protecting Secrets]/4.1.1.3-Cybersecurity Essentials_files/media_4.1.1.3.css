@@ -1,0 +1,25 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+html, body {
+	margin:0;
+	height:100%;
+}
+#ID_static_1,#ID_static_2,#ID_static_3,#ID_static_4,#ID_static_5,#ID_static_6
+{
+	font-size: 18px !important;
+}
+/*#ID_static_4,#ID_static_3
+{
+	letter-spacing: 3px;
+}
+#ID_static_1,#ID_static_5
+{
+line-height: 50px;
+}
+#ID_static_2
+{
+	line-height: 30px;
+}*/

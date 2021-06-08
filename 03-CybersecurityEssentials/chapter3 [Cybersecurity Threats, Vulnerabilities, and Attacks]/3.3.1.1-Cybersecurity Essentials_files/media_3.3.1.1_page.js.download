@@ -1,0 +1,30 @@
+function registerSWF(){
+	swfobject.registerObject("flashobject", "9.0.0", "../../../common/libs/expressInstall.swf");
+}
+
+loadScript("../../../common/scripts/swfobject.js", registerSWF);
+
+
+/*var manifest = [
+		{src:"images/Bitmap1.png", id:"Bitmap1"},
+		{src:"images/media_3311A.png", id:"media_3311A"},
+		{src:"images/media_3311B.png", id:"media_3311B"}
+	];*/
+	
+	
+	var mainMovieClip;
+
+			(Animation = function(control,id){
+
+			 	var manifest = [
+							{src:"images/Bitmap1.png", id:"Bitmap1"},
+							{src:"images/media_3311A.png", id:"media_3311A"},
+							{src:"images/media_3311B.png", id:"media_3311B"}
+						];
+
+
+				return manifest;
+
+			});
+
+

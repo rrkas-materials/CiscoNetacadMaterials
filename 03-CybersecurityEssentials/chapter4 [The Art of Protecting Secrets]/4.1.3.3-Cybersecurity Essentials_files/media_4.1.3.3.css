@@ -1,0 +1,38 @@
+@import url('../../../common/styles/media2.css');
+#ID_s1_instr_title {
+    margin-top: 2px;
+}
+
+#ID_s1_txt04,
+#ID_s1_txt05,
+#ID_s2_txt04,
+#ID_s2_txt05,
+#ID_s3_txt04,
+#ID_s3_txt05,
+#ID_s4_txt04,
+#ID_s4_txt05 {
+    background-color: #666263;
+    border: 2px solid #FFFFFF !important;
+    color: #FFFFFF !important;
+    padding-left: 3px;
+}
+
+#aln1,
+#aln2,
+#aln3,
+#aln4,
+#aln01,
+#aln02,
+#aln03,
+#aln04,
+#aln1a,
+#aln2a,
+#aln3a,
+#aln4a,
+#aln1A,
+#aln2A,
+#aln3A,
+#aln4A {
+    margin-left: 100px !important;
+    margin-top: -30px !important;
+}

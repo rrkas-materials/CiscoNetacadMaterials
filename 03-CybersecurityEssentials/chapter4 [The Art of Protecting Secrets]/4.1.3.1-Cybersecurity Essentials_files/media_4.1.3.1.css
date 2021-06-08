@@ -1,0 +1,18 @@
+@import url('../../../common/styles/media2.css');
+#ID_s1_txt04
+{
+	top: 22px !important;
+	width: 115px !important;
+	left: -41px !important;
+}
+
+#ID_s2_txt03, #ID_s3_txt03{
+	background-color: #660099 !important;
+	border: 2px solid #fff;
+
+}
+#ID_s1_txt01{
+	background-color: #fff !important;
+	padding:5px 5px !important;
+	box-shadow: 1px 1px #888 !important;
+}

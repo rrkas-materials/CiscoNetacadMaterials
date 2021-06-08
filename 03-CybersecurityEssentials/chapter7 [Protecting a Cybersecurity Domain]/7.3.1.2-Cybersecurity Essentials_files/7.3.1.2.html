@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberEss1.1/en/course/module7/7.3.1.2/7.3.1.2.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>7.3.1.2 Switches, Routers, and Network Appliances</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    
+    <link rel="stylesheet" type="text/css" href="./responsive.css">
+    <script type="text/javascript" src="./responsive.js.download"></script>
+    
+    <script>
+      var media_transcript_file = "media_7.3.1.2_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">Switches, Routers, and Network Appliances</h1>
+        <div tabindex="0">
+          <p>Network devices ship with either no passwords or default passwords. Change the default passwords before connecting any device to the network. Document the changes to network devices and log the changes. Lastly, examine all configuration logs.</p>
+          <p></p>
+          <p>The following sections discuss several measures that an administrator can take to protect various network devices.</p>
+          <p></p>
+          <p>
+            <b>Switches</b>
+          </p>
+          <p></p>
+          <p>Network switches are the heart of the modern data communication network. The main threat to network switches are theft, hacking and remote access, attacks against network protocols like ARP/STP or attacks against performance and availability. Several countermeasures and controls can protect network switches including improved physical security, advanced configuration, and implementing proper system updates and patches as needed. Another effective control is the implementation of port security. An administrator should secure all switch ports (interfaces) before deploying the switch for production use. One way to secure ports is by implementing a feature called port security. Port security limits the number of valid MAC addresses allowed on a port. The switch allows access to devices with legitimate MAC addresses while it denies other MAC addresses.</p>
+          <p></p>
+          <p>
+            <b>VLANs</b>
+          </p>
+          <p></p>
+          <p>VLANs provide a way to group devices within a LAN and on individual switches. VLANs use logical connections instead of physical connections. Individual ports of a switch can be assigned to a specific VLAN. Other ports can be used to physically interconnect switches and allow multiple VLAN traffic between switches. These ports are called trunks. </p>
+          <p></p>
+          <p>For example, the HR department may need to protect sensitive data.  VLANs allow an administrator to segment networks based on factors such as function, project team, or application, without regard for the physical location of the user or device as shown in Figure 1. Devices within a VLAN act as if they are in their own independent network, even if they share a common infrastructure with other VLANs. A VLAN can separate groups that have sensitive data from the rest of the network, decreasing the chances of confidential information breaches. Trunks allow individuals on the HR VLAN to be physically connected to multiple switches. </p>
+          <p></p>
+          <p>There are many different types of VLAN vulnerabilities and attacks. These can include attacking the VLAN and Trucking protocols. These attack details are beyond the scope of this course. Hackers can also attack VLAN performance and availability. Common countermeasures include monitoring VLAN changes and performance, advanced configurations and regular system patching and updates to the IOS.</p>
+          <p></p>
+          <p>
+            <b>Firewalls</b>
+          </p>
+          <p></p>
+          <p>Firewalls are hardware or software solutions that enforce network security policies. A firewall filters unauthorized or potentially dangerous traffic from entering the network (Figure 2). A simple firewall provides basic traffic filtering capabilities using access control lists (ACLs). Administrators use ACLs to stop traffic or permit only specified traffic on their networks. An ACL is a sequential list of permit or deny statements that apply to addresses or protocols. ACLs provide a powerful way to control traffic into and out of a network. Firewalls keep attacks out of a private network and are a common target of hackers in order to defeat the firewall protections. The main threat to firewalls are theft, hacking and remote access, attacks against ACLs or attacks against performance and availability. Several countermeasures and controls can protect firewalls including improved physical security, advanced configuration, secure remote access and authentication, and proper system updates and patches as needed.</p>
+          <p></p>
+          <p>
+            <b>Routers</b>
+          </p>
+          <p></p>
+          <p>Routers form the backbone of the Internet and communications between different networks. Routers communicate with one another to identify the best possible path to deliver traffic to different networks. Routers use routing protocols to make routing decision. Routers can also integrate other services like switching and firewall capabilities. These operations make routers prime targets. The main threat to network routers are theft, hacking and remote access, attacks against routing protocols like RIP/OSPF or attacks against performance and availability. Several countermeasures and controls can protect network routers including improved physical security, advanced configuration settings, use of secure routing protocols with authentication, and proper system updates and patches as needed.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0">Figure 1: A VLAN is defined for the IT, HR, and Sales departments even though the devices are physically located on different floors within the organization. Figure 2 shows that the firewall can permit or deny network traffic depending on the configuration. Figure 3 shows a network hierarchy with ACLs configured at various routers to deny or allow traffic.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>

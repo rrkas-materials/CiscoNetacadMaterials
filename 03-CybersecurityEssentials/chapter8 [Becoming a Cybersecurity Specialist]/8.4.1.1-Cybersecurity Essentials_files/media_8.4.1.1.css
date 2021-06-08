@@ -1,0 +1,9 @@
+
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_bodyTxt01, #ID_bodyTxt02, #ID_bodyTxt03 {
+  font-size: 1.2em !important;
+}

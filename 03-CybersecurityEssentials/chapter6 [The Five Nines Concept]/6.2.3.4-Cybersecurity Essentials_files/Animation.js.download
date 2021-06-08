@@ -1,0 +1,481 @@
+(function (lib, img, cjs) {
+
+var p; // shortcut to reference prototypes
+
+
+
+// symbols:
+
+
+
+(lib.Bitmap1 = function() {
+	this.initialize(img.Bitmap1);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,396,267);
+
+
+(lib.Bitmap2 = function() {
+	this.initialize(img.Bitmap2);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,82,52);
+
+
+(lib.Bitmap3 = function() {
+	this.initialize(img.Bitmap3);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,30,30);
+
+
+(lib.textbox7 = function() {
+	this.initialize();
+
+	// Layer 1
+	this.text=getCJSElement("TEXTBOX",{width:"200",height:"150",bodyId:"ID_s1_txt07",animated:"1",visible:"1"});
+	//this.text = new cjs.Text("ID_s1_txt07,w:200,h:150,a:1,vis:1,ani:1", "11px 'Times New Roman'");
+	this.text.textAlign = "center";
+	this.text.lineHeight = 13;
+	this.text.lineWidth = 182;
+	this.text.setTransform(-25,-10);
+
+	this.addChild(this.text);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,186,16.4);
+
+
+(lib.textbox6 = function() {
+	this.initialize();
+
+	// Layer 1
+	this.text=getCJSElement("TEXTBOX",{width:"200",height:"150",bodyId:"ID_s1_txt06",animated:"1",visible:"1"});
+	//this.text = new cjs.Text("ID_s1_txt06,w:200,h:150,a:1,vis:1,ani:1", "11px 'Times New Roman'");
+	this.text.textAlign = "center";
+	this.text.lineHeight = 13;
+	this.text.lineWidth = 182;
+	this.text.setTransform(-25,-10);
+
+	this.addChild(this.text);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,186,16.4);
+
+
+(lib.textbox5 = function() {
+	this.initialize();
+
+	// Layer 1
+	this.text=getCJSElement("TEXTBOX",{width:"200",height:"150",bodyId:"ID_s1_txt05",animated:"1",visible:"1"});
+	//this.text = new cjs.Text("ID_s1_txt05,w:200,h:150,a:1,vis:1,ani:1", "11px 'Times New Roman'");
+	this.text.textAlign = "center";
+	this.text.lineHeight = 13;
+	this.text.lineWidth = 182;
+	this.text.setTransform(-25,-10);
+
+	this.addChild(this.text);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,186,16.4);
+
+
+(lib.textbox4 = function() {
+	this.initialize();
+
+	// Layer 1
+	this.text=getCJSElement("TEXTBOX",{width:"200",height:"150",bodyId:"ID_s1_txt04",animated:"1",visible:"1"});
+	//this.text = new cjs.Text("ID_s1_txt04,w:200,h:150,a:1,vis:1,ani:1", "11px 'Times New Roman'");
+	this.text.textAlign = "center";
+	this.text.lineHeight = 13;
+	this.text.lineWidth = 182;
+	this.text.setTransform(-25,-10);
+
+	this.addChild(this.text);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,186,16.4);
+
+
+(lib.textbox2 = function() {
+	this.initialize();
+
+	// Layer 1
+	this.text=getCJSElement("TEXTBOX",{width:"200",height:"150",bodyId:"ID_s1_txt02",animated:"1",visible:"1"});
+	//this.text = new cjs.Text("ID_s1_txt02,w:200,h:150,a:1,vis:1,ani:1", "11px 'Times New Roman'");
+	this.text.textAlign = "center";
+	this.text.lineHeight = 13;
+	this.text.lineWidth = 182;
+	this.text.setTransform(-25,-10);
+
+	this.addChild(this.text);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,186,16.4);
+
+
+(lib.textbox1 = function() {
+	this.initialize();
+
+	// Layer 1
+	this.text=getCJSElement("TEXTBOX",{width:"200",height:"150",bodyId:"ID_s1_txt01",animated:"1",visible:"1"});
+	//this.text = new cjs.Text("ID_s1_txt01,w:200,h:150,a:1,vis:1,ani:1", "11px 'Times New Roman'");
+	this.text.textAlign = "center";
+	this.text.lineHeight = 13;
+	this.text.lineWidth = 182;
+	this.text.setTransform(-25,-10);
+
+	this.addChild(this.text);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,186,16.4);
+
+
+(lib.Symbol3 = function() {
+	this.initialize();
+
+	// Layer 1
+	this.text = getCJSElement("TEXT",{compId:"ID_s1_txt08",width:"70",expand:"right",align:"left",color:"#652C8A" });
+	//this.text = new cjs.Text("ID_s1_txt08,w:70,a:l,e:r,col:#652C8A", "11px 'Times New Roman'");
+	//this.text.textAlign = "center";
+	this.text.lineHeight = 13;
+	this.text.lineWidth = 172;
+	this.text.setTransform(13,8);
+
+	this.addChild(this.text);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,176,16.4);
+
+
+(lib.Symbol2 = function() {
+	this.initialize();
+
+	// Layer 1
+	this.text = getCJSElement("TEXT",{compId:"ID_s1_txt09",width:"70",expand:"left",align:"right",color:"#652C8A" });
+	//this.text = new cjs.Text("ID_s1_txt09,w:70,a:r,e:l,col:#652C8A", "11px 'Times New Roman'");
+	//this.text.textAlign = "center";
+	this.text.lineHeight = 13;
+	this.text.lineWidth = 172;
+	this.text.setTransform(-13,8);
+
+	this.addChild(this.text);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,176,16.4);
+
+
+(lib.Symbol1 = function() {
+	this.initialize();
+
+	// Layer 1
+	this.text = getCJSElement("TEXT",{compId:"ID_s1_txt10",width:"78",expand:"up",align:"center",color:"#652C8A" });
+	//this.text = new cjs.Text("ID_s1_txt10,w:78,a:c,e:ucol:#652C8A", "11px 'Times New Roman'");
+	//this.text.textAlign = "center";
+	this.text.lineHeight = 13;
+	this.text.lineWidth = 172;
+	this.text.setTransform(0,-8);
+
+	this.addChild(this.text);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,176,16.4);
+
+
+(lib.RedX = function() {
+	this.initialize();
+
+	// shape
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#C51230").s().p("ABmDhIhmiiIhlCiIhRAAICPjhIiPjgIBRAAIBlCiIBmiiIBRAAIiPDgICPDhg");
+	this.shape.setTransform(0,0.3);
+
+	// shadlow
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#FFFFFF").s().p("ABjDqIhjidIhjCdIhiAAICWjpIiVjpIBhAAIBjCeIBkieIBiAAIiWDpICVDpg");
+	this.shape_1.setTransform(0,0.3);
+
+	this.addChild(this.shape_1,this.shape);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(-19.8,-23.1,39.7,46.8);
+
+
+(lib.NotAllowed = function() {
+	this.initialize();
+
+	// shape
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#E31C23").s().p("AiwCwQhJhJAAhnQAAhmBJhKQBKhIBmgBQBnABBJBIQBJBKABBmQgBBnhJBJQhJBKhnAAQhmAAhKhKgAjXAAQAABZA/A/QBABABYAAQBOgBA7gxIkvkuQgxA6AABOgAiJilIEuEvQAzg7AAhPQAAhYhAhAQg3g2hJgIQgNgBgLAAQhOAAg7Ayg");
+
+	this.addChild(this.shape);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(-25,-25,50,50);
+
+
+(lib.envelopeclosedstatic = function() {
+	this.initialize();
+
+	// inner lines
+	this.instance = new lib.Bitmap2();
+	this.instance.setTransform(-39.6,-26.1);
+
+	this.addChild(this.instance);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(-39.6,-26.1,82,52);
+
+
+(lib.frame02 = function() {
+	this.initialize();
+
+	// Layer 2
+	this.instance = new lib.envelopeclosedstatic();
+	this.instance.setTransform(0,0.1,0.507,0.501,0,0,0,1.4,0);
+
+	this.addChild(this.instance);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(-20.7,-13,41.6,26.1);
+
+
+(lib.animation01 = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// timeline functions:
+	this.frame_0 = function() {
+		/* stop();
+		*/
+	}
+	this.frame_910 = function() {
+		/* stop();*/
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(910).call(this.frame_910).wait(1));
+
+	// dont allow
+	this.instance = new lib.Bitmap3();
+	this.instance.setTransform(49,138.3);
+
+	this.instance_1 = new lib.NotAllowed();
+	this.instance_1.setTransform(62.3,151.6,0.45,0.45);
+	this.instance_1._off = true;
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance}]}).to({state:[]},195).to({state:[{t:this.instance_1}]},7).to({state:[]},6).to({state:[{t:this.instance_1}]},6).to({state:[]},6).to({state:[{t:this.instance_1}]},6).to({state:[{t:this.instance_1}]},5).to({state:[{t:this.instance_1}]},20).to({state:[]},1).wait(659));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(202).to({_off:false},0).to({_off:true},6).wait(6).to({_off:false},0).to({_off:true},6).wait(6).to({_off:false},0).wait(5).to({y:151.8},0).to({alpha:0},20).to({_off:true},1).wait(659));
+
+	// broadcast
+	this.frame02 = new lib.frame02();
+	this.frame02.setTransform(103,205);
+	this.frame02._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.frame02).wait(510).to({_off:false},0).to({x:194.1,y:310.5},71).to({_off:true},44).wait(286));
+
+	// broadcast
+	this.frame02_1 = new lib.frame02();
+	this.frame02_1.setTransform(103,205);
+	this.frame02_1._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.frame02_1).wait(510).to({_off:false},0).to({x:101.1,y:310.5},71).to({_off:true},44).wait(235).to({_off:false,x:190,y:94},0).to({x:352.6},49).wait(2));
+
+	// broadcast4
+	this.frame02_2 = new lib.frame02();
+	this.frame02_2.setTransform(15,310.8);
+	this.frame02_2._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.frame02_2).wait(335).to({_off:false},0).to({x:103,y:205},59).wait(116).to({x:23,y:94},71).wait(99).to({x:190},75).to({_off:true},105).wait(51));
+
+	// textboxes7
+	this.instance_2 = new lib.textbox7();
+	this.instance_2.setTransform(370,257.5,1,1,0,0,0,80,77.5);
+	this.instance_2.alpha = 0;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(811).to({alpha:1},0).wait(100));
+
+	// textboxes6
+	this.instance_3 = new lib.textbox6();
+	this.instance_3.setTransform(370,257.5,1,1,0,0,0,80,77.5);
+	this.instance_3.alpha = 0;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(631).to({alpha:1},0).wait(174).to({alpha:0},0).wait(106));
+
+	// textboxes5
+	this.instance_4 = new lib.textbox5();
+	this.instance_4.setTransform(370,257.5,1,1,0,0,0,80,77.5);
+	this.instance_4.alpha = 0;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(451).to({alpha:1},0).wait(174).to({alpha:0},0).wait(286));
+
+	// textboxes4
+	this.instance_5 = new lib.textbox4();
+	this.instance_5.setTransform(370,257.5,1,1,0,0,0,80,77.5);
+	this.instance_5.alpha = 0;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(287).to({alpha:1},0).wait(157).to({alpha:0},0).wait(467));
+
+	// textboxes2
+	this.instance_6 = new lib.textbox2();
+	this.instance_6.setTransform(370,257.5,1,1,0,0,0,80,77.5);
+	this.instance_6.alpha = 0;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(145).to({alpha:1},0).wait(135).to({alpha:0},0).wait(631));
+
+	// textboxes1
+	this.instance_7 = new lib.textbox1();
+	this.instance_7.setTransform(370,257.5,1,1,0,0,0,80,77.5);
+	this.instance_7.alpha = 0;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(62).to({alpha:1},0).wait(76).to({alpha:0},0).wait(773));
+
+	// Red X
+	this.instance_8 = new lib.RedX();
+	this.instance_8.setTransform(148.1,151.6,0.44,0.44,0,0,0,0,0.3);
+	this.instance_8._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(15).to({_off:false},0).to({_off:true},6).wait(6).to({_off:false},0).to({_off:true},6).wait(6).to({_off:false},0).wait(872));
+
+	// statictext
+	this.text = getCJSElement("TEXT",{id:"ID_static_01",text:"F0/1",width:"18",expand:"up",align:"center" });
+	//this.text = new cjs.Text("F0/1", "10px 'Arial'", "#393536");
+	this.text.textAlign = "center";
+	this.text.lineHeight = 12;
+	this.text.setTransform(55.4,103);
+	this.text.shadow = new cjs.Shadow("rgba(255,255,255,1)",0,0,2);
+
+	this.text_1 = new cjs.Text("S2", "11px 'Arial'", "#FFFFFF");
+	this.text_1.textAlign = "center";
+	this.text_1.lineHeight = 13;
+	this.text_1.lineWidth = 53;
+	this.text_1.setTransform(97,207);
+
+	this.text_2 = new cjs.Text("S3", "11px 'Arial'", "#FFFFFF");
+	this.text_2.textAlign = "center";
+	this.text_2.lineHeight = 13;
+	this.text_2.lineWidth = 51;
+	this.text_2.setTransform(18.4,98.4);
+
+	this.text_3 = new cjs.Text("PC4", "11px 'Arial'", "#FFFFFF");
+	this.text_3.textAlign = "center";
+	this.text_3.lineHeight = 13;
+	this.text_3.lineWidth = 25;
+	this.text_3.setTransform(353.8,83.1);
+
+	this.text_4 = new cjs.Text("S1", "11px 'Arial'", "#FFFFFF");
+	this.text_4.textAlign = "center";
+	this.text_4.lineHeight = 13;
+	this.text_4.lineWidth = 53;
+	this.text_4.setTransform(182.2,101.7);
+
+	this.text_5 = new cjs.Text("PC3", "11px 'Arial'", "#FFFFFF");
+	this.text_5.textAlign = "center";
+	this.text_5.lineHeight = 13;
+	this.text_5.lineWidth = 25;
+	this.text_5.setTransform(194.9,305.3);
+
+	this.text_6 = new cjs.Text("PC2", "11px 'Arial'", "#FFFFFF");
+	this.text_6.textAlign = "center";
+	this.text_6.lineHeight = 13;
+	this.text_6.lineWidth = 25;
+	this.text_6.setTransform(102,305.3);
+
+	this.text_7 = new cjs.Text("PC1", "11px 'Arial'", "#FFFFFF");
+	this.text_7.textAlign = "center";
+	this.text_7.lineHeight = 13;
+	this.text_7.lineWidth = 26;
+	this.text_7.setTransform(16,305.3);
+
+	this.text_8 = getCJSElement("TEXT",{id:"ID_static_02",text:"F0/6",width:"18",expand:"up",align:"center" });
+	//this.text_8 = new cjs.Text("F0/6", "10px 'Arial'", "#393536");
+	this.text_8.lineHeight = 12;
+	this.text_8.lineWidth = 29;
+	this.text_8.setTransform(147,225);
+
+	this.text_9 = getCJSElement("TEXT",{id:"ID_static_03",text:"F0/11",width:"18",expand:"up",align:"center" });
+	//this.text_9 = new cjs.Text("F0/11", "10px 'Arial'", "#393536");
+	this.text_9.textAlign = "right";
+	this.text_9.lineHeight = 12;
+	this.text_9.lineWidth = 29;
+	this.text_9.setTransform(35,225);
+
+	this.text_10 = getCJSElement("TEXT",{id:"ID_static_04",text:"F0/1",width:"18",expand:"up",align:"center" });
+	//this.text_10 = new cjs.Text("F0/1", "10px 'Arial'", "#393536");
+	this.text_10.lineHeight = 12;
+	this.text_10.lineWidth = 25;
+	this.text_10.setTransform(140,172.7);
+
+	this.text_11 = getCJSElement("TEXT",{id:"ID_static_05",text:"F0/2",width:"18",expand:"up",align:"center" });
+	//this.text_11 = new cjs.Text("F0/2", "10px 'Arial'", "#393536");
+	this.text_11.textAlign = "right";
+	this.text_11.lineHeight = 12;
+	this.text_11.lineWidth = 25;
+	this.text_11.setTransform(52,178.4);
+
+	this.text_12 = getCJSElement("TEXT",{id:"ID_static_06",text:"F0/3",width:"18",expand:"up",align:"center" });
+	//this.text_12 = new cjs.Text("F0/3", "10px 'Arial'", "#393536");
+	this.text_12.lineHeight = 12;
+	this.text_12.lineWidth = 25;
+	this.text_12.setTransform(221.8,103);
+
+	this.text_13 = getCJSElement("TEXT",{id:"ID_static_07",text:"F0/1",width:"18",expand:"up",align:"center" });
+	//this.text_13 = new cjs.Text("F0/1", "10px 'Arial'", "#393536");
+	this.text_13.lineHeight = 12;
+	this.text_13.lineWidth = 25;
+	this.text_13.setTransform(173.7,124.3);
+
+	this.text_14 = getCJSElement("TEXT",{id:"ID_static_08",text:"F0/2",width:"18",expand:"up",align:"center" });
+	//this.text_14 = new cjs.Text("F0/2", "10px 'Arial'", "#393536");
+	this.text_14.textAlign = "right";
+	this.text_14.lineHeight = 12;
+	this.text_14.lineWidth = 25;
+	this.text_14.setTransform(5.2,116.6);
+
+	this.text_15 = getCJSElement("TEXT",{id:"ID_static_09",text:"F0/2",width:"18",expand:"up",align:"center" });
+	//this.text_15 = new cjs.Text("F0/2", "10px 'Arial'", "#393536");
+	this.text_15.textAlign = "right";
+	this.text_15.lineHeight = 12;
+	this.text_15.lineWidth = 25;
+	this.text_15.setTransform(116,103);
+	
+	this.text_16 = getCJSElement("TEXT",{id:"ID_static_10",text:"F0/18",width:"18",expand:"up",align:"center" });
+	//this.text_16 = new cjs.Text("F0/18", "10px 'Arial'", "#393536");
+	this.text_16.textAlign = "right";
+	this.text_16.lineHeight = 12;
+	this.text_16.lineWidth = 25;
+	this.text_16.setTransform(84,228);
+	
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.text_16},{t:this.text_15},{t:this.text_14},{t:this.text_13},{t:this.text_12},{t:this.text_11},{t:this.text_10},{t:this.text_9},{t:this.text_8},{t:this.text_7},{t:this.text_6},{t:this.text_5},{t:this.text_4},{t:this.text_3},{t:this.text_2},{t:this.text_1},{t:this.text}]}).wait(911));
+
+	// icons
+	this.instance_9 = new lib.Bitmap1();
+	this.instance_9.setTransform(-13.2,71.4);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(911));
+
+	// lazytext
+	this.instance_10 = new lib.Symbol3();
+	this.instance_10.setTransform(191.2,152.7,1,1,0,0,0,33.9,8.5);
+
+	this.instance_11 = new lib.Symbol2();
+	this.instance_11.setTransform(12.8,152.7,1,1,0,0,0,35.1,8.5);
+
+	this.instance_12 = new lib.Symbol1();
+	this.instance_12.setTransform(108.2,85.3,1,1,0,0,0,38.7,8.5);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_12},{t:this.instance_11},{t:this.instance_10}]}).wait(911));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-22.3,71.4,498.4,267);
+
+
+(lib.Main = function() {
+	this.initialize();
+
+	// animation 1
+	this.anim01 = new lib.animation01();
+	this.anim01.setTransform(155.2,15.5);
+
+	this.addChild(this.anim01);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(132.9,86.9,498.4,267);
+
+
+// stage content:
+(lib.media_6234 = function() {
+	this.initialize();
+
+	// Layer 4
+	this.instance = new lib.Main();
+	this.instance.setTransform(340,121.1,1,1,0,0,0,340,121.1);
+
+	this.addChild(this.instance);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(472.9,331.9,498.4,267);
+
+})(lib = lib||{}, images = images||{}, createjs = createjs||{});
+var lib, images, createjs;

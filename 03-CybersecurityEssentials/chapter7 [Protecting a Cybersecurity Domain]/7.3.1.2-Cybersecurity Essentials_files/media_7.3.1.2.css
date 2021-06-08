@@ -1,0 +1,9 @@
+@import url('../../../common/styles/media2.css');
+
+.bg{
+border:2px solid #7B797A;
+padding:2px 0 3px 3px;
+background:#E9E7E8;
+}
+
+.orangeCallOut{padding: 2px 3px 3px 3px !important;}

@@ -1,0 +1,19 @@
+
+/*   load the main media CSS file    */
+
+@import url('../../../common/styles/media2.css');
+
+#ID_s1_bodyTxt01 {
+	border: 2px solid #fff !important;
+	background-color: #fff !important;
+	height: 190px !important;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#ID_s2_bodyTxt01 {
+	border: 2px solid #fff !important;
+	background-color: #fff !important;
+	height: 190px !important;
+	padding-top: 10px;
+	padding-left: 10px;
+}

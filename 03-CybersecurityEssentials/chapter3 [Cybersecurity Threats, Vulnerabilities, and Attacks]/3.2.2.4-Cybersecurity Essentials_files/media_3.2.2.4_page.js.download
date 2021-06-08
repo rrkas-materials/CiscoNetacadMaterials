@@ -1,0 +1,127 @@
+function registerSWF(){
+	swfobject.registerObject("flashobject", "9.0.0", "../../../common/libs/expressInstall.swf");
+}
+
+loadScript("../../../common/scripts/swfobject.js", registerSWF);
+
+(slideViewDidLoad = function(_container,_id)
+{
+var clickBool=false;
+btnXPos=20.7;
+btnYPos=28.7;
+var textContainer;
+
+  var hit = new createjs.Shape();
+		hit.graphics.beginFill("#000000").drawRect(0,0,680,490);
+		hit.alpha=0.4;
+		 _container.addChild(hit);
+		 hit.visible=false;
+
+var container=new createjs.Container()
+_container.addChild(container);
+container.cursor="pointer";
+
+
+  
+
+btn = getCJSElement("IMAGE",{x:btnXPos,y:btnYPos,width:50,height:50,src:"trans_btn.png",});
+container.addChild(btn);
+
+
+btn1 = getCJSElement("IMAGE",{x:btnXPos,y:btnYPos,width:50,height:50,src:"trans_btn_over.png",});
+container.addChild(btn1);
+btn1.visible=false;
+
+
+btn2 = getCJSElement("IMAGE",{x:btnXPos,y:btnYPos,width:50,height:50,src:"cross.png",});
+container.addChild(btn2);
+btn2.visible=false;
+
+
+
+		ID_trans01 = getCJSElement("TEXT",{x:110,y:94,compId:"ID_trans01",width:455,color:"#ffffff",bgColor:"#000000",align:"center",expand:"left+right",bgWithoutBorder:"true",corner:3});
+        _container.addChild(ID_trans01);
+		ID_trans01.visible=false;
+
+		ID_trans02 = getCJSElement("TEXT",{x:110,y:200,compId:"ID_trans02",width:173,color:"#ffffff",bgColor:"#000000",align:"center",expand:"left+right",bgWithoutBorder:"true",corner:3});
+        _container.addChild(ID_trans02);
+		ID_trans02.visible=false;
+
+		ID_trans03 = getCJSElement("TEXT",{x:110,y:307,compId:"ID_trans03",width:282,color:"#ffffff",bgColor:"#000000",align:"center",expand:"left+right",bgWithoutBorder:"true",corner:3});
+        _container.addChild(ID_trans03);
+		ID_trans03.visible=false;
+		
+		
+
+     
+
+
+container.addEventListener("click", handlerMethod);
+container.addEventListener("mouseover", handlerOverMethod);
+container.addEventListener("mouseout", handlerOutMethod);
+//var btn2 = getCJSElement("TEXTBOX",{x:405.95,y:96,width:234.75,height:287,size:11,titleId:bubbleTitleArr[i],bodyId:bubbleTextArr[i]});
+//_container.addChild(btn2);
+
+
+//accessbility fix
+   var label = new ButtonLabelComp({ x: 5, y: 4, width: 40, height: 40, compId: "text_id_0" + (1 + 1), align: "center", color: "#343434", bold: "obj.bold", style: "pointer-events:all;cursor:pointer;" + "line-height:" + "1.1" });
+   btn.addChild(label);
+
+   btn.mouseOver = function(event) {
+       btn1.visible = true;
+   }
+   //Mouse out function
+   btn.mouseOut = function() {
+       btn1.visible = false;
+   }
+   //Mouse click function
+   btn.mouseClick = function(event) {
+       handlerMethod(event);
+   }
+ 
+
+
+
+
+	 function handlerMethod(event) {
+		
+		if(clickBool==false)
+		{
+	
+		ID_trans01.visible=true;
+		ID_trans02.visible=true;
+		ID_trans03.visible=true;
+	
+		btn2.visible=true;
+		
+		hit.visible=true;
+		clickBool=true;
+		}
+		else 
+		{
+			
+		ID_trans01.visible=false;
+		ID_trans02.visible=false;
+		ID_trans03.visible=false;
+			clickBool=false;
+			btn2.visible=false;
+			hit.visible=false;
+			
+		}
+	
+	   
+ }
+ 
+ function handlerOverMethod(event)
+ {
+
+	btn1.visible=true;
+	
+
+ }
+  function handlerOutMethod(event)
+ {
+	btn1.visible=false;
+	}
+
+});

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- saved from url=(0095)http://static-course-assets.s3.amazonaws.com/CyberEss1.1/en/course/module6/6.3.2.3/6.3.2.3.html -->
+<html class="text-on-right" dir="ltr" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>6.3.2.3 Intrusion Prevention Systems</title>
+    <!-- Content -->
+    <link rel="stylesheet" type="text/css" href="./page.css">
+    <script type="text/javascript" src="./jquery-2.1.0.min.js.download"></script>
+    <script type="text/javascript" src="./permission.js(1).download"></script><script type="text/javascript" src="./permission.js.download"></script>
+    <script type="text/javascript" src="./page.js.download"></script>
+    <script type="text/javascript" src="./override.js.download"></script>
+    
+    <link rel="stylesheet" type="text/css" href="./responsive.css">
+    <script type="text/javascript" src="./responsive.js.download"></script>
+    
+    <script>
+      var media_transcript_file = "media_6.3.2.3_longdesc.txt";
+    </script>
+  </head>
+  <body>
+    <div id="text-container" role="region" style="min-width: 320px; max-width: 660px;">
+      <div id="text">
+        <h1 tabindex="0">Intrusion Prevention Systems</h1>
+        <div tabindex="0">
+          <p>An IPS builds upon IDS technology. However, an IPS device operates in inline mode. This means that all incoming and outgoing traffic must flow through it for processing. As shown in the figure, an IPS does not allow packets to enter the trusted side of the network unless it has analyzed the packets. It can detect and immediately address a network problem.</p>
+          <p></p>
+          <p>An IPS monitors network traffic. It analyzes the contents and the payload of the packets for more sophisticated embedded attacks that might include malicious data. Some systems use a blend of detection technologies, including signature-based, profile-based, and protocol analysis-based intrusion detection. This deeper analysis enables the IPS to identify, stop, and block attacks that would pass through a traditional firewall device. When a packet comes in through an interface on an IPS, the outbound or trusted interface does not receive that packet until the IPS analyzes the packet.</p>
+          <p></p>
+          <p>The advantage of operating in inline mode is that the IPS can stop single-packet attacks from reaching the target system. The disadvantage is that a poorly configured IPS can negatively affect the packet flow of the forwarded traffic.</p>
+          <p></p>
+          <p>The biggest difference between IDS and IPS is that an IPS responds immediately and does not allow any malicious traffic to pass, whereas an IDS allows malicious traffic to pass before addressing the problem.</p>
+        </div>
+      </div>
+      <button id="text-handle" title="Resize" role="button"></button>
+    </div>
+    <div id="media-container" role="complementary" style="width: 680px;">
+      <iframe id="media" title="interactive graphic" aria-label="interactive graphic" aria-describedby="media-description" src="./index.html"></iframe>
+      <div id="media-description" tabindex="0">The figure shows a depiction of an intrusion prevention system in operation. A user connects to a router over the internet, which then connects to an ips enabled sensor while at the same time being discarded. A management console is shown managing the router behind the ips enabled sensor. The traffic never reaches the target.</div>
+    </div>
+    <div id="login">Please log into <a href="http://netacad.com/">netacad.com</a> before accessing this course.</div>
+  
+
+</body></html>
