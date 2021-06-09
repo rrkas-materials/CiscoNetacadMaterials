@@ -1,5 +1,16 @@
 # Cisco Netacad Materials
 
+## PCAP – Certified Associate in Python
+### Modules
+1. Basic (**PCEP**)  
+   module 1 : Intro  
+   module 2 : print(), literals, operators, variables, comments, input()  
+   module 3 : if-elif-else, loops, logic, lists  
+   module 4 : functions, tuples, dictionary  
+2. Intermediate (**PCAP**)  
+   module 5 : modules, packages, strings, exceptions  
+   module 6 : OOP, lambda, files
+
 ## Introduction To Packet Tracer
 ### Modules
 1. Introduction to Packet Tracer  
