@@ -266,3 +266,16 @@
    8.7 Cisco Security Platforms  
    8.8 Cisco Platforms and Development Summary  
    8.9 Prepare for Your Exam and Launch Your Career!
+
+## CODE_RIDERS_CET_Bhubaneswar_PCAP_Python
+### Modules
+1. Basic  
+   module 1 : intro  
+   module 2 : print(), literals, operators, variables, comments, input()  
+   module 3 : if-elif-else, loops, logic, lists  
+   module 4 : functions, tuples, dictionary, data processing  
+2. Intermediate  
+   module 1 : modules, packages, pip  
+   module 2 : strings, string and list methods, exceptions  
+   module 3 : OOP  
+   module 4 : miscellaneous  
