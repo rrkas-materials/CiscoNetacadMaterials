@@ -1,0 +1,2 @@
+(this["webpackJsonpnetacad-course-ui"]=this["webpackJsonpnetacad-course-ui"]||[]).push([[23],{1773:function(e,a,t){"use strict";t.r(a);var n=t(0),s=t.n(n),c=t(29);a.default=function(e){var a=e.assets,t=e.id;return s.a.createElement("div",{id:t},a.map((function(e){return s.a.createElement(c.a,Object.assign({zoom:!1,md:e.markdown,key:e.id},e))})))}}}]);
+//# sourceMappingURL=23.41a6daa0.chunk.js.map

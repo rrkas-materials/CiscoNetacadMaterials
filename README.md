@@ -279,3 +279,22 @@
    module 2 : strings, string and list methods, exceptions  
    module 3 : OOP  
    module 4 : miscellaneous  
+
+## CCNA 2
+### Modules
+1. Basic Device Configuration
+2. Switching Concepts
+3. VLANs
+4. Inter-VLAN Routing
+5. STP Concepts
+6. EtherChannel
+7. DHCPv4
+8. SLAAC and DHCPv6
+9. FHRP Concepts
+10. LAN Security Concepts
+11. Switch Security Configuration
+12. WLAN Concepts
+13. WLAN Configuration
+14. Routing Concepts
+15. IP Static Routing
+16. Troubleshoot Static and Default Routes  

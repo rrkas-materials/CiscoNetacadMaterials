@@ -1,0 +1,2 @@
+(this["webpackJsonpnetacad-course-ui"]=this["webpackJsonpnetacad-course-ui"]||[]).push([[20],{1745:function(e,a,t){},1772:function(e,a,t){"use strict";t.r(a);var n=t(0),c=t.n(n),i=t(29);t(1745);a.default=function(e){return e.images.map((function(e){return c.a.createElement("div",{className:"card",key:e.image},c.a.createElement("div",null,c.a.createElement(i.a,{id:e.image,style:{width:"100%",height:"100%"}})),e.caption&&c.a.createElement("div",{className:"card__body"},c.a.createElement(i.a,{id:e.caption})))}))}}}]);
+//# sourceMappingURL=20.210e6082.chunk.js.map
